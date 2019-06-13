@@ -243,6 +243,8 @@ header .container nav ul li a::after {
   color: black;
   border: 1px solid black;
   border-radius: 4px;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
 }
 
 #first-btns .first-btns::after {
@@ -258,10 +260,10 @@ header .container nav ul li a::after {
           transform: scale(0, 1);
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease;
+  transition: -webkit-transform 500ms ease;
+  transition: transform 500ms ease;
+  transition: transform 500ms ease, -webkit-transform 500ms ease;
   z-index: -1;
 }
 
