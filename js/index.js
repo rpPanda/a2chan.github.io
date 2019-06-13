@@ -76,7 +76,7 @@ function playGame(replay) {
 		for (let i = 0; i < 6; i++) {
 			color += colorGen[Math.floor(Math.random() * len)];
 		}
-		color = "#162449";
+		color = "black";
 		return color;
 	}
 
