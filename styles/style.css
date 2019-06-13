@@ -7,6 +7,8 @@ body {
 
 header {
   background-color: #dbbc33;
+  position: fixed;
+  z-index: 1;
 }
 
 header::after {
@@ -46,10 +48,12 @@ header .container nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
+  font-family: "Work Sans", sans-serif;
+  color: black;
 }
 
 header .container nav ul li a:hover {
-  color: yellow;
+  color: white;
 }
 
 header .container nav ul li a:hover::before {
@@ -98,5 +102,120 @@ header .container nav ul li a::after {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   border-left: 1px solid black;
   border-right: 1px solid black;
+}
+
+#fallingLetters {
+  height: 98vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  font-family: Mina, Roboto, "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#fallingLetters main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fallingLetters main p {
+  text-align: center;
+  margin-top: 5vh;
+  padding: 0 2rem;
+  max-width: 30rem;
+  line-height: 1.4;
+}
+
+#fallingLetters main div {
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  text-transform: uppercase;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+  -webkit-transition: opacity 0.7s ease-in;
+  transition: opacity 0.7s ease-in;
+  font-size: 3vh;
+  font-weight: 1;
+}
+
+#fallingLetters main div span {
+  position: absolute;
+  display: block;
+  -webkit-animation: waver 2s infinite alternate ease-in-out;
+  animation: waver 2s infinite alternate ease-in-out;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+#fallingLetters main div span b {
+  display: block;
+  padding: 2.5vh;
+  z-index: 0;
+  -webkit-transition: opacity 0.25s linear;
+  transition: opacity 0.25s linear;
+}
+
+#fallingLetters main div .popped {
+  opacity: 0;
+}
+
+#fallingLetters main div .popped span {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+#fallingLetters main div .popped span b {
+  opacity: 0;
+}
+
+#fallingLetters main div .missed {
+  opacity: 0;
+}
+
+#fallingLetters main div .missed span {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+@-webkit-keyframes waver {
+  100% {
+    -webkit-transform: translate3d(6vw, 0, 0);
+    transform: translate3d(6vw, 0, 0);
+  }
+}
+
+@keyframes waver {
+  100% {
+    -webkit-transform: translate3d(6vw, 0, 0);
+    transform: translate3d(6vw, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
