@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #dbbc33;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header .container {
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+header .container #company-name {
+  float: left;
+  padding: 1vh 0;
+}
+
+header .container nav {
+  float: right;
+}
+
+header .container nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .container nav ul li {
+  display: inline-block;
+  margin-left: 4vw;
+  padding: 1vh 0;
+  position: relative;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+header .container nav ul li a:hover {
+  color: yellow;
+}
+
+header .container nav ul li a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+header .container nav ul li a:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+header .container nav ul li a::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+header .container nav ul li a::after {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+/*# sourceMappingURL=style.css.map */
