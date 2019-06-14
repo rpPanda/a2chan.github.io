@@ -28,27 +28,19 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
+  right: 0;
 }
 
 header .container {
   position: relative;
-  width: 90vw;
-  margin: 0 6em;
-  position: relative;
+  width: 100%;
   overflow: hidden;
-}
-
-header .container #company-name {
-  float: left;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 header .container nav {
   float: right;
   position: relative;
+  margin-right: 2em;
 }
 
 header .container nav ul {
@@ -300,8 +292,8 @@ header .container nav ul li a::after {
 
 #brand-text {
   position: relative;
-  top: 4em;
-  margin-left: 2em;
+  top: 3.5em;
+  margin-left: 1.6em;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   font-size: 7em;
@@ -310,7 +302,21 @@ header .container nav ul li a::after {
 #brand-text #pepper-text {
   display: block;
   position: relative;
+  float: left;
+  clear: left;
   font-family: "Special Elite", cursive;
+}
+
+#brand-text #pepper-text::after {
+  content: ".";
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+#brand-text #pepper-text:hover::after {
+  opacity: 1;
 }
 
 #brand-text #tagline {
@@ -334,8 +340,8 @@ header .container nav ul li a::after {
   background-color: #000;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
+  -webkit-transform-origin: left;
+          transform-origin: left;
   -webkit-transition: -webkit-transform 400ms ease-in-out;
   transition: -webkit-transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out;
@@ -355,8 +361,8 @@ header .container nav ul li a::after {
   background-color: #000;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform-origin: right;
+          transform-origin: right;
   -webkit-transition: -webkit-transform 400ms ease-in-out;
   transition: -webkit-transform 400ms ease-in-out;
   transition: transform 400ms ease-in-out;
@@ -370,6 +376,8 @@ header .container nav ul li a::after {
           transform: scaleX(0);
   -webkit-transition-delay: 0ms;
           transition-delay: 0ms;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 #brand-text #tagline:hover::before {
@@ -377,6 +385,8 @@ header .container nav ul li a::after {
           transform: scaleX(1);
   -webkit-transition-delay: 300ms;
           transition-delay: 300ms;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .lang-bar {
