@@ -307,18 +307,6 @@ header .container nav ul li a::after {
   font-family: "Special Elite", cursive;
 }
 
-#brand-text #pepper-text::after {
-  content: ".";
-  position: relative;
-  opacity: 0;
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
-}
-
-#brand-text #pepper-text:hover::after {
-  opacity: 1;
-}
-
 #brand-text #tagline {
   position: relative;
   display: block;

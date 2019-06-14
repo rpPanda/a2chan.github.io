@@ -271,19 +271,6 @@ header {
 		float: left;
 		clear: left;
 		font-family: "Special Elite", cursive;
-
-		&::after {
-			content: ".";
-			position: relative;
-			opacity: 0;
-			transition: all 250ms ease-in-out;
-		}
-
-		&:hover {
-			&::after {
-				opacity: 1;
-			}
-		}
 	}
 
 	#tagline {
