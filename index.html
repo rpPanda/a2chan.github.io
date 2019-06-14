@@ -16,6 +16,7 @@
 		<title>Pepper</title>
 	</head>
 	<body>
+		<!-- top bar begins -->
 		<header>
 			<div class="container">
 				<div id="company-name"></div>
@@ -29,16 +30,59 @@
 				</nav>
 			</div>
 		</header>
+		<!-- top bar ends -->
+
+		<!-- side nav-bar begins -->
+		<nav class="lang-bar">
+			<ul>
+				<li onclick="location.href='index_hindi.html'">
+					<div id="lang1">
+						<span>हि</span>
+					</div>
+				</li>
+				<li onclick="location.href='index_tamil.html'">
+					<div class="lang2">
+						<span>த</span>
+					</div>
+				</li>
+				<li onclick="location.href='index_gujarati.html'">
+					<div class="lang3">
+						<span>ગુ</span>
+					</div>
+				</li>
+				<li onclick="location.href='index_bengali.html'">
+					<div class="lang4">
+						<span>বা</span>
+					</div>
+				</li>
+				<li onclick="location.href='index.html'">
+					<div class="lang5">
+						<span>E</span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<!-- side nav-bar ends -->
+
+		<!-- falling letters begin -->
 		<div id="fallingLetters">
 			<main id="main"></main>
 		</div>
+		<!-- falling letters end -->
+
+		<!-- Pepper text begins -->
 		<div id="pepper-text">
 			<h1>Pepper</h1>
 		</div>
+		<!-- Pepper text ends -->
+
+		<!-- buttons business and writer begins -->
 		<div id="first-btns">
 			<button class="btn first-btns">Businesses</button>
 			<button class="btn first-btns">Creators</button>
 		</div>
+		<!-- buttons end -->
+
 		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/61811/web-animations-next-2.2.0.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>

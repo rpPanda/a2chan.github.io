@@ -20,6 +20,7 @@ header {
 	// }
 
 	.container {
+		position: relative;
 		width: 90vw;
 		margin: 0 6em;
 		position: relative;
@@ -219,7 +220,9 @@ header {
 		width: 8em;
 		height: 4em;
 		color: black;
-		border: 1px solid black;
+		font-weight: 400;
+		font-family: "Work Sans", sans-serif;
+		border: 2px solid black;
 		border-radius: 4px;
 		transition: color 500ms ease-in-out;
 		&::after {
@@ -253,6 +256,78 @@ header {
 	margin-left: 4em;
 	transform: translateY(-50%);
 	font-size: 3.5em;
+
+	h1 {
+		display: inline-block;
+		position: relative;
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: #000;
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform 400ms ease-in-out;
+		}
+
+		&:hover {
+			&::after {
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+
+.lang-bar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 50vh;
+	right: 3em;
+	transform: translateY(-50%);
+	z-index: 2;
+	ul {
+		list-style: none;
+
+		li {
+			position: relative;
+			height: 3.5em;
+			width: 3.5em;
+			margin: 1em 0;
+			display: grid;
+			place-content: center;
+			border: 1px solid black;
+			border-radius: 50%;
+			transition: color 500ms ease-in-out;
+			color: #fcd116;
+			font-size: 1.1em;
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				border-radius: 50%;
+				background-color: rgba($color: #000000, $alpha: 1);
+				transform: scale(1, 1);
+				transform-origin: center;
+				transition: transform 400ms ease-in-out;
+				z-index: -1;
+			}
+
+			&:hover {
+				color: black;
+				&::after {
+					transform: scale(0, 0);
+					// transform-origin: left;
+				}
+			}
+		}
+	}
 }
 // @media all and (max-width: 30em) {
 // 	.btn {
