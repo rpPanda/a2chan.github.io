@@ -74,7 +74,7 @@ header .container nav ul li a:hover::after {
 header .container nav ul li a::before {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(20, 20, 20, 0);
   position: absolute;
   bottom: 1em;
   top: 1em;
@@ -93,7 +93,7 @@ header .container nav ul li a::before {
 header .container nav ul li a::after {
   content: "";
   display: block;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(20, 20, 20, 0);
   position: absolute;
   bottom: 1em;
   top: 1em;
@@ -235,8 +235,8 @@ header .container nav ul li a::after {
 }
 
 #first-btns {
-  position: absolute;
-  bottom: 8em;
+  position: relative;
+  top: 18em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -262,7 +262,7 @@ header .container nav ul li a::after {
 #first-btns .first-btns::after {
   content: "";
   display: block;
-  background-color: black;
+  background-color: #141414;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -421,7 +421,7 @@ header .container nav ul li a::after {
   left: 0;
   right: 0;
   border-radius: 50%;
-  background-color: black;
+  background-color: #141414;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transform-origin: center;
