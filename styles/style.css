@@ -10,6 +10,8 @@ header {
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
 }
 
 header .container {
@@ -66,10 +68,10 @@ header .container nav ul li a::before {
   display: block;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  bottom: 1em;
+  top: 1em;
+  left: 1em;
+  right: 1em;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -85,10 +87,10 @@ header .container nav ul li a::after {
   display: block;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  bottom: 1em;
+  top: 1em;
+  left: 1em;
+  right: 1em;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -276,5 +278,15 @@ header .container nav ul li a::after {
           transform: scale(1, 1);
   -webkit-transform-origin: left;
           transform-origin: left;
+}
+
+#pepper-text {
+  position: relative;
+  font-family: "Special Elite", cursive;
+  top: 7em;
+  margin-left: 4em;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 3.5em;
 }
 /*# sourceMappingURL=style.css.map */
