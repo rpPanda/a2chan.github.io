@@ -34,7 +34,6 @@ header {
 
 header .container {
   position: relative;
-  overflow: hidden;
 }
 
 header .container nav {
@@ -53,6 +52,10 @@ header .container nav ul li {
   float: left;
   padding: 2em 2.5em;
   position: relative;
+}
+
+header .container nav ul li .icon {
+  display: none;
 }
 
 header .container nav ul li a {
@@ -109,6 +112,7 @@ header .container nav ul li a::after {
   border-right: 1px solid #141414;
 }
 
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 #fallingLetters {
   margin-top: 10vh;
   height: 50vh;
@@ -442,5 +446,131 @@ header .container nav ul li a::after {
 .lang-bar ul li:hover::after {
   -webkit-transform: scale(0, 0);
           transform: scale(0, 0);
+}
+
+.card2 #newAtPepper {
+  padding: 4em 0;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background-color: rgba(51, 51, 51, 0.08);
+}
+
+.card2 #newAtPepper section {
+  position: relative;
+  font-size: 2em;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card2 #newAtPepper section::before {
+  content: "";
+  display: block;
+  position: relative;
+  left: -84%;
+  top: 50%;
+  width: 15vw;
+  height: 2px;
+  background-color: #141414;
+}
+
+.card2 #newAtPepper section::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -84%;
+  top: 50%;
+  width: 15vw;
+  height: 2px;
+  background-color: #141414;
+}
+
+.card2 .carouselNAP {
+  position: relative;
+  display: block;
+  top: 5%;
+}
+
+.card2 .carouselNAP ul {
+  position: relative;
+  width: 60vw;
+  height: 200px;
+  margin: 0.5vh 20vw;
+}
+
+.card2 .carouselNAP ul > li {
+  width: 25%;
+  list-style-type: none;
+  position: absolute;
+  top: 0;
+  padding: 20px;
+  height: 200px;
+  opacity: 0;
+  padding-top: 40px;
+  text-align: center;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity;
+}
+
+.card2 .carouselNAP .active {
+  opacity: 1;
+}
+
+.card2 .carouselNAP p {
+  font-size: 13px;
+  color: #141414;
+  line-height: 1.5em;
+}
+
+.card2 .carouselNAP strong {
+  color: #141414;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }
 /*# sourceMappingURL=style.css.map */
