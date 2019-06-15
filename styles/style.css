@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -8,10 +9,7 @@ body {
 .bg-cards {
   display: block;
   height: 100vh;
-  width: 92vw;
-  margin: 0 4vw;
-  position: absolute;
-  z-index: -2;
+  position: relative;
 }
 
 .card1 {
@@ -20,6 +18,12 @@ body {
   width: 100vw;
   margin: 0;
   background-color: #fcd116;
+}
+
+.card2 {
+  width: 100%;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 header {
@@ -58,7 +62,7 @@ header .container nav ul li {
 header .container nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  color: black;
+  color: #141414;
 }
 
 header .container nav ul li a:hover::before {
@@ -86,8 +90,8 @@ header .container nav ul li a::before {
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #141414;
+  border-bottom: 1px solid #141414;
 }
 
 header .container nav ul li a::after {
@@ -105,8 +109,8 @@ header .container nav ul li a::after {
   transition: -webkit-transform 250ms ease-in;
   transition: transform 250ms ease-in;
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid #141414;
+  border-right: 1px solid #141414;
 }
 
 #fallingLetters {
@@ -230,64 +234,68 @@ header .container nav ul li a::after {
   background: rgba(0, 0, 0, 0);
 }
 
-.btn:not(:last-of-type) {
-  margin-bottom: 0.6em;
-}
-
 #first-btns {
-  position: relative;
-  top: 18em;
+  position: absolute;
+  left: 15em;
+  bottom: 10em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  place-content: center;
 }
 
 #first-btns .first-btns {
   display: inline-block;
   text-transform: uppercase;
-  margin: 0 4em;
-  width: 8em;
-  height: 4em;
-  color: black;
+  margin-right: 4em;
+  padding: 0;
+  border-style: none;
+  color: #141414;
+  font-size: 1.8em;
   font-weight: 400;
   font-family: "Work Sans", sans-serif;
-  border: 2px solid black;
-  border-radius: 4px;
-  -webkit-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#first-btns .first-btns::before {
+  content: "→  ";
+  display: block;
+  position: absolute;
+  left: -2em;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 #first-btns .first-btns::after {
   content: "";
-  display: block;
-  background-color: #141414;
   position: absolute;
-  bottom: 0;
-  top: 0;
+  bottom: -0.5em;
   left: 0;
-  right: 0;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transition: -webkit-transform 500ms ease;
-  transition: -webkit-transform 500ms ease;
-  transition: transform 500ms ease;
-  transition: transform 500ms ease, -webkit-transform 500ms ease;
-  z-index: -1;
+  width: 100%;
+  height: 2px;
+  background-color: #141414;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 #first-btns .first-btns:hover {
-  color: #fcd116;
+  -webkit-transform: translateX(0.5em);
+          transform: translateX(0.5em);
+}
+
+#first-btns .first-btns:hover::before {
+  -webkit-transform: translateX(0.5em);
+          transform: translateX(0.5em);
 }
 
 #first-btns .first-btns:hover::after {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transform-origin: left;
-          transform-origin: left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 #brand-text {
@@ -346,7 +354,7 @@ header .container nav ul li a::after {
   top: -0.8em;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #141414;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -405,7 +413,7 @@ header .container nav ul li a::after {
   display: -ms-grid;
   display: grid;
   place-content: center;
-  border: 1px solid black;
+  border: 1px solid #141414;
   border-radius: 50%;
   -webkit-transition: color 500ms ease-in-out;
   transition: color 500ms ease-in-out;
@@ -434,7 +442,7 @@ header .container nav ul li a::after {
 }
 
 .lang-bar ul li:hover {
-  color: black;
+  color: #141414;
 }
 
 .lang-bar ul li:hover::after {
