@@ -1,3 +1,4 @@
+// falling letters begin
 playGame();
 polyfillKey();
 
@@ -225,4 +226,16 @@ function polyfillKey() {
 		}
 	};
 	Object.defineProperty(KeyboardEvent.prototype, "key", proto);
+}
+// falling letters end
+
+// top nav bar begins
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+	var x = document.getElementsByClassName("container");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
 }

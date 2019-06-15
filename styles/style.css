@@ -4,26 +4,23 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .bg-cards {
   display: block;
   height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 .card1 {
-  top: 0;
-  left: 0;
   width: 100vw;
-  margin: 0;
   background-color: #fcd116;
 }
 
 .card2 {
-  width: 100%;
-  margin: 0;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0);
 }
 
@@ -32,13 +29,11 @@ header {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
   right: 0;
 }
 
 header .container {
   position: relative;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -117,7 +112,7 @@ header .container nav ul li a::after {
 #fallingLetters {
   margin-top: 10vh;
   height: 50vh;
-  width: 100vw;
+  width: 100%;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
   display: -webkit-box;
@@ -132,7 +127,6 @@ header .container nav ul li a::after {
           flex-direction: column;
   font-family: Mina, Roboto, "Helvetica Neue", sans-serif;
   position: absolute;
-  top: 0;
   left: 0;
 }
 
@@ -239,7 +233,6 @@ header .container nav ul li a::after {
   position: absolute;
   left: 15em;
   bottom: 10em;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
