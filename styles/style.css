@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
@@ -24,65 +25,64 @@ body {
   background-color: rgba(0, 0, 0, 0);
 }
 
-header {
-  background-color: rgba(255, 255, 255, 0);
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
+.topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 9vh;
+  background-color: #fcd116;
 }
 
-header .container {
+.topnav .logo {
+  margin-left: 4em;
+}
+
+.topnav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  margin-right: 8em;
+}
+
+.topnav .nav-links li {
+  list-style-type: none;
   position: relative;
 }
 
-header .container nav {
-  float: right;
-  position: relative;
-  margin-right: 2em;
-}
-
-header .container nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header .container nav ul li {
-  float: left;
-  padding: 2em 2.5em;
-  position: relative;
-}
-
-header .container nav ul li .icon {
-  display: none;
-}
-
-header .container nav ul li a {
+.topnav .nav-links li a {
   text-decoration: none;
   text-transform: uppercase;
   color: #141414;
 }
 
-header .container nav ul li a:hover::before {
+.topnav .nav-links li a:hover::before {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-header .container nav ul li a:hover::after {
+.topnav .nav-links li a:hover::after {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
 
-header .container nav ul li a::before {
+.topnav .nav-links li a::before {
   content: "";
   display: block;
   background-color: rgba(20, 20, 20, 0);
   position: absolute;
-  bottom: 1em;
-  top: 1em;
-  left: 1em;
-  right: 1em;
+  bottom: -14px;
+  top: -14px;
+  left: -14px;
+  right: -14px;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -93,15 +93,15 @@ header .container nav ul li a::before {
   border-bottom: 1px solid #141414;
 }
 
-header .container nav ul li a::after {
+.topnav .nav-links li a::after {
   content: "";
   display: block;
   background-color: rgba(20, 20, 20, 0);
   position: absolute;
-  bottom: 1em;
-  top: 1em;
-  left: 1em;
-  right: 1em;
+  bottom: -14px;
+  top: -14px;
+  left: -14px;
+  right: -14px;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transition: -webkit-transform 250ms ease-in;
@@ -110,6 +110,93 @@ header .container nav ul li a::after {
   transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
   border-left: 1px solid #141414;
   border-right: 1px solid #141414;
+}
+
+.topnav .burger {
+  display: none;
+  cursor: pointer;
+}
+
+.topnav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #141414;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 40vh;
+    top: 8vh;
+    background-color: #f3db70;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .burger {
+    display: block !important;
+  }
+  .nav-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+          transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */

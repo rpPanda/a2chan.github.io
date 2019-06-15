@@ -3,6 +3,7 @@ $base-grey: #333333;
 $base-black: #141414;
 body {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: "Work Sans", sans-serif;
 	max-width: 100%;
@@ -25,90 +26,218 @@ body {
 	width: 100vw;
 	background-color: rgba($color: #000000, $alpha: 0);
 }
-header {
-	background-color: rgba($color: #ffffff, $alpha: 0);
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	// Use if header is position != fixed
-	// &::after {
-	// 	content: "";
-	// 	display: table;
-	// 	clear: both;
-	// }
+// header {
+// 	background-color: rgba($color: #ffffff, $alpha: 0);
+// 	position: fixed;
+// 	z-index: 1;
+// 	top: 0;
+// 	right: 0;
+// Use if header is position != fixed
+// &::after {
+// 	content: "";
+// 	display: table;
+// 	clear: both;
+// }
 
-	.container {
-		position: relative;
+// 	.container {
+// 		nav {
+// 			float: right;
+// 			position: relative;
+// 			margin-right: 2em;
 
-		nav {
-			float: right;
+// 			ul {
+// 				list-style: none;
+// 				margin: 0;
+// 				padding: 0;
+
+// 				li {
+// 					float: left;
+// 					padding: 2em 2.5em;
+// 					position: relative;
+
+// 					.icon {
+// 						display: none;
+// 					}
+
+// 					a {
+// 						text-decoration: none;
+// 						text-transform: uppercase;
+// 						color: $base-black;
+
+// 						&:hover {
+// 							&::before {
+// 								transform: scale(1, 1);
+// 							}
+
+// 							&::after {
+// 								transform: scale(1, 1);
+// 							}
+// 						}
+
+// 						&::before {
+// 							content: "";
+// 							display: block;
+// 							background-color: rgba($color: $base-black, $alpha: 0);
+// 							position: absolute;
+// 							bottom: 1em;
+// 							top: 1em;
+// 							left: 1em;
+// 							right: 1em;
+// 							transform: scale(0, 1);
+// 							transition: transform 250ms ease-in;
+// 							border-top: 1px solid $base-black;
+// 							border-bottom: 1px solid $base-black;
+// 						}
+
+// 						&::after {
+// 							content: "";
+// 							display: block;
+// 							background-color: rgba($color: $base-black, $alpha: 0);
+// 							position: absolute;
+// 							bottom: 1em;
+// 							top: 1em;
+// 							left: 1em;
+// 							right: 1em;
+// 							transform: scale(1, 0);
+// 							transition: transform 250ms ease-in;
+// 							border-left: 1px solid $base-black;
+// 							border-right: 1px solid $base-black;
+// 						}
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+
+.topnav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 9vh;
+	background-color: $base-yellow;
+
+	.logo {
+		margin-left: 4em;
+	}
+
+	.nav-links {
+		display: flex;
+		justify-content: space-around;
+		width: 30%;
+		margin-right: 8em;
+
+		li {
+			list-style-type: none;
 			position: relative;
-			margin-right: 2em;
 
-			ul {
-				list-style: none;
-				margin: 0;
-				padding: 0;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $base-black;
 
-				li {
-					float: left;
-					padding: 2em 2.5em;
-					position: relative;
-
-					.icon {
-						display: none;
+				&:hover {
+					&::before {
+						transform: scale(1, 1);
 					}
 
-					a {
-						text-decoration: none;
-						text-transform: uppercase;
-						color: $base-black;
-
-						&:hover {
-							&::before {
-								transform: scale(1, 1);
-							}
-
-							&::after {
-								transform: scale(1, 1);
-							}
-						}
-
-						&::before {
-							content: "";
-							display: block;
-							background-color: rgba($color: $base-black, $alpha: 0);
-							position: absolute;
-							bottom: 1em;
-							top: 1em;
-							left: 1em;
-							right: 1em;
-							transform: scale(0, 1);
-							transition: transform 250ms ease-in;
-							border-top: 1px solid $base-black;
-							border-bottom: 1px solid $base-black;
-						}
-
-						&::after {
-							content: "";
-							display: block;
-							background-color: rgba($color: $base-black, $alpha: 0);
-							position: absolute;
-							bottom: 1em;
-							top: 1em;
-							left: 1em;
-							right: 1em;
-							transform: scale(1, 0);
-							transition: transform 250ms ease-in;
-							border-left: 1px solid $base-black;
-							border-right: 1px solid $base-black;
-						}
+					&::after {
+						transform: scale(1, 1);
 					}
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					background-color: rgba($color: $base-black, $alpha: 0);
+					position: absolute;
+					bottom: -14px;
+					top: -14px;
+					left: -14px;
+					right: -14px;
+					transform: scale(0, 1);
+					transition: transform 250ms ease-in;
+					border-top: 1px solid $base-black;
+					border-bottom: 1px solid $base-black;
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					background-color: rgba($color: $base-black, $alpha: 0);
+					position: absolute;
+					bottom: -14px;
+					top: -14px;
+					left: -14px;
+					right: -14px;
+					transform: scale(1, 0);
+					transition: transform 250ms ease-in;
+					border-left: 1px solid $base-black;
+					border-right: 1px solid $base-black;
 				}
 			}
 		}
 	}
+
+	.burger {
+		display: none;
+		cursor: pointer;
+	}
+
+	.burger div {
+		width: 25px;
+		height: 3px;
+		background-color: $base-black;
+		margin: 5px;
+		transition: all 0.3s ease;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 40vh;
+		top: 8vh;
+		background-color: #f3db70;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
+	.nav-links li {
+		// opacity: 0;
+	}
+
+	.burger {
+		display: block !important;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes navLinkFade {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+	opacity: 0;
+}
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
