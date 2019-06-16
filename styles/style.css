@@ -234,6 +234,7 @@ body {
   margin-top: 1.1em;
   word-wrap: break-word;
   font-size: 0.2em;
+  cursor: pointer;
 }
 
 #brand-text #tagline::after {
@@ -300,6 +301,11 @@ body {
   position: relative;
   left: calc(9% + 45px);
   top: 48%;
+}
+
+.btn-1-1 a {
+  text-decoration: none;
+  color: #141414;
 }
 
 .btn-1-1 .btn-1-1-2 {

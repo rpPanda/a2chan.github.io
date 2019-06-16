@@ -191,6 +191,7 @@ body {
 		margin-top: 1.1em;
 		word-wrap: break-word;
 		font-size: 0.2em;
+		cursor: pointer;
 
 		&::after {
 			content: "";
@@ -241,6 +242,11 @@ body {
 	position: relative;
 	left: calc(9% + 45px);
 	top: 48%;
+
+	a {
+		text-decoration: none;
+		color: $base-black;
+	}
 	.btn-1-1-2 {
 		position: relative;
 		display: block;
