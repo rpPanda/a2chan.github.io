@@ -1,4 +1,11 @@
 @charset "UTF-8";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -432,7 +439,8 @@ body {
 }
 
 .card2 #newAtPepper {
-  padding: 4em 0;
+  padding: 7em 0 0 0;
+  position: relative;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -493,7 +501,7 @@ body {
   padding: 20px;
   height: 200px;
   opacity: 0;
-  padding-top: 40px;
+  padding-top: 25px;
   text-align: center;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
@@ -515,6 +523,109 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 100px;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  grid: auto/repeat(auto-fit, minmax(300px, 1fr));
+  padding: 7em 0;
+  position: relative;
+  margin-top: 12vh;
+}
+
+.card {
+  position: relative;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  opacity: 1;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 1.25em;
+  bottom: 1.25em;
+  left: 1.25em;
+  right: 1.25em;
+  opacity: 1;
+  -webkit-transition: -webkit-transform ease-out 250ms;
+  transition: -webkit-transform ease-out 250ms;
+  transition: transform ease-out 250ms;
+  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+}
+
+.card::before {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+}
+
+.card::after {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+}
+
+.card:hover .card__text {
+  opacity: 1;
+}
+
+.card:hover::before {
+  -webkit-transform: scale(1.05, 1);
+          transform: scale(1.05, 1);
+}
+
+.card:hover::after {
+  -webkit-transform: scale(1, 1.05);
+          transform: scale(1, 1.05);
+}
+
+.card:hover img {
+  opacity: 0.5;
+}
+
+.card .card__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms;
+}
+
+.card .card__title {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0;
+}
+
+.portfolio__image {
+  width: 100%;
+  display: block;
+  -webkit-transition: opacity ease-out 250ms;
+  transition: opacity ease-out 250ms;
 }
 
 /* Smartphones (portrait and landscape) ----------- */

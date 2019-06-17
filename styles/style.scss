@@ -1,6 +1,13 @@
 $base-yellow: #fcd116;
 $base-grey: #333333;
 $base-black: #141414;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -343,7 +350,8 @@ body {
 .card2 {
 	background: #eeecec;
 	#newAtPepper {
-		padding: 4em 0;
+		padding: 7em 0 0 0;
+		position: relative;
 		width: 100%;
 		display: grid;
 		place-content: center;
@@ -402,7 +410,7 @@ body {
 			padding: 20px;
 			height: 200px;
 			opacity: 0;
-			padding-top: 40px;
+			padding-top: 25px;
 			text-align: center;
 			transition: 1s opacity;
 		}
@@ -426,6 +434,94 @@ body {
 			line-height: 100px;
 		}
 	}
+}
+
+// portfolio
+.portfolio {
+	display: grid;
+	grid: auto / repeat(auto-fit, minmax(300px, 1fr));
+	padding: 7em 0;
+	position: relative;
+	margin-top: 12vh;
+	// margin: 0 5px;
+}
+
+.card {
+	position: relative;
+	flex-basis: 30%;
+	margin: 0;
+	padding: 0;
+	background: black;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 1.25em;
+		bottom: 1.25em;
+		left: 1.25em;
+		right: 1.25em;
+		opacity: 1;
+		transition: transform ease-out 250ms;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 1.25em;
+		bottom: 1.25em;
+		left: 1.25em;
+		right: 1.25em;
+		opacity: 1;
+		transition: transform ease-out 250ms;
+	}
+
+	&::before {
+		border-top: 1px solid white;
+		border-bottom: 1px solid white;
+		transform: scale(0, 1);
+	}
+
+	&::after {
+		border-left: 1px solid white;
+		border-right: 1px solid white;
+		transform: scale(1, 0);
+	}
+
+	&:hover {
+		.card__text {
+			opacity: 1;
+		}
+		&::before {
+			transform: scale(1.05, 1);
+		}
+
+		&::after {
+			transform: scale(1, 1.05);
+		}
+
+		img {
+			opacity: 0.5;
+		}
+	}
+	.card__text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: white;
+		opacity: 0;
+		transition: opacity ease-out 250ms;
+	}
+
+	.card__title {
+		font-size: 2rem;
+		color: white;
+		margin-bottom: 0;
+	}
+}
+
+.portfolio__image {
+	width: 100%;
+	display: block;
+	transition: opacity ease-out 250ms;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
