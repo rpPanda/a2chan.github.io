@@ -1,6 +1,15 @@
+function scrollProgressBar() {
+	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+	var height =
+		document.documentElement.scrollHeight -
+		document.documentElement.clientHeight;
+	var scrolled = (winScroll / height) * 100;
+	document.getElementById("scroll-progress-bar").style.width = scrolled + "%";
+}
+
 // falling letters begin
-playGame();
-polyfillKey();
+// playGame();
+// polyfillKey();
 
 function playGame(replay) {
 	var LETTERS = [
@@ -318,3 +327,7 @@ setInterval(function() {
 		.addClass("active")
 		.css("transition-delay", "2s");
 }, timer);
+
+window.onscroll = function() {
+	scrollProgressBar();
+};

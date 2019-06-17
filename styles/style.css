@@ -14,6 +14,7 @@ body {
   font-family: "Raleway", sans-serif;
   max-width: 100%;
   overflow-x: hidden;
+  cursor: default;
 }
 
 .bg-cards {
@@ -30,6 +31,14 @@ body {
 .card2 {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 7vh;
+  left: 0;
+  height: 4px;
+  background: #141414;
 }
 
 .topnav {
@@ -141,7 +150,7 @@ body {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .lang-bar {
     display: none !important;
   }
@@ -399,8 +408,8 @@ body {
   place-content: center;
   border: 1px solid #141414;
   border-radius: 50%;
-  -webkit-transition: color 500ms ease-in-out;
-  transition: color 500ms ease-in-out;
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
   color: #fcd116;
   font-size: 1.1em;
 }
