@@ -241,21 +241,23 @@ function polyfillKey() {
 // top nav bar begins
 const navSlide = () => {
 	const burger = document.querySelector(".burger");
+	const burgerSpan = document.querySelectorAll(".burger span");
 	const nav = document.querySelector(".nav-links");
 	const navLinks = document.querySelectorAll(".nav-links li");
 	// toggle nav
 	burger.addEventListener("click", () => {
 		nav.classList.toggle("nav-active");
+		burger.classList.toggle("open");
 
-		navLinks.forEach((link, index) => {
-			// if (link.style.animation) {
-			// 	link.style.animation = "";
-			// } else {
-			link.style.animation = "navLinkFade 0.5s ease forwards ${index / 5 +2}s";
-			// }
+		navLinks.forEach(function(link, index) {
+			time = index / 5 + 0.3;
+			console.log(time);
+			if (link.style.animation) {
+				link.style.animation = "";
+			} else {
+				link.style.animation = "navLinkFade 0.5s ease forwards " + time + "s";
+			}
 		});
-		// burger animations
-		burger.classList.toggle("toggle");
 	});
 };
 
