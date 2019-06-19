@@ -240,10 +240,9 @@ function polyfillKey() {
 
 // top nav bar begins
 const navSlide = () => {
-	const burger = document.querySelector(".burger");
-	const burgerSpan = document.querySelectorAll(".burger span");
-	const nav = document.querySelector(".nav-links");
-	const navLinks = document.querySelectorAll(".nav-links li");
+	const burger = document.querySelector(".topnav__burger");
+	const nav = document.querySelector(".topnav__nav-links");
+	const navLinks = document.querySelectorAll(".topnav__nav-links li");
 	// toggle nav
 	burger.addEventListener("click", () => {
 		nav.classList.toggle("nav-active");
@@ -251,7 +250,6 @@ const navSlide = () => {
 
 		navLinks.forEach(function(link, index) {
 			time = index / 5 + 0.3;
-			console.log(time);
 			if (link.style.animation) {
 				link.style.animation = "";
 			} else {
@@ -330,6 +328,12 @@ setInterval(function() {
 		.css("transition-delay", "2s");
 }, timer);
 
-window.onscroll = function() {
-	scrollProgressBar();
-};
+window.addEventListener(
+	"DOMContentLoaded",
+	function() {
+		window.onscroll = function() {
+			scrollProgressBar();
+		};
+	},
+	false
+);
