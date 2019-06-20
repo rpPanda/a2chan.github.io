@@ -1,4 +1,54 @@
 @charset "UTF-8";
+/* maximum yellow red */
+/* gunmetal */
+/* lavender gray */
+/* white */
+/* maastricht blue */
+/* jonquil */
+/* black olive */
+/* charleston green */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* registration black */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* alice blue */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* light gray */
+/* dark gunmetal */
+/* white */
+/* maximum yellow red */
+/* gunmetal */
+/* lavender gray */
+/* white */
+/* maastricht blue */
+/* jonquil */
+/* black olive */
+/* charleston green */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* registration black */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* alice blue */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* light gray */
+/* dark gunmetal */
+/* white */
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
@@ -60,7 +110,6 @@
           align-items: center;
   height: 7vh;
   background: #fcd116;
-  z-index: 100;
   -webkit-box-shadow: 0 6px 6px -6px black;
           box-shadow: 0 6px 6px -6px black;
 }
@@ -177,6 +226,7 @@
   position: relative;
   right: 25px;
   top: 10px;
+  z-index: 11;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-transition: 0.5s ease-in-out;
@@ -244,8 +294,7 @@
 }
 
 .nav-active {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  display: none;
 }
 
 @-webkit-keyframes navLinkFade {
@@ -560,15 +609,109 @@
   }
 }
 
-#portfolio-title {
+/* maximum yellow red */
+/* gunmetal */
+/* lavender gray */
+/* white */
+/* maastricht blue */
+/* jonquil */
+/* black olive */
+/* charleston green */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* registration black */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* alice blue */
+/* dark gunmetal */
+/* white */
+/* jonquil */
+/* black olive */
+/* light gray */
+/* dark gunmetal */
+/* white */
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
+.portfolio-title {
   color: #141414;
   font-size: 150%;
   height: 50px;
   padding: 10px 4px;
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: block;
+}
+
+.portfolio-title text {
+  position: relative;
+  bottom: 4vh;
+  left: 4px;
+  background: #fcd116;
+  padding: 20px;
+  z-index: 10;
+  white-space: nowrap;
+  text-orientation: upright;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  letter-spacing: 3px;
+  -webkit-box-shadow: 0 10px 6px -6px black;
+          box-shadow: 0 10px 6px -6px black;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.portfolio-title text:hover {
+  background: black;
+  color: #fcd116;
 }
 
 .portfolio {
@@ -841,6 +984,65 @@
           transform: translateX(5px);
 }
 
+.res-menu {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+.res-menu__red {
+  display: -ms-grid;
+  display: grid;
+  height: 60%;
+}
+
+.res-menu__red li {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.res-menu__red li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.res-menu__lang {
+  position: fixed;
+  bottom: 0;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  margin: 0 10vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.res-menu__lang li {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.res-menu__lang li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.res-menu--active {
+  display: block !important;
+}
+
 *,
 *::before,
 *::after {
@@ -868,12 +1070,13 @@ body {
   width: 100vw;
   background-color: #fcd116;
   height: 100vh;
+  border-bottom: 4px solid #141414;
 }
 
 .bg-card--card2 {
   width: 100vw;
   height: 65vh;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #fdfdff;
 }
 
 .scroll-progress-bar {

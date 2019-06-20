@@ -4,6 +4,7 @@ function scrollProgressBar() {
 		document.documentElement.scrollHeight -
 		document.documentElement.clientHeight;
 	var scrolled = (winScroll / height) * 100;
+	console.log(scrolled) + "%";
 	document.getElementById("scroll-progress-bar").style.width = scrolled + "%";
 }
 
@@ -242,20 +243,22 @@ function polyfillKey() {
 const navSlide = () => {
 	const burger = document.querySelector(".topnav__burger");
 	const nav = document.querySelector(".topnav__nav-links");
+	const resmenu = document.querySelector(".res-menu");
 	const navLinks = document.querySelectorAll(".topnav__nav-links li");
 	// toggle nav
 	burger.addEventListener("click", () => {
 		nav.classList.toggle("nav-active");
 		burger.classList.toggle("open");
+		resmenu.classList.toggle("res-menu--active");
 
-		navLinks.forEach(function(link, index) {
-			time = index / 5 + 0.3;
-			if (link.style.animation) {
-				link.style.animation = "";
-			} else {
-				link.style.animation = "navLinkFade 0.5s ease forwards " + time + "s";
-			}
-		});
+		// navLinks.forEach(function(link, index) {
+		// 	time = index / 5 + 0.3;
+		// 	if (link.style.animation) {
+		// 		link.style.animation = "";
+		// 	} else {
+		// 		link.style.animation = "navLinkFade 0.5s ease forwards " + time + "s";
+		// 	}
+		// });
 	});
 };
 
@@ -328,12 +331,6 @@ setInterval(function() {
 		.css("transition-delay", "2s");
 }, timer);
 
-window.addEventListener(
-	"DOMContentLoaded",
-	function() {
-		window.onscroll = function() {
-			scrollProgressBar();
-		};
-	},
-	false
-);
+// window.onscroll = function() {
+// 	scrollProgressBar();
+// };

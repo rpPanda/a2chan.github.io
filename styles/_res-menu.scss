@@ -1,0 +1,46 @@
+.res-menu {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	background: black;
+
+	&__red {
+		display: grid;
+		height: 60%;
+		li {
+			display: grid;
+			place-content: center;
+			a {
+				text-decoration: none;
+				color: whitesmoke;
+			}
+		}
+	}
+
+	&__lang {
+		position: fixed;
+		bottom: 0;
+		height: 20vh;
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		margin: 0 10vw;
+		justify-content: space-around;
+
+		li {
+			display: grid;
+			place-content: center;
+			a {
+				text-decoration: none;
+				color: whitesmoke;
+			}
+		}
+	}
+}
+
+.res-menu--active {
+	display: block !important;
+}
