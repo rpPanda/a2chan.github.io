@@ -24,7 +24,8 @@
 
 			a {
 				text-decoration: none;
-				@include uppercase;
+				text-transform: uppercase;
+				letter-spacing: 1px;
 				color: $base-black;
 
 				&:hover {
@@ -68,28 +69,6 @@
 				}
 			}
 		}
-
-		// @include mq(1024px) {
-		// 	position: absolute;
-		// 	right: 0;
-		// 	height: 100vh;
-		// 	top: 0;
-		// 	width: 100vw !important;
-		// 	margin: 0 0 0 0 !important;
-		// 	background-color: $base-black;
-		// 	display: flex;
-		// 	flex-direction: column;
-		// 	align-items: center;
-		// 	transform: translateX(100%);
-		// 	transition: transform 0.5s ease-in;
-
-		// 	li {
-		// 		opacity: 0;
-		// 		a {
-		// 			color: white !important;
-		// 		}
-		// 	}
-		// }
 
 		@include mq(1024px) {
 			display: none;
