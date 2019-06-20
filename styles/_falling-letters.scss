@@ -1,6 +1,6 @@
 #fallingLetters {
-	margin-top: 10vh;
-	height: 50vh;
+	margin-top: 1vh;
+	height: 60vh;
 	width: 100%;
 	background: rgba(0, 0, 0, 0);
 	overflow: hidden;
@@ -35,7 +35,8 @@
 			perspective: 300px;
 			transition: opacity 0.7s ease-in;
 			font-size: 3vh;
-			font-weight: 1;
+			font-weight: 100;
+			font-family: "Open Sans", sans-serif;
 
 			span {
 				position: absolute;

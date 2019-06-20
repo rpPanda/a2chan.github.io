@@ -287,6 +287,12 @@
   font-family: "Special Elite", cursive;
 }
 
+@media only screen and (max-width: 700px) {
+  .brand-text__pepper {
+    font-size: 0.7em;
+  }
+}
+
 .brand-text__tagline {
   position: relative;
   display: block;
@@ -296,6 +302,12 @@
   word-wrap: break-word;
   font-size: 0.2em;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .brand-text__tagline {
+    font-size: 0.15em;
+  }
 }
 
 .brand-text__tagline::after {
@@ -443,8 +455,8 @@
 }
 
 #fallingLetters {
-  margin-top: 10vh;
-  height: 50vh;
+  margin-top: 1vh;
+  height: 60vh;
   width: 100%;
   background: rgba(0, 0, 0, 0);
   overflow: hidden;
@@ -500,7 +512,8 @@
   -webkit-transition: opacity 0.7s ease-in;
   transition: opacity 0.7s ease-in;
   font-size: 3vh;
-  font-weight: 1;
+  font-weight: 100;
+  font-family: "Open Sans", sans-serif;
 }
 
 #fallingLetters main div span {
@@ -898,6 +911,12 @@
   letter-spacing: 1px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 700px) {
+  .btn-1-1 a {
+    font-size: 0.9em;
+  }
 }
 
 .btn-1-1__btn-1, .btn-1-1__btn-2 {

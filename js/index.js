@@ -9,8 +9,9 @@ function scrollProgressBar() {
 }
 
 // falling letters begin
-// playGame();
-// polyfillKey();
+playGame();
+polyfillKey();
+navSlide();
 
 function playGame(replay) {
 	var LETTERS = [
@@ -270,8 +271,6 @@ const navSlide = () => {
 		});
 	});
 };
-
-navSlide();
 
 // carousel
 var timer = 4000;
