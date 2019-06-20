@@ -270,58 +270,6 @@
   display: none;
 }
 
-@-webkit-keyframes navLinkFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes navLinkFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50px);
-            transform: translateX(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@-webkit-keyframes langLinkFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
-@keyframes langLinkFade {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-  }
-}
-
 .brand-text {
   position: relative;
   top: 40%;
@@ -947,6 +895,8 @@
   text-decoration: none;
   color: #141414;
   letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
 .btn-1-1__btn-1, .btn-1-1__btn-2 {
@@ -1016,16 +966,44 @@
 }
 
 .res-menu__red {
-  display: -ms-grid;
-  display: grid;
-  height: 30vh;
   margin: 30vh 20vw 40vh 20vw;
+  display: inline-block;
 }
 
 .res-menu__red li {
   display: -ms-grid;
   display: grid;
+  padding: 2vh 0;
+  position: relative;
   opacity: 0;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.res-menu__red li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -5px;
+  width: 100%;
+  background: white;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  z-index: -1;
+}
+
+.res-menu__red li:hover a {
+  color: black;
+}
+
+.res-menu__red li:hover::before {
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
 }
 
 .res-menu__red li a {
@@ -1033,12 +1011,14 @@
   color: whitesmoke;
   font-weight: bold;
   font-size: 130%;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .res-menu__lang {
   position: fixed;
-  bottom: 0;
-  height: 20vh;
+  bottom: 5vh;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1057,6 +1037,8 @@
   display: grid;
   place-content: center;
   opacity: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .res-menu__lang li a {
@@ -1085,9 +1067,83 @@
           transform: scaleX(1);
 }
 
+.res-menu__social {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  height: 3vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.res-menu__social .container i {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 10px;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.res-menu__social .container i:hover {
+  color: white;
+}
+
 .res-menu--active {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
+}
+
+@-webkit-keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes langLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes langLinkFade {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 /* ---------------------- */
@@ -1099,7 +1155,6 @@
 
 .ts-testimonial-slide {
   text-align: center;
-  color: #ffffff;
   width: 60% !important;
   margin: 0 auto;
 }
@@ -1138,7 +1193,6 @@
 }
 
 .ts-testimonial-slide .ts-testimonial-item .icon-client {
-  background: #ffffff;
   width: 29px;
   height: 29px;
   border-radius: 50%;
