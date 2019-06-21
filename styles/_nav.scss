@@ -7,7 +7,7 @@
 	justify-content: flex-end;
 	align-items: center;
 	height: 7vh;
-	background: $base-yellow;
+	background: rgba($color: $base-yellow, $alpha: 0);
 	z-index: 10;
 	box-shadow: 0 6px 6px -6px black;
 

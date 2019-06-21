@@ -43,6 +43,7 @@ $p5_color5: #fdfdff; /* white */
 @import "buttons";
 @import "res-menu";
 @import "testimonials";
+@import "svg";
 
 *,
 *::before,
@@ -64,13 +65,12 @@ body {
 .bg-card {
 	display: block;
 	position: relative;
+	z-index: -2;
 
 	&--card1 {
 		width: 100vw;
-		background-color: $base-yellow;
+		background-color: $y3;
 		height: 100vh;
-		border-bottom: 4px solid $base-black;
-		// box-shadow: 0 10px 6px -6px #777;
 	}
 
 	&--card2 {

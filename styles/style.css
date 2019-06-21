@@ -109,7 +109,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 7vh;
-  background: #fcd116;
+  background: rgba(252, 209, 22, 0);
   z-index: 10;
   -webkit-box-shadow: 0 6px 6px -6px black;
           box-shadow: 0 6px 6px -6px black;
@@ -384,15 +384,11 @@
 
 .lang-bar {
   position: fixed;
-  top: 3.5vh;
+  right: 1vw;
+  top: 50vh;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   display: block;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  left: 10px;
   z-index: 200;
 }
 
@@ -407,10 +403,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -419,9 +415,9 @@
 
 .lang-bar ul li {
   position: relative;
-  height: 4.2vh;
-  width: 4.2vh;
-  margin: 0 5px;
+  height: 6vh;
+  width: 6vh;
+  margin: 5px 0;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -1326,6 +1322,41 @@
   color: #5ed9e7;
 }
 
+.topnav__nav-logo {
+  position: absolute;
+  height: 7vh;
+  width: 7vh;
+  left: 1.5vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  fill: #141414;
+}
+
+.res-menu__nav-logo {
+  position: absolute;
+  top: 2vh;
+  left: 30px;
+  fill: whitesmoke;
+}
+
+.big_logo {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 6vh;
+  padding-right: 6vw;
+  z-index: -1;
+  overflow: hidden;
+  fill: rgba(20, 20, 20, 0.4);
+}
+
+@media only screen and (max-width: 1000px) {
+  .big_logo {
+    left: 3vw !important;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -1347,13 +1378,13 @@ body {
 .bg-card {
   display: block;
   position: relative;
+  z-index: -2;
 }
 
 .bg-card--card1 {
   width: 100vw;
-  background-color: #fcd116;
+  background-color: #f0e100;
   height: 100vh;
-  border-bottom: 4px solid #141414;
 }
 
 .bg-card--card2 {
