@@ -63,6 +63,10 @@
 		justify-content: space-around;
 		padding: 0 0;
 
+		@include mq(1024px) {
+			bottom: 10vh;
+		}
+
 		li {
 			display: grid;
 			place-content: center;
@@ -103,6 +107,10 @@
 		height: 3vh;
 		display: grid;
 		place-content: center;
+		@include mq(1024px) {
+			bottom: 30px;
+		}
+
 		.container {
 			i {
 				color: rgba(255, 255, 255, 0.5);

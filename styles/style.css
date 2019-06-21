@@ -1126,6 +1126,12 @@
   padding: 0 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .res-menu__lang {
+    bottom: 10vh;
+  }
+}
+
 .res-menu__lang li {
   display: -ms-grid;
   display: grid;
@@ -1170,6 +1176,12 @@
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .res-menu__social {
+    bottom: 30px;
+  }
 }
 
 .res-menu__social .container i {
