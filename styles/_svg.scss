@@ -16,6 +16,18 @@
 		top: 2vh;
 		left: 30px;
 		fill: rgba($color: whitesmoke, $alpha: 1);
+		transform-origin: bottom;
+	}
+}
+
+@keyframes svgLogo {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }
 
@@ -25,7 +37,6 @@
 	height: 100vh;
 	top: 6vh;
 	padding-right: 6vw;
-	z-index: -1;
 	overflow: hidden;
 	fill: rgba($color: $base-black, $alpha: 0.4);
 

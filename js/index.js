@@ -9,8 +9,8 @@ function scrollProgressBar() {
 }
 
 // falling letters begin
-playGame();
-polyfillKey();
+// playGame();
+// polyfillKey();
 
 function playGame(replay) {
 	var LETTERS = [
@@ -246,6 +246,7 @@ const navSlide = () => {
 	const resmenu = document.querySelector(".res-menu");
 	const navLinks = document.querySelectorAll(".res-menu__red li");
 	const langLinks = document.querySelectorAll(".res-menu__lang li");
+	const resMenuLogo = document.querySelector(".res-menu__nav-logo");
 	// toggle nav
 	burger.addEventListener("click", () => {
 		nav.classList.toggle("nav-active");
@@ -268,6 +269,11 @@ const navSlide = () => {
 				link.style.animation = "langLinkFade 0.5s ease forwards " + time + "s";
 			}
 		});
+		if (resMenuLogo.style.animation) {
+			resMenuLogo.style.animation = "";
+		} else {
+			resMenuLogo.style.animation = "svgLogo 2s ease forwards";
+		}
 	});
 };
 

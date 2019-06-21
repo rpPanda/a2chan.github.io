@@ -26,12 +26,9 @@
 			border: 1px solid $base-black;
 			border-radius: 50%;
 			transition: 500ms ease-in-out;
-			color: #fcd116;
 			font-size: 1.1em;
+			color: #fcd116;
 
-			span {
-				color: white;
-			}
 			&::after {
 				content: "";
 				position: absolute;
@@ -49,6 +46,7 @@
 
 			&:hover {
 				color: $base-black;
+
 				&::after {
 					transform: scale(0, 0);
 					// transform-origin: left;

@@ -425,12 +425,8 @@
   border-radius: 50%;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  color: #fcd116;
   font-size: 1.1em;
-}
-
-.lang-bar ul li span {
-  color: white;
+  color: #fcd116;
 }
 
 .lang-bar ul li::after {
@@ -1338,6 +1334,34 @@
   top: 2vh;
   left: 30px;
   fill: whitesmoke;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+@-webkit-keyframes svgLogo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes svgLogo {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .big_logo {
@@ -1346,7 +1370,6 @@
   height: 100vh;
   top: 6vh;
   padding-right: 6vw;
-  z-index: -1;
   overflow: hidden;
   fill: rgba(20, 20, 20, 0.4);
 }
@@ -1378,7 +1401,6 @@ body {
 .bg-card {
   display: block;
   position: relative;
-  z-index: -2;
 }
 
 .bg-card--card1 {
