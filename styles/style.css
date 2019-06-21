@@ -1126,7 +1126,7 @@
   padding: 0 0;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 500px) {
   .res-menu__lang {
     bottom: 10vh;
   }
@@ -1169,7 +1169,7 @@
 
 .res-menu__social {
   position: absolute;
-  bottom: 10px;
+  bottom: 1vh;
   left: 0;
   right: 0;
   height: 3vh;
@@ -1178,9 +1178,9 @@
   place-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 500px) {
   .res-menu__social {
-    bottom: 30px;
+    bottom: 5vh;
   }
 }
 

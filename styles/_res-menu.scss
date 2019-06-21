@@ -63,7 +63,7 @@
 		justify-content: space-around;
 		padding: 0 0;
 
-		@include mq(1024px) {
+		@include mq(500px) {
 			bottom: 10vh;
 		}
 
@@ -101,14 +101,15 @@
 
 	&__social {
 		position: absolute;
-		bottom: 10px;
+		bottom: 1vh;
 		left: 0;
 		right: 0;
 		height: 3vh;
 		display: grid;
 		place-content: center;
-		@include mq(1024px) {
-			bottom: 30px;
+
+		@include mq(500px) {
+			bottom: 5vh;
 		}
 
 		.container {
