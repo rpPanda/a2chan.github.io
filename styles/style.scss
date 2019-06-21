@@ -78,6 +78,15 @@ body {
 		height: 65vh;
 		background-color: rgba($color: $p5_color5, $alpha: 1);
 	}
+	&--card3 {
+		width: 100vw;
+		position: relative;
+		background-color: rgba($color: $p5_color5, $alpha: 1);
+
+		@media only screen and (max-device-height: 600px) {
+			margin-top: 50px !important;
+		}
+	}
 }
 
 .scroll-progress-bar {

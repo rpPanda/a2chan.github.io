@@ -7,7 +7,10 @@
 		width: 60vw;
 		height: 200px;
 		margin: 0.5vh 20vw;
-		// margin-top: -130px;
+		@include mq(600px) {
+			width: 80vw !important;
+			margin: 0.2vh 10vw;
+		}
 	}
 
 	ul > li {
@@ -21,6 +24,14 @@
 		padding-top: 25px;
 		text-align: center;
 		transition: 1s opacity;
+
+		@include mq(900px) {
+			width: 50% !important;
+		}
+
+		@include mq(600px) {
+			padding: 10px !important;
+		}
 	}
 
 	.active {
@@ -29,7 +40,6 @@
 
 	p {
 		font-size: 13px;
-		// color: #646566
 		color: $base-black;
 		line-height: 1.5em;
 		font-family: "Raleway", sans-serif;
@@ -40,5 +50,12 @@
 		font-weight: 700;
 		font-size: 60px;
 		line-height: 100px;
+
+		@include mq(600px) {
+			font-size: 40px !important;
+		}
+		@include mq(400px) {
+			line-height: 60px !important;
+		}
 	}
 }

@@ -2,7 +2,7 @@
 	position: relative;
 	left: calc(9% + 45px);
 	top: 48%;
-	width: 40vw;
+	width: 50vw;
 
 	a {
 		text-decoration: none;
@@ -12,6 +12,14 @@
 		font-weight: 400;
 		@include mq(700px) {
 			font-size: 0.9em;
+		}
+
+		@include mq(500px) {
+			font-size: 0.7em;
+		}
+
+		@include mq_h(600px) {
+			font-size: 0.6em;
 		}
 	}
 	&__btn-1,

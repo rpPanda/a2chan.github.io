@@ -37,6 +37,12 @@ $p5_color5: #fdfdff; /* white */
 	}
 }
 
+@mixin mq_h($size) {
+	@media only screen and (max-height: $size) {
+		@content;
+	}
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 	/* Styles */

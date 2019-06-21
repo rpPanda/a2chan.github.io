@@ -16,6 +16,10 @@
 		@include mq(700px) {
 			font-size: 0.7em;
 		}
+
+		@include mq(400px) {
+			font-size: 0.4em;
+		}
 	}
 
 	&__tagline {
@@ -29,6 +33,10 @@
 		cursor: pointer;
 		@include mq(700px) {
 			font-size: 0.15em;
+		}
+
+		@include mq(500px) {
+			font-size: 0.12em;
 		}
 
 		&::after {

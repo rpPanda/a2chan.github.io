@@ -2,14 +2,12 @@
 // portfolio
 .portfolio-title {
 	color: $base-black;
-	font-size: 150%;
 	height: 50px;
 	padding: 10px 4px;
 	position: relative;
 	display: block;
 
 	text {
-		// display: block;
 		position: relative;
 		bottom: 4vh;
 		left: 4px;
@@ -36,20 +34,22 @@
 .portfolio {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-auto-rows: 300px;
-	grid-auto-flow: dense;
 	position: relative;
 	padding: 10px 4px;
 	min-height: 0;
 	min-width: 0;
 	grid-gap: 4px;
-	// margin: 0 5px;
+
+	@media screen and (min-width: 602px) {
+		grid-auto-rows: 300px;
+		grid-auto-flow: dense;
+	}
 }
 
 .card {
 	position: relative;
 	background: black;
-	overflow: hidden; /* NEW */
+	overflow: hidden;
 	min-width: 0;
 
 	&:nth-child(1) {
@@ -59,6 +59,7 @@
 		border: 1px solid $base-black;
 		div {
 			width: 250px;
+			height: 200px;
 			color: black;
 			// font-weight: bold;
 			position: relative;
@@ -69,18 +70,24 @@
 			text-transform: uppercase;
 			letter-spacing: 4px;
 			font-family: "Montserrat", sans-serif;
+			@include mq(700px) {
+				display: grid !important;
+				place-content: center !important;
+			}
 		}
 	}
 
-	&:nth-child(2) {
-		grid-column: span 2;
-	}
-	&:nth-child(4) {
-		grid-row: span 2;
-	}
-	&:nth-child(6) {
-		grid-column: span 2;
-		grid-row: span 2;
+	@media screen and (min-width: 602px) {
+		&:nth-child(2) {
+			grid-column: span 2;
+		}
+		&:nth-child(4) {
+			grid-row: span 2;
+		}
+		&:nth-child(6) {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
 	}
 	&:not(:first-child)::before {
 		content: "";
