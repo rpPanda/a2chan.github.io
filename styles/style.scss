@@ -68,14 +68,33 @@ body {
 
 	&--card1 {
 		width: 100vw;
-		background-color: $y3;
+		// background-color: #655dfa;
 		height: 100vh;
+		overflow: hidden;
+		// background-image: linear-gradient(
+		// 	to left top,
+		// 	#fcd116,
+		// 	#f9d511,
+		// 	#f7d90b,
+		// 	#f3dd05,
+		// 	#f0e100
+		// );
+		background-image: linear-gradient(
+			to right bottom,
+			#eee00b,
+			#eee515,
+			#efe91d,
+			#efee24,
+			#eff32a
+		);
 	}
 
 	&--card2 {
 		width: 100vw;
 		height: 65vh;
-		background-color: rgba($color: $p5_color5, $alpha: 1);
+		// background-color: rgba($color: $p5_color5, $alpha: 1);
+		background: url("../assets/page2.jpg");
+		background-size: cover;
 	}
 	&--card3 {
 		width: 100vw;

@@ -1,13 +1,3 @@
-function scrollProgressBar() {
-	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-	var height =
-		document.documentElement.scrollHeight -
-		document.documentElement.clientHeight;
-	var scrolled = (winScroll / height) * 100;
-	console.log(scrolled) + "%";
-	document.getElementById("scroll-progress-bar").style.width = scrolled + "%";
-}
-
 // falling letters begin
 playGame();
 polyfillKey();
@@ -384,9 +374,6 @@ if (s_size > 900) {
 			.css("transition-delay", "2s");
 	}, timer);
 }
-// window.onscroll = function() {
-// 	scrollProgressBar();
-// };
 if ($(".ts-testimonial-slide").length > 0) {
 	$(".ts-testimonial-slide").owlCarousel({
 		autoPlay: 4000,
