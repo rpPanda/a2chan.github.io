@@ -44,7 +44,7 @@ $p5_color5: #fdfdff; /* white */
 @import "res-menu";
 @import "testimonials";
 @import "svg";
-@import "contact-form.scss";
+@import "contact-form";
 
 *,
 *::before,
@@ -94,7 +94,6 @@ body {
 		width: 100vw;
 		height: 65vh;
 		// background-color: rgba($color: $p5_color5, $alpha: 1);
-		background: url("../assets/page2.jpg");
 		background-size: cover;
 	}
 	&--card3 {

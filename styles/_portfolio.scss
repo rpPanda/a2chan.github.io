@@ -38,11 +38,26 @@
 	padding: 10px 4px;
 	min-height: 0;
 	min-width: 0;
-	grid-gap: 4px;
+	grid-gap: 30px;
+	margin: 0 10vw;
+	@include mq(500px) {
+		margin: 0 9px;
+		grid-gap: 10px;
+	}
 
 	@media screen and (min-width: 602px) {
 		grid-auto-rows: 300px;
 		grid-auto-flow: dense;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 10%;
+		bottom: 10%;
+		left: 10%;
+		right: 10%;
+		background: $base-yellow;
 	}
 }
 
@@ -51,45 +66,8 @@
 	background: black;
 	overflow: hidden;
 	min-width: 0;
-
-	&:nth-child(1) {
-		background: $base-yellow;
-		align-items: center;
-		width: 100%;
-		border: 1px solid $base-black;
-		div {
-			width: 250px;
-			height: 200px;
-			color: black;
-			// font-weight: bold;
-			position: relative;
-			left: 30px;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 200%;
-			text-transform: uppercase;
-			letter-spacing: 4px;
-			font-family: "Montserrat", sans-serif;
-			@include mq(700px) {
-				display: grid !important;
-				place-content: center !important;
-			}
-		}
-	}
-
-	@media screen and (min-width: 602px) {
-		&:nth-child(2) {
-			grid-column: span 2;
-		}
-		&:nth-child(4) {
-			grid-row: span 2;
-		}
-		&:nth-child(6) {
-			grid-column: span 2;
-			grid-row: span 2;
-		}
-	}
-	&:not(:first-child)::before {
+	box-shadow: 0 10px 30px -10px #000;
+	&::before {
 		content: "";
 		position: absolute;
 		top: 1.25em;
@@ -102,7 +80,7 @@
 		border-bottom: 1px solid white;
 		transform: scale(0, 1);
 	}
-	&:not(:first-child)::after {
+	&::after {
 		content: "";
 		position: absolute;
 		top: 1.25em;

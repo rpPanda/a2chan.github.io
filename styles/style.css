@@ -661,7 +661,15 @@
   padding: 10px 4px;
   min-height: 0;
   min-width: 0;
-  grid-gap: 4px;
+  grid-gap: 30px;
+  margin: 0 10vw;
+}
+
+@media only screen and (max-width: 500px) {
+  .portfolio {
+    margin: 0 9px;
+    grid-gap: 10px;
+  }
 }
 
 @media screen and (min-width: 602px) {
@@ -671,59 +679,26 @@
   }
 }
 
+.portfolio::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+  background: #fcd116;
+}
+
 .card {
   position: relative;
   background: black;
   overflow: hidden;
   min-width: 0;
+  -webkit-box-shadow: 0 10px 30px -10px #000;
+          box-shadow: 0 10px 30px -10px #000;
 }
 
-.card:nth-child(1) {
-  background: #fcd116;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  border: 1px solid #141414;
-}
-
-.card:nth-child(1) div {
-  width: 250px;
-  height: 200px;
-  color: black;
-  position: relative;
-  left: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  font-size: 200%;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-family: "Montserrat", sans-serif;
-}
-
-@media only screen and (max-width: 700px) {
-  .card:nth-child(1) div {
-    display: -ms-grid !important;
-    display: grid !important;
-    place-content: center !important;
-  }
-}
-
-@media screen and (min-width: 602px) {
-  .card:nth-child(2) {
-    grid-column: span 2;
-  }
-  .card:nth-child(4) {
-    grid-row: span 2;
-  }
-  .card:nth-child(6) {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-}
-
-.card:not(:first-child)::before {
+.card::before {
   content: "";
   position: absolute;
   top: 1.25em;
@@ -741,7 +716,7 @@
           transform: scale(0, 1);
 }
 
-.card:not(:first-child)::after {
+.card::after {
   content: "";
   position: absolute;
   top: 1.25em;
@@ -1227,10 +1202,119 @@
   padding: 130px 0 95px;
 }
 
+.testy-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.testy-title text {
+  position: relative;
+  font-size: 160%;
+}
+
+@media only screen and (max-width: 600px) {
+  .testy-title text {
+    font-size: 120% !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .testy-title text {
+    font-size: 80% !important;
+  }
+}
+
+.testy-title__container:hover .first {
+  color: black;
+}
+
+.testy-title__container:hover .first::before {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.testy-title__container:hover .second {
+  color: white;
+}
+
+.testy-title__container:hover .second::before {
+  background: black;
+}
+
+.testy-title__container .first {
+  color: white;
+  padding-right: 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.testy-title__container .first::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: 0;
+  background: black;
+  z-index: -1;
+  border: 1px solid black;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.testy-title__container .first::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: 0;
+  z-index: -1;
+  border: 1px solid black;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+}
+
+.testy-title__container .second {
+  color: black;
+  padding-left: 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.testy-title__container .second::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  left: 0;
+  right: -10px;
+  z-index: -1;
+  border: 1px solid black;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
 .ts-testimonial-slide {
   text-align: center;
   width: 60% !important;
   margin: 0 auto;
+  border-top: 1px solid black;
 }
 
 .ts-testimonial-slide p {
@@ -1492,7 +1576,6 @@ body {
 .bg-card--card2 {
   width: 100vw;
   height: 65vh;
-  background: url("../assets/page2.jpg");
   background-size: cover;
 }
 
