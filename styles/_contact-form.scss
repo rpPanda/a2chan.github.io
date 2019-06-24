@@ -6,15 +6,15 @@
 	width: 30vw;
 	vertical-align: baseline;
 	background: #f7f7f7;
-	padding: 5vh 5vw;
+	padding: 1.5vh 2.5vw;
 
-	@include mq(1200px) {
-		width: 60vw;
-	}
+	// @include mq(1200px) {
+	// 	width: 60vw;
+	// }
 
-	@include mq(700px) {
-		width: 80vw;
-	}
+	// @include mq(700px) {
+	// 	width: 80vw;
+	// }
 
 	input {
 		background-color: transparent;
