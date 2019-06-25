@@ -15,7 +15,6 @@
 	&__nav-links {
 		display: flex;
 		justify-content: space-around;
-		// width: 30%;
 		margin-right: 1%;
 		letter-spacing: 2px;
 
@@ -28,6 +27,9 @@
 				text-transform: uppercase;
 				letter-spacing: 1px;
 				color: $base-black;
+				letter-spacing: 3px;
+				font-weight: 400;
+				font-family: "Montserrat", sans-serif;
 
 				&:hover {
 					&::before {

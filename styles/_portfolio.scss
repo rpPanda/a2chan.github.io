@@ -34,6 +34,7 @@
 .portfolio {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	// grid-auto-rows: 300px;
 	position: relative;
 	padding: 10px 4px;
 	min-height: 0;
@@ -131,4 +132,5 @@
 	width: 100%;
 	display: block;
 	transition: opacity ease-out 250ms;
+	object-fit: fill;
 }

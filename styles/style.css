@@ -136,6 +136,9 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #141414;
+  letter-spacing: 3px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
 }
 
 .topnav__nav-links li a:hover::before {
@@ -775,6 +778,8 @@
   display: block;
   -webkit-transition: opacity ease-out 250ms;
   transition: opacity ease-out 250ms;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .carouselNAP {
@@ -1868,6 +1873,209 @@ footer .info {
   }
   footer .info p {
     text-align: right;
+  }
+}
+
+.desc-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.desc-container .desc {
+  width: 35vw;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  padding-left: 5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .desc-container .desc {
+    font-size: 0.6rem;
+  }
+}
+
+.desc-container .desc .title {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 180%;
+  position: relative;
+  display: inline-block;
+  padding: 10px 10px 10px 0;
+}
+
+.desc-container .desc .text {
+  line-height: 2rem;
+  letter-spacing: 2px;
+  font-size: 120%;
+  font-weight: 300;
+  margin-top: 10px;
+  padding: 0 10px 4px 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .desc-container img {
+    width: 60vw;
+  }
+}
+
+.desc-container .writer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 100px;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .desc-container .writer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.desc-container .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 100px;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .desc-container .client {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.desc-container .client .desc {
+  padding-left: 0;
+  padding-right: 5vw;
+}
+
+.fadeInLeft,
+.fadeInRight {
+  opacity: 1;
+}
+
+@-webkit-keyframes padding_10px_blue {
+  from {
+    padding-left: 0;
+    background: white;
+    color: black;
+  }
+  to {
+    padding-left: 10px;
+    background: #162449;
+    color: white;
+  }
+}
+
+@keyframes padding_10px_blue {
+  from {
+    padding-left: 0;
+    background: white;
+    color: black;
+  }
+  to {
+    padding-left: 10px;
+    background: #162449;
+    color: white;
+  }
+}
+
+@-webkit-keyframes padding_10px_yellow {
+  from {
+    padding-left: 0;
+    background: white;
+    color: black;
+  }
+  to {
+    padding-left: 10px;
+    background: #f9d016;
+    color: white;
+  }
+}
+
+@keyframes padding_10px_yellow {
+  from {
+    padding-left: 0;
+    background: white;
+    color: black;
+  }
+  to {
+    padding-left: 10px;
+    background: #f9d016;
+    color: white;
+  }
+}
+
+@-webkit-keyframes bg_lblue {
+  from {
+    background: white;
+  }
+  to {
+    background: #dee3ec;
+  }
+}
+
+@keyframes bg_lblue {
+  from {
+    background: white;
+  }
+  to {
+    background: #dee3ec;
+  }
+}
+
+@-webkit-keyframes bg_lyellow {
+  from {
+    background: white;
+  }
+  to {
+    background: #f9f6de;
+  }
+}
+
+@keyframes bg_lyellow {
+  from {
+    background: white;
+  }
+  to {
+    background: #f9f6de;
   }
 }
 
