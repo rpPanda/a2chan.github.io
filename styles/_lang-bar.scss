@@ -3,7 +3,6 @@
 	right: 1vw;
 	top: 50vh;
 	transform: translateY(-50%);
-	display: none;
 	z-index: 200;
 
 	@include mq(1024px) {

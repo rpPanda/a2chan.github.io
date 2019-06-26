@@ -366,7 +366,6 @@
   top: 50vh;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  display: none;
   z-index: 200;
 }
 
