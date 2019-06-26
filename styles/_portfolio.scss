@@ -44,6 +44,8 @@
 	@include mq(500px) {
 		margin: 0 9px;
 		grid-gap: 10px;
+		grid-template-columns: repeat(auto-fit, 200px);
+		place-content: center;
 	}
 
 	@media screen and (min-width: 602px) {
@@ -58,7 +60,7 @@
 		bottom: 10%;
 		left: 10%;
 		right: 10%;
-		background: $base-yellow;
+		clip-path: polygon(0 0, 0% 100%, 100% 0);
 	}
 }
 

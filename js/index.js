@@ -458,3 +458,17 @@ const portfolio_observer = new IntersectionObserver(function (entries, portfolio
 }, options);
 
 portfolio_observer.observe(portfolio);
+
+// topnav intersection observer
+const footer = document.querySelector(".footer-bg");
+const footer_observer = new IntersectionObserver(function (entries, footer_observer) {
+	entries.forEach(entry => {
+		if (!entry.isIntersecting) {
+			return;
+		}
+		entry.target.classList.toggle("fadeInUp");
+		footer_observer.unobserve(entry.target);
+	});
+}, options);
+
+footer_observer.observe(footer);

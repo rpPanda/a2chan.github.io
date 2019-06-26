@@ -1,13 +1,20 @@
 footer {
+	background: $base-black;
+	overflow-y: hidden;
+}
+.footer-bg {
 	margin-bottom: 0;
 	width: 100%;
 	padding: 5vh 3vw 3vh 3vw;
 	max-width: 100vw;
 	height: auto;
+	opacity: 0;
+	background: rgba($color: #000000, $alpha: 0);
 	display: grid;
-	background: black;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto auto;
+	position: relative;
+
 	@include mq(1000px) {
 		grid-template-rows: auto auto auto;
 		grid-row-gap: 40px;
@@ -189,4 +196,8 @@ footer {
 		justify-content: center;
 		align-items: flex-end;
 	}
+}
+
+.fadeInUp {
+	opacity: 1;
 }
