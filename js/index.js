@@ -1,6 +1,6 @@
 // falling letters begin
-// playGame();
-// polyfillKey();
+playGame();
+polyfillKey();
 
 function playGame(replay) {
 	var LETTERS = [
