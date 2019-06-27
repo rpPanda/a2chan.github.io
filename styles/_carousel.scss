@@ -54,6 +54,13 @@
 		font-size: 60px;
 		line-height: 100px;
 		font-family: "Montserrat", sans-serif;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			background: $base-black;
+		}
 
 		@include mq(600px) {
 			font-size: 40px !important;

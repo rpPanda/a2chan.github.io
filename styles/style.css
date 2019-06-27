@@ -620,38 +620,42 @@
   /* Styles */
 }
 
-.portfolio-title {
-  color: #141414;
-  height: 50px;
-  padding: 10px 4px;
-  position: relative;
-  display: block;
+@media only screen and (max-width: 1000px) {
+  .portfolio-container {
+    margin-top: 150px;
+  }
 }
 
-.portfolio-title text {
-  position: relative;
-  bottom: 4vh;
-  left: 4px;
-  background: #fcd116;
-  padding: 20px;
-  z-index: 10;
-  white-space: nowrap;
-  text-orientation: upright;
+.portfolio-title {
+  font-size: 150%;
+  padding: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  background: #fcd116;
+  color: white;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  letter-spacing: 3px;
-  -webkit-box-shadow: 0 10px 6px -6px black;
-          box-shadow: 0 10px 6px -6px black;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  text-orientation: upright;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 25vh;
+  float: left;
 }
 
-.portfolio-title text:hover {
-  background: black;
-  color: #fcd116;
+@media only screen and (max-width: 1600px) {
+  .portfolio-title {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .portfolio-title {
+    padding: 15px;
+    font-size: 100%;
+  }
 }
 
 .portfolio {
@@ -667,20 +671,13 @@
   margin: 0 10vw;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
   .portfolio {
     margin: 0 9px;
     grid-gap: 10px;
     -ms-grid-columns: (200px)[auto-fit];
         grid-template-columns: repeat(auto-fit, 200px);
     place-content: center;
-  }
-}
-
-@media screen and (min-width: 602px) {
-  .portfolio {
-    grid-auto-rows: 300px;
-    grid-auto-flow: dense;
   }
 }
 
@@ -704,58 +701,16 @@
           box-shadow: 0 10px 30px -10px #000;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  top: 1.25em;
-  bottom: 1.25em;
-  left: 1.25em;
-  right: 1.25em;
-  opacity: 1;
-  -webkit-transition: -webkit-transform ease-out 250ms;
-  transition: -webkit-transform ease-out 250ms;
-  transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-}
-
-.card::after {
-  content: "";
-  position: absolute;
-  top: 1.25em;
-  bottom: 1.25em;
-  left: 1.25em;
-  right: 1.25em;
-  opacity: 1;
-  -webkit-transition: -webkit-transform ease-out 250ms;
-  transition: -webkit-transform ease-out 250ms;
-  transition: transform ease-out 250ms;
-  transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-}
-
 .card:hover .card__text {
   opacity: 1;
 }
 
-.card:hover::before {
-  -webkit-transform: scale(1.05, 1);
-          transform: scale(1.05, 1);
-}
-
-.card:hover::after {
-  -webkit-transform: scale(1, 1.05);
-          transform: scale(1, 1.05);
+.card:hover .card__text .card__body {
+  opacity: 0.6;
 }
 
 .card:hover img {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .card .card__text {
@@ -768,12 +723,17 @@
   opacity: 0;
   -webkit-transition: opacity ease-out 250ms;
   transition: opacity ease-out 250ms;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card .card__title {
   font-size: 2rem;
   color: white;
   margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
 }
 
 .portfolio__image {
@@ -850,6 +810,13 @@
   font-size: 60px;
   line-height: 100px;
   font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.carouselNAP strong::before {
+  content: "";
+  position: absolute;
+  background: #141414;
 }
 
 @media only screen and (max-width: 600px) {
@@ -873,10 +840,19 @@
   place-content: center;
 }
 
+@media only screen and (max-width: 600px) {
+  #newAtPepper {
+    font-size: 80%;
+  }
+}
+
 #newAtPepper section {
   position: relative;
   font-size: 180%;
   font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  font-weight: 400;
   cursor: default;
   text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1), 10px 15px 5px rgba(0, 0, 0, 0.05), -10px 15px 5px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 300ms ease-in-out;
@@ -1332,10 +1308,10 @@
   font-size: 120%;
   line-height: 150%;
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-style: normal;
   margin-bottom: 35px;
-  color: black;
+  color: #9b9b9c;
   letter-spacing: 1px;
 }
 
@@ -1485,6 +1461,7 @@
   margin-bottom: 34px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .contact-form textarea {
@@ -1525,6 +1502,7 @@
   margin-bottom: 34px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-transform: uppercase;
 }
 
 .contact-form .button {
@@ -1548,6 +1526,9 @@
 footer {
   background: #141414;
   overflow-y: hidden;
+  z-index: 300;
+  position: relative;
+  text-transform: uppercase;
 }
 
 .footer-bg {
@@ -1677,7 +1658,7 @@ footer {
   color: white;
   font-size: 120%;
   line-height: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   position: relative;
 }
 
@@ -1685,6 +1666,7 @@ footer {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
+  font-size: 80%;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1713,6 +1695,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  letter-spacing: 2px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1761,7 +1744,9 @@ footer {
 
 .footer-bg .contact-details .phone p {
   text-align: right;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
+  letter-spacing: 3px;
+  font-weight: 300;
 }
 
 .footer-bg .social {
@@ -1850,6 +1835,7 @@ footer {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  text-transform: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

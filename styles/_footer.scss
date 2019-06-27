@@ -1,6 +1,9 @@
 footer {
 	background: $base-black;
 	overflow-y: hidden;
+	z-index: 300;
+	position: relative;
+	text-transform: uppercase;
 }
 .footer-bg {
 	margin-bottom: 0;
@@ -83,7 +86,7 @@ footer {
 					color: white;
 					font-size: 120%;
 					line-height: 3rem;
-					letter-spacing: 2px;
+					letter-spacing: 3px;
 					position: relative;
 				}
 			}
@@ -92,6 +95,7 @@ footer {
 
 	.contact-details {
 		grid-column: 3/4;
+		font-size: 80%;
 		@include mq(1000px) {
 			grid-column: 2/4;
 			grid-row: 2/3;
@@ -102,6 +106,7 @@ footer {
 		}
 		.address {
 			display: flex;
+			letter-spacing: 2px;
 			flex-direction: column;
 			align-items: flex-end;
 			justify-content: right;
@@ -129,7 +134,9 @@ footer {
 
 			p {
 				text-align: right;
-				line-height: 1.5rem;
+				line-height: 1.8rem;
+				letter-spacing: 3px;
+				font-weight: 300;
 			}
 		}
 	}
@@ -178,6 +185,7 @@ footer {
 		color: white;
 		grid-column: 2/3;
 		grid-row: 2/3;
+		text-transform: none;
 
 		@include mq(1000px) {
 			grid-row: 3/4;
