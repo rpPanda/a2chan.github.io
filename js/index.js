@@ -423,24 +423,27 @@ desc_card.forEach(card => {
 	observer.observe(card);
 });
 
-const one = document.querySelector(".portfolio div:nth-child(1)");
-const two = document.querySelector(".portfolio div:nth-child(2)");
-const three = document.querySelector(".portfolio div:nth-child(3)");
-const four = document.querySelector(".portfolio div:nth-child(4)");
-const five = document.querySelector(".portfolio div:nth-child(5)");
-const six = document.querySelector(".portfolio div:nth-child(6)");
-const seven = document.querySelector(".portfolio div:nth-child(7)");
-const eight = document.querySelector(".portfolio div:nth-child(8)");
-const nine = document.querySelector(".portfolio div:nth-child(9)");
-const ten = document.querySelector(".portfolio div:nth-child(10)");
-const eleven = document.querySelector(".portfolio div:nth-child(11)");
-const twelve = document.querySelector(".portfolio div:nth-child(12)");
+const one = document.querySelector(".card:nth-child(1)");
+const two = document.querySelector(".card:nth-child(2)");
+const three = document.querySelector(".card:nth-child(3)");
+const four = document.querySelector(".card:nth-child(4)");
+const five = document.querySelector(".card:nth-child(5)");
+const six = document.querySelector(".card:nth-child(6)");
+const seven = document.querySelector(".card:nth-child(7)");
+const eight = document.querySelector(".card:nth-child(8)");
+const nine = document.querySelector(".card:nth-child(9)");
+const ten = document.querySelector(".card:nth-child(10)");
+const eleven = document.querySelector(".card:nth-child(11)");
+const twelve = document.querySelector(".card:nth-child(12)");
 
 const portfolio_observer = new IntersectionObserver(function (entries, portfolio_observer) {
 	entries.forEach(entry => {
 		if (!entry.isIntersecting) {
 			return;
 		}
+		console.log(one);
+		console.log(two);
+		console.log(three);
 		one.classList.toggle("fadeInLeft");
 		five.classList.toggle("fadeInLeft");
 		nine.classList.toggle("fadeInLeft");

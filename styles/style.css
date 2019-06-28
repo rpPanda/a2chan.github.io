@@ -620,16 +620,30 @@
   /* Styles */
 }
 
+.portfolio-container {
+  position: relative;
+}
+
 @media only screen and (max-width: 1000px) {
   .portfolio-container {
     margin-top: 150px;
   }
 }
 
+.portfolio-container::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  color: black;
+  width: 80px;
+  height: 2px;
+  left: 0;
+}
+
 .portfolio-title {
   font-size: 150%;
   padding: 25px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -690,6 +704,70 @@
   right: 10%;
   -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
           clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.portfolio div {
+  opacity: 0;
+}
+
+.portfolio div:nth-child(1) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.portfolio div:nth-child(2) {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.portfolio div:nth-child(3) {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.portfolio div:nth-child(4) {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
+}
+
+.portfolio div:nth-child(5) {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
+}
+
+.portfolio div:nth-child(6) {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
+.portfolio div:nth-child(7) {
+  -webkit-animation-delay: 3500ms;
+          animation-delay: 3500ms;
+}
+
+.portfolio div:nth-child(8) {
+  -webkit-animation-delay: 4000ms;
+          animation-delay: 4000ms;
+}
+
+.portfolio div:nth-child(9) {
+  -webkit-animation-delay: 4500ms;
+          animation-delay: 4500ms;
+}
+
+.portfolio div:nth-child(10) {
+  -webkit-animation-delay: 5000ms;
+          animation-delay: 5000ms;
+}
+
+.portfolio div:nth-child(11) {
+  -webkit-animation-delay: 5500ms;
+          animation-delay: 5500ms;
+}
+
+.portfolio div:nth-child(12) {
+  -webkit-animation-delay: 6000ms;
+          animation-delay: 6000ms;
 }
 
 .card {
@@ -1313,6 +1391,7 @@
   margin-bottom: 35px;
   color: #9b9b9c;
   letter-spacing: 1px;
+  position: relative;
 }
 
 .ts-testimonial-slide .ts-testimonial-item {
@@ -1349,7 +1428,6 @@
 
 .ts-testimonial-slide .ts-testimonial-item .client-position {
   font-size: 12px;
-  font-style: italic;
   line-height: normal;
   padding-left: 38px;
   display: block;
@@ -2007,7 +2085,9 @@ footer {
 }
 
 .fadeInLeft,
-.fadeInRight {
+.fadeInRight,
+.fadeInDown,
+.fadeInUp {
   opacity: 1;
 }
 
