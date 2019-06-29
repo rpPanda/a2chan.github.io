@@ -6,7 +6,7 @@
 	justify-content: center;
 	overflow-x: hidden;
 
-	@include mq(700px) {
+	@include mq(800px) {
 		width: 80%;
 		margin: auto;
 	}
@@ -16,7 +16,7 @@
 		transition: all 1s ease-in-out;
 		padding-left: 5vw;
 
-		@include mq(600px) {
+		@include mq(800px) {
 			font-size: 0.6rem;
 			width: 100%;
 			padding-left: 0;
@@ -46,7 +46,7 @@
 	}
 
 	img {
-		@include mq(800px) {
+		@include mq(700px) {
 			width: 60vw;
 			align-self: flex-end;
 		}

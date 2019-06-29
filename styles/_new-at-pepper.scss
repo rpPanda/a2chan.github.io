@@ -1,11 +1,12 @@
 #newAtPepper {
 	padding: 7em 0 0 0;
 	position: relative;
+	top: 16%;
 	width: 100%;
 	display: grid;
 	place-content: center;
 
-	@include mq (600px) {
+	@include mq(600px) {
 		font-size: 80%;
 	}
 

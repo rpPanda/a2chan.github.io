@@ -105,7 +105,7 @@ body {
 
 	&--card2 {
 		width: 100vw;
-		height: 65vh;
+		height: 90vh;
 		// background-color: rgba($color: $p5_color5, $alpha: 1);
 		background-size: cover;
 	}
@@ -116,6 +116,15 @@ body {
 
 		@media only screen and (max-device-height: 600px) {
 			margin-top: 50px !important;
+		}
+	}
+
+	&--card4 {
+		margin: 30vh 0;
+		z-index: 300;
+
+		@include mq(700px) {
+			margin: 5vh 0;
 		}
 	}
 }
