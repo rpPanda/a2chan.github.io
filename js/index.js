@@ -441,9 +441,6 @@ const portfolio_observer = new IntersectionObserver(function (entries, portfolio
 		if (!entry.isIntersecting) {
 			return;
 		}
-		console.log(one);
-		console.log(two);
-		console.log(three);
 		one.classList.toggle("fadeInLeft");
 		five.classList.toggle("fadeInLeft");
 		nine.classList.toggle("fadeInLeft");
@@ -463,13 +460,17 @@ const portfolio_observer = new IntersectionObserver(function (entries, portfolio
 portfolio_observer.observe(portfolio);
 
 // topnav intersection observer
-const footer = document.querySelector(".footer-bg");
+const footer = document.querySelector("footer");
+const footer_children = document.querySelectorAll(".footer-bg > div")
 const footer_observer = new IntersectionObserver(function (entries, footer_observer) {
 	entries.forEach(entry => {
 		if (!entry.isIntersecting) {
 			return;
 		}
-		entry.target.classList.toggle("fadeInUp");
+		footer_children.forEach(element => {
+			element.style.animation = "fadeInUp_20px 1s ease-out 2s forwards";
+		});
+		footer.style.animation = "moveUp 1.3s ease-in-out 500ms forwards";
 		footer_observer.unobserve(entry.target);
 	});
 }, options);
