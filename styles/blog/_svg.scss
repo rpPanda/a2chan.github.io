@@ -1,6 +1,7 @@
 .svg-end {
 	display: none;
 }
+
 .topnav {
 	&__nav-logo {
 		position: absolute;
@@ -28,6 +29,7 @@
 		opacity: 0;
 		transform: translateX(50px);
 	}
+
 	100% {
 		opacity: 1;
 		transform: translateX(0px);

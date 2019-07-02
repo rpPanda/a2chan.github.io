@@ -2,35 +2,60 @@ $base-yellow: #fcd116;
 $base-grey: #333333;
 $base-black: #141414;
 
-$p1_color1: #e8c547; /* maximum yellow red */
-$p1_color2: #30323d; /* gunmetal */
-$p1_color3: #c8c8c8; /* lavender gray */
-$p1_color4: #fffbfe; /* white */
-$p1_color5: #011638; /* maastricht blue */
+$p1_color1: #e8c547;
+/* maximum yellow red */
+$p1_color2: #30323d;
+/* gunmetal */
+$p1_color3: #c8c8c8;
+/* lavender gray */
+$p1_color4: #fffbfe;
+/* white */
+$p1_color5: #011638;
+/* maastricht blue */
 
-$p2_color1: #fcd116; /* jonquil */
-$p2_color2: #393e41; /* black olive */
-$p2_color3: #2a2b2a; /* charleston green */
-$p2_color4: #232528; /* dark gunmetal */
-$p2_color5: #fdfdff; /* white */
+$p2_color1: #fcd116;
+/* jonquil */
+$p2_color2: #393e41;
+/* black olive */
+$p2_color3: #2a2b2a;
+/* charleston green */
+$p2_color4: #232528;
+/* dark gunmetal */
+$p2_color5: #fdfdff;
+/* white */
 
-$p3_color1: #fcd116; /* jonquil */
-$p3_color2: #393e41; /* black olive */
-$p3_color3: #000000; /* registration black */
-$p3_color4: #232528; /* dark gunmetal */
-$p3_color5: #fdfdff; /* white */
+$p3_color1: #fcd116;
+/* jonquil */
+$p3_color2: #393e41;
+/* black olive */
+$p3_color3: #000000;
+/* registration black */
+$p3_color4: #232528;
+/* dark gunmetal */
+$p3_color5: #fdfdff;
+/* white */
 
-$p4_color1: #fcd116; /* jonquil */
-$p4_color2: #393e41; /* black olive */
-$p4_color3: #eeeeff; /* alice blue */
-$p4_color4: #232528; /* dark gunmetal */
-$p4_color5: #fdfdff; /* white */
+$p4_color1: #fcd116;
+/* jonquil */
+$p4_color2: #393e41;
+/* black olive */
+$p4_color3: #eeeeff;
+/* alice blue */
+$p4_color4: #232528;
+/* dark gunmetal */
+$p4_color5: #fdfdff;
+/* white */
 
-$p5_color1: #fcd116; /* jonquil */
-$p5_color2: #393e41; /* black olive */
-$p5_color3: #cacfd6; /* light gray */
-$p5_color4: #232528; /* dark gunmetal */
-$p5_color5: #fdfdff; /* white */
+$p5_color1: #fcd116;
+/* jonquil */
+$p5_color2: #393e41;
+/* black olive */
+$p5_color3: #cacfd6;
+/* light gray */
+$p5_color4: #232528;
+/* dark gunmetal */
+$p5_color5: #fdfdff;
+/* white */
 
 @import "abstracts";
 @import "nav";
@@ -47,6 +72,7 @@ $p5_color5: #fdfdff; /* white */
 @import "contact-form";
 @import "footer";
 @import "exhibit";
+
 *,
 *::before,
 *::after {
@@ -81,14 +107,12 @@ body {
 		// 	#f3dd05,
 		// 	#f0e100
 		// );
-		background-image: linear-gradient(
-			to right bottom,
-			#eee00b,
-			#eee515,
-			#efe91d,
-			#efee24,
-			#eff32a
-		);
+		// background-image: linear-gradient(to right bottom,
+		// 		#eee00b,
+		// 		#eee515,
+		// 		#efe91d,
+		// 		#efee24,
+		// 		#eff32a);
 		// background: linear-gradient(to right, #fdc830, #f37335);
 		// background: linear-gradient(to right, #f2994a, #f2c94c);
 		// background: linear-gradient(
@@ -106,9 +130,9 @@ body {
 	&--card2 {
 		width: 100vw;
 		height: 90vh;
-		// background-color: rgba($color: $p5_color5, $alpha: 1);
 		background-size: cover;
 	}
+
 	&--card3 {
 		width: 100vw;
 		position: relative;

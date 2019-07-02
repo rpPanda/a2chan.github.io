@@ -2177,8 +2177,6 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#eee00b), color-stop(#eee515), color-stop(#efe91d), color-stop(#efee24), to(#eff32a));
-  background-image: linear-gradient(to right bottom, #eee00b, #eee515, #efe91d, #efee24, #eff32a);
 }
 
 .bg-card--card2 {
