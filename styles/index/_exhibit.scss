@@ -1,130 +1,157 @@
 .desc-container {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	overflow-x: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
 
-	@include mq(800px) {
-		width: 80%;
-		margin: auto;
-	}
+    @include mq(800px) {
+        width: 80%;
+        margin: auto;
+    }
 
-	.desc {
-		width: 35vw;
-		transition: all 1s ease-in-out;
-		padding-left: 5vw;
+    .writer-container {
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        background: #ffeb39f2;
+    }
+    .client-container {
+        width: 100vw;
+        display: grid;
+        place-content: center;
+        background: #4b67ffcc;
+    }
 
-		@include mq(800px) {
-			font-size: 0.6rem;
-			width: 100%;
-			padding-left: 0;
-			padding-bottom: 40px;
-		}
+    .desc {
+        width: 35vw;
+        transition: all 1s ease-in-out;
+        padding-left: 5vw;
 
-		.title {
-			text-transform: uppercase;
-			font-weight: 400;
-			letter-spacing: 4px;
-			font-size: 180%;
-			position: relative;
-			display: inline-block;
-			padding: 10px 10px 10px 0;
-		}
-		.text {
-			line-height: 2rem;
-			letter-spacing: 2px;
-			font-size: 120%;
-			font-weight: 300;
-			margin-top: 10px;
-			padding: 6px 10px 10px 10px;
-			p {
-				margin: 0;
-			}
-		}
-	}
+        @include mq(800px) {
+            font-size: 0.6rem;
+            width: 100%;
+            padding-left: 0;
+            padding-bottom: 40px;
+        }
 
-	img {
-		@include mq(700px) {
-			width: 60vw;
-			align-self: flex-end;
-		}
-	}
-	.writer {
-		display: flex;
-		flex-direction: row;
-		padding-bottom: 100px;
-		animation-delay: 500ms;
-		opacity: 0;
-		transition: all 1s ease-in-out;
+        .title {
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 4px;
+            font-size: 180%;
+            position: relative;
+            display: inline-block;
+            padding: 10px 10px 10px 0;
+        }
+        .text {
+            line-height: 2rem;
+            letter-spacing: 2px;
+            font-size: 120%;
+            font-weight: 300;
+            margin-top: 10px;
+            padding: 6px 10px 10px 10px;
+            p {
+                margin: 0;
+            }
+        }
+    }
 
-		@include mq(800px) {
-			flex-direction: column-reverse;
-		}
-	}
-	.client {
-		display: flex;
-		flex-direction: row;
-		padding-bottom: 100px;
-		animation-delay: 500ms;
-		opacity: 0;
-		transition: all 1s ease-in-out;
-		@include mq(800px) {
-			flex-direction: column;
-		}
-		.desc {
-			padding-left: 0;
-			padding-right: 5vw;
-		}
-	}
+    img {
+        @include mq(700px) {
+            width: 60vw;
+            align-self: flex-end;
+        }
+    }
+    .writer {
+        display: flex;
+        flex-direction: row;
+        animation-delay: 500ms;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        position: relative;
+        padding: 100px 0;
+
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     top: -15px;
+        //     bottom: -15px;
+        //     left: -15px;
+        //     right: -15px;
+        //     background: #faf9ef;
+        //     z-index: -1;
+        // }
+
+        @include mq(800px) {
+            flex-direction: column-reverse;
+        }
+    }
+    .client {
+        display: flex;
+        flex-direction: row;
+        animation-delay: 500ms;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        position: relative;
+        padding: 100px 0;
+
+        @include mq(800px) {
+            flex-direction: column;
+        }
+        .desc {
+            padding-left: 0;
+            padding-right: 5vw;
+        }
+    }
 }
 
 .fadeInLeft,
 .fadeInRight,
 .fadeInDown,
 .fadeInUp {
-	opacity: 1;
+    opacity: 1;
 }
 
 @keyframes padding_10px_blue {
-	from {
-		padding-left: 0;
-		background: white;
-		color: black;
-	}
-	to {
-		padding-left: 10px;
-		background: rgb(22, 36, 73);
-		color: white;
-	}
+    from {
+        padding-left: 0;
+        background: white;
+        color: black;
+    }
+    to {
+        padding-left: 10px;
+        background: rgb(22, 36, 73);
+        color: white;
+    }
 }
 @keyframes padding_10px_yellow {
-	from {
-		padding-left: 0;
-		background: white;
-		color: black;
-	}
-	to {
-		padding-left: 10px;
-		background: #f9d016;
-		color: white;
-	}
+    from {
+        padding-left: 0;
+        background: white;
+        color: black;
+    }
+    to {
+        padding-left: 10px;
+        background: #f9d016;
+        color: white;
+    }
 }
 
 @keyframes bg_lblue {
-	from {
-		background: white;
-	}
-	to {
-		background: #dee3ec;
-	}
+    from {
+        background: white;
+    }
+    to {
+        background: #dee3ec;
+    }
 }
 @keyframes bg_lyellow {
-	from {
-		background: white;
-	}
-	to {
-		background: #f9f6de;
-	}
+    from {
+        background: white;
+    }
+    to {
+        background: #f9f6de;
+    }
 }
