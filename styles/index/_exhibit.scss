@@ -16,12 +16,16 @@
         display: grid;
         place-content: center;
         background: #ffeb39f2;
+        opacity: 0;
+        transform-origin: left;
     }
     .client-container {
         width: 100vw;
         display: grid;
         place-content: center;
         background: #4b67ffcc;
+        opacity: 0;
+        transform-origin: right;
     }
 
     .desc {
@@ -72,17 +76,7 @@
         transition: all 1s ease-in-out;
         position: relative;
         padding: 100px 0;
-
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     top: -15px;
-        //     bottom: -15px;
-        //     left: -15px;
-        //     right: -15px;
-        //     background: #faf9ef;
-        //     z-index: -1;
-        // }
+        animation-delay: 3s;
 
         @include mq(800px) {
             flex-direction: column-reverse;
@@ -96,6 +90,7 @@
         transition: all 1s ease-in-out;
         position: relative;
         padding: 100px 0;
+        animation-delay: 3s;
 
         @include mq(800px) {
             flex-direction: column;
@@ -153,5 +148,16 @@
     }
     to {
         background: #f9f6de;
+    }
+}
+
+@keyframes bg_expand {
+    from {
+        opacity: 1;
+        transform: scaleX(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
     }
 }

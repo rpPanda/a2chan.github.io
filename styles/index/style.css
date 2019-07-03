@@ -1952,6 +1952,9 @@ footer {
   display: grid;
   place-content: center;
   background: #ffeb39f2;
+  opacity: 0;
+  -webkit-transform-origin: left;
+          transform-origin: left;
 }
 
 .desc-container .client-container {
@@ -1960,6 +1963,9 @@ footer {
   display: grid;
   place-content: center;
   background: #4b67ffcc;
+  opacity: 0;
+  -webkit-transform-origin: right;
+          transform-origin: right;
 }
 
 .desc-container .desc {
@@ -2024,6 +2030,8 @@ footer {
   transition: all 1s ease-in-out;
   position: relative;
   padding: 100px 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @media only screen and (max-width: 800px) {
@@ -2050,6 +2058,8 @@ footer {
   transition: all 1s ease-in-out;
   position: relative;
   padding: 100px 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @media only screen and (max-width: 800px) {
@@ -2158,6 +2168,32 @@ footer {
   }
   to {
     background: #f9f6de;
+  }
+}
+
+@-webkit-keyframes bg_expand {
+  from {
+    opacity: 1;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes bg_expand {
+  from {
+    opacity: 1;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 

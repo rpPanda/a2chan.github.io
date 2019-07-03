@@ -397,6 +397,8 @@ const writer_title = document.querySelector(".writer .desc .title");
 const client_title = document.querySelector(".client .desc .title");
 const writer_text = document.querySelector(".writer .desc .text");
 const client_text = document.querySelector(".client .desc .text");
+const writer_bg = document.querySelector(".writer-container");
+const client_bg = document.querySelector(".client-container");
 const portfolio = document.querySelector(".portfolio");
 
 const options = {
@@ -413,15 +415,19 @@ const observer = new IntersectionObserver(function(entries, observer) {
         if (entry.target.className == "writer animated") {
             entry.target.classList.toggle("fadeInLeft");
             writer_title.style.animation =
-                "padding_10px_yellow 1s ease-in-out 1.5s forwards";
+                "padding_10px_yellow 1s ease-in-out 3.5s forwards";
             writer_text.style.animation =
-                "bg_lyellow 1s ease-in-out 1.5s forwards";
+                "bg_lyellow 1s ease-in-out 3.5s forwards";
+            writer_bg.style.animation =
+                "bg_expand 2s ease-in-out 0.5s forwards";
         } else {
             entry.target.classList.toggle("fadeInRight");
             client_title.style.animation =
-                "padding_10px_blue 1s ease 1.5s forwards";
+                "padding_10px_blue 1s ease 3.5s forwards";
             client_text.style.animation =
-                "bg_lblue 1s ease-in-out 1.5s forwards";
+                "bg_lblue 1s ease-in-out 3.5s forwards";
+            client_bg.style.animation =
+                "bg_expand 2s ease-in-out 0.5s forwards";
         }
         observer.unobserve(entry.target);
     });
