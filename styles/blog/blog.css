@@ -1010,8 +1010,27 @@ footer {
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 body {
-  padding-top: 3rem;
   color: #5a5a5a;
+  font-family: "Montserrat", sans-serif;
+}
+
+.col-md-7 {
+  padding-right: 20px;
+}
+
+.col-md-4.col-lg-12 {
+  background: url("../../assets/pencil_yelllow.jpg");
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.col-md-4.col-lg-12 h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 8em;
+  letter-spacing: 2rem;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -1054,8 +1073,8 @@ body {
 }
 
 .marketing .col-lg-6 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 /* Featurettes
@@ -1069,7 +1088,7 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  letter-spacing: -.05rem;
+  letter-spacing: -0.05rem;
 }
 
 /* RESPONSIVE CSS
@@ -1103,11 +1122,6 @@ body {
   }
 }
 
-html,
-body {
-  font-family: Abel, Arial, Verdana, sans-serif;
-}
-
 .center {
   position: relative;
 }
@@ -1134,8 +1148,8 @@ body {
   position: absolute;
   width: 150px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#dE685E), to(#EE786E));
-  background: linear-gradient(#dE685E, #EE786E);
+  background: -webkit-gradient(linear, left top, left bottom, from(#de685e), to(#ee786e));
+  background: linear-gradient(#de685e, #ee786e);
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
   overflow: hidden;
@@ -1143,8 +1157,8 @@ body {
 }
 
 .card.green .additional {
-  background: -webkit-gradient(linear, left top, left bottom, from(#92bCa6), to(#A2CCB6));
-  background: linear-gradient(#92bCa6, #A2CCB6);
+  background: -webkit-gradient(linear, left top, left bottom, from(#92bca6), to(#a2ccb6));
+  background: linear-gradient(#92bca6, #a2ccb6);
 }
 
 .card:hover .additional {
@@ -1203,7 +1217,7 @@ body {
 }
 
 .card.green .additional .more-info h1 {
-  color: #224C36;
+  color: #224c36;
 }
 
 .card .additional .coords {
@@ -1213,7 +1227,7 @@ body {
 }
 
 .card.green .additional .coords {
-  color: #325C46;
+  color: #325c46;
 }
 
 .card .additional .coords span + span {
@@ -1234,7 +1248,7 @@ body {
 }
 
 .card.green .additional .stats {
-  color: #325C46;
+  color: #325c46;
 }
 
 .card .additional .stats > div {
