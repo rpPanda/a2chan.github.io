@@ -6,10 +6,10 @@
     justify-content: center;
     overflow-x: hidden;
 
-    @include mq(800px) {
-        width: 80%;
-        margin: auto;
-    }
+    // @include mq(800px) {
+    //     width: 80%;
+    //     margin: auto;
+    // }
 
     .writer-container {
         width: 100vw;
@@ -63,8 +63,8 @@
     }
 
     img {
-        @include mq(700px) {
-            width: 60vw;
+        @include mq(800px) {
+            width: 40vw;
             align-self: flex-end;
         }
     }
@@ -80,6 +80,8 @@
 
         @include mq(800px) {
             flex-direction: column-reverse;
+            width: 80%;
+            margin: auto;
         }
     }
     .client {
@@ -94,6 +96,8 @@
 
         @include mq(800px) {
             flex-direction: column;
+            width: 80%;
+            margin: auto;
         }
         .desc {
             padding-left: 0;

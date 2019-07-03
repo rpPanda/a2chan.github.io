@@ -99,32 +99,36 @@ body {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        background: $primary-color;
+        background: rgba($color: #162449, $alpha: 0.89);
 
         .color-stripes {
             display: grid;
-            grid-template-columns: 700px repeat(3, 1fr);
+            grid-template-columns: 1fr;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
 
-            // .stripe1 {
-            //     // background: #ffff00;
-            //     background: #ffeb3b;
-            // }
+            .stripe1 {
+                // background: #ffff00;
+                background: #ffeb3b;
+                clip-path: polygon(0px 0px, 52.09% 0px, 35% 100%, 0% 100%);
+            }
             // .stripe2 {
             //     // background: #ffd740;
             //     background: #ffc107;
+            //     // background: white;
             // }
             // .stripe3 {
             //     // background: #ffab40;
-            //     background: #ff9800;
+            //     // background: #ff9800;
+            //     background: #ffc107;
             // }
             // .stripe4 {
-            //     background: #ff6e40;
+            //     // background: #ff6e40;
             //     // background: #ff5722;
+            //     background: #ffc107;
             // }
         }
     }

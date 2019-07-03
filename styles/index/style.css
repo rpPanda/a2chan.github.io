@@ -701,12 +701,10 @@
 .portfolio::before {
   content: "";
   position: absolute;
-  top: 10%;
-  bottom: 10%;
-  left: 10%;
-  right: 10%;
-  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
-          clip-path: polygon(0 0, 0% 100%, 100% 0);
+  top: -2%;
+  bottom: -2%;
+  left: -2%;
+  right: -2%;
 }
 
 .portfolio div {
@@ -1267,7 +1265,7 @@
 /* ---------------------- */
 /*       TESTIMONIAL      */
 /* ---------------------- */
-#testimonial {
+.testimonial {
   padding: 130px 0 95px;
   z-index: 300;
 }
@@ -1403,13 +1401,15 @@
 
 .big_logo {
   position: absolute;
-  right: 0;
+  left: 35%;
   width: 100vw;
   height: 100vh;
-  top: 6vh;
+  top: 60%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   padding-right: 6vw;
   overflow: hidden;
-  fill: rgba(20, 20, 20, 0.4);
+  fill: rgba(255, 235, 59, 0.8);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1609,9 +1609,9 @@ footer {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     padding-top: 20px;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -1939,13 +1939,6 @@ footer {
   overflow-x: hidden;
 }
 
-@media only screen and (max-width: 800px) {
-  .desc-container {
-    width: 80%;
-    margin: auto;
-  }
-}
-
 .desc-container .writer-container {
   width: 100vw;
   display: -ms-grid;
@@ -2007,9 +2000,9 @@ footer {
   margin: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .desc-container img {
-    width: 60vw;
+    width: 40vw;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -2040,6 +2033,8 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -2068,6 +2063,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 80%;
+    margin: auto;
   }
 }
 
@@ -2225,19 +2222,25 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #ffeb3b;
+  background: rgba(22, 36, 73, 0.89);
 }
 
 .bg-card--card1 .color-stripes {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 700px (1fr)[3];
-      grid-template-columns: 700px repeat(3, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.bg-card--card1 .color-stripes .stripe1 {
+  background: #ffeb3b;
+  -webkit-clip-path: polygon(0px 0px, 52.09% 0px, 35% 100%, 0% 100%);
+          clip-path: polygon(0px 0px, 52.09% 0px, 35% 100%, 0% 100%);
 }
 
 .bg-card--card2 {

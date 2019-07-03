@@ -67,11 +67,12 @@
     &::before {
         content: "";
         position: absolute;
-        top: 10%;
-        bottom: 10%;
-        left: 10%;
-        right: 10%;
-        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        top: -2%;
+        bottom: -2%;
+        left: -2%;
+        right: -2%;
+        // background: #4c69ea;
+        // opacity: 0.6;
     }
 
     div {
