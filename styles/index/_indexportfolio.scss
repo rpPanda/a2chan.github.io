@@ -1,0 +1,194 @@
+@import "abstracts";
+@import "palette";
+
+.portfolio-container {
+    position: relative;
+
+    @include mq(1000px) {
+        margin-top: 150px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        color: black;
+        width: 80px;
+        height: 2px;
+        left: 0;
+    }
+}
+
+// portfolio
+.portfolio-title {
+    font-size: 150%;
+    padding: 20px;
+    margin-left: 2px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    // background: rgb(22, 36, 73);
+    background: $accent-color;
+    color: white;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: sticky;
+    top: 25vh;
+    float: left;
+
+    @include mq(1600px) {
+        padding: 15px;
+    }
+
+    @include mq(700px) {
+        padding: 15px;
+        font-size: 100%;
+    }
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    position: relative;
+    padding: 10px 4px;
+    min-height: 0;
+    min-width: 0;
+    grid-gap: 30px;
+    margin: 0 10vw;
+
+    @include mq(800px) {
+        margin: 0 9px;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, 200px);
+        place-content: center;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        bottom: 10%;
+        left: 10%;
+        right: 10%;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+    }
+
+    div {
+        opacity: 0;
+        &:nth-child(1) {
+            animation-delay: 500ms;
+        }
+        &:nth-child(2) {
+            animation-delay: 1000ms;
+        }
+        &:nth-child(3) {
+            animation-delay: 1500ms;
+        }
+        &:nth-child(4) {
+            animation-delay: 2000ms;
+        }
+        &:nth-child(5) {
+            animation-delay: 2500ms;
+        }
+        &:nth-child(6) {
+            animation-delay: 3000ms;
+        }
+        &:nth-child(7) {
+            animation-delay: 3500ms;
+        }
+        &:nth-child(8) {
+            animation-delay: 4000ms;
+        }
+        &:nth-child(9) {
+            animation-delay: 4500ms;
+        }
+        &:nth-child(10) {
+            animation-delay: 5000ms;
+        }
+        &:nth-child(11) {
+            animation-delay: 5500ms;
+        }
+        &:nth-child(12) {
+            animation-delay: 6000ms;
+        }
+    }
+}
+
+.card {
+    position: relative;
+    background: black;
+    overflow: hidden;
+    min-width: 0;
+    box-shadow: 0 10px 30px -10px #000;
+
+    // &::before {
+    // 	content: "";
+    // 	position: absolute;
+    // 	top: 1.25em;
+    // 	bottom: 1.25em;
+    // 	left: 1.25em;
+    // 	right: 1.25em;
+    // 	opacity: 1;
+    // 	transition: transform ease-out 250ms;
+    // 	border-top: 1px solid white;
+    // 	border-bottom: 1px solid white;
+    // 	transform: scale(0, 1);
+    // }
+
+    // &::after {
+    // 	content: "";
+    // 	position: absolute;
+    // 	top: 1.25em;
+    // 	bottom: 1.25em;
+    // 	left: 1.25em;
+    // 	right: 1.25em;
+    // 	opacity: 1;
+    // 	transition: transform ease-out 250ms;
+    // 	border-left: 1px solid white;
+    // 	border-right: 1px solid white;
+    // 	transform: scale(1, 0);
+    // }
+
+    &:hover {
+        .card__text {
+            opacity: 1;
+
+            .card__body {
+                opacity: 0.6;
+            }
+        }
+
+        img {
+            opacity: 0.2;
+        }
+    }
+
+    .card__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        opacity: 0;
+        transition: opacity ease-out 250ms;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .card__title {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3.5px;
+    }
+}
+
+.portfolio__image {
+    width: 100%;
+    display: block;
+    transition: opacity ease-out 250ms;
+    object-fit: fill;
+}

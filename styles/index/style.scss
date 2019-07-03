@@ -1,0 +1,164 @@
+$base-yellow: #fcd116;
+$base-grey: #333333;
+$base-black: #141414;
+
+$p1_color1: #e8c547;
+/* maximum yellow red */
+$p1_color2: #30323d;
+/* gunmetal */
+$p1_color3: #c8c8c8;
+/* lavender gray */
+$p1_color4: #fffbfe;
+/* white */
+$p1_color5: #011638;
+/* maastricht blue */
+
+$p2_color1: #fcd116;
+/* jonquil */
+$p2_color2: #393e41;
+/* black olive */
+$p2_color3: #2a2b2a;
+/* charleston green */
+$p2_color4: #232528;
+/* dark gunmetal */
+$p2_color5: #fdfdff;
+/* white */
+
+$p3_color1: #fcd116;
+/* jonquil */
+$p3_color2: #393e41;
+/* black olive */
+$p3_color3: #000000;
+/* registration black */
+$p3_color4: #232528;
+/* dark gunmetal */
+$p3_color5: #fdfdff;
+/* white */
+
+$p4_color1: #fcd116;
+/* jonquil */
+$p4_color2: #393e41;
+/* black olive */
+$p4_color3: #eeeeff;
+/* alice blue */
+$p4_color4: #232528;
+/* dark gunmetal */
+$p4_color5: #fdfdff;
+/* white */
+
+$p5_color1: #fcd116;
+/* jonquil */
+$p5_color2: #393e41;
+/* black olive */
+$p5_color3: #cacfd6;
+/* light gray */
+$p5_color4: #232528;
+/* dark gunmetal */
+$p5_color5: #fdfdff;
+/* white */
+
+@import "abstracts";
+@import "nav";
+@import "pepper-text";
+@import "lang-bar";
+@import "falling-letters";
+@import "indexportfolio";
+@import "carousel";
+@import "new-at-pepper";
+@import "buttons";
+@import "res-menu";
+@import "testimonials";
+@import "svg";
+@import "contact-form";
+@import "footer";
+@import "exhibit";
+@import "palette";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Work Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    cursor: default;
+}
+
+.bg-card {
+    display: block;
+    position: relative;
+
+    &--card1 {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: $primary-color;
+
+        .color-stripes {
+            display: grid;
+            grid-template-columns: 700px repeat(3, 1fr);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+
+            // .stripe1 {
+            //     // background: #ffff00;
+            //     background: #ffeb3b;
+            // }
+            // .stripe2 {
+            //     // background: #ffd740;
+            //     background: #ffc107;
+            // }
+            // .stripe3 {
+            //     // background: #ffab40;
+            //     background: #ff9800;
+            // }
+            // .stripe4 {
+            //     background: #ff6e40;
+            //     // background: #ff5722;
+            // }
+        }
+    }
+
+    &--card2 {
+        width: 100vw;
+        height: 90vh;
+        background-size: cover;
+    }
+
+    &--card3 {
+        width: 100vw;
+        position: relative;
+        background-color: rgba($color: $p5_color5, $alpha: 1);
+
+        @media only screen and (max-device-height: 600px) {
+            margin-top: 50px !important;
+        }
+    }
+
+    &--card4 {
+        margin: 30vh 0;
+        z-index: 300;
+
+        @include mq(700px) {
+            margin: 5vh 0;
+        }
+    }
+}
+
+.scroll-progress-bar {
+    position: fixed;
+    top: 7vh;
+    left: 0;
+    height: 4px;
+    background: $base-black;
+}
