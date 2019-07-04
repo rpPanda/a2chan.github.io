@@ -817,6 +817,12 @@
   letter-spacing: 3.5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .card .card__title {
+    font-size: 1.2em;
+  }
+}
+
 .portfolio__image {
   width: 100%;
   display: block;

@@ -122,34 +122,6 @@
     min-width: 0;
     box-shadow: 0 10px 30px -10px #000;
 
-    // &::before {
-    // 	content: "";
-    // 	position: absolute;
-    // 	top: 1.25em;
-    // 	bottom: 1.25em;
-    // 	left: 1.25em;
-    // 	right: 1.25em;
-    // 	opacity: 1;
-    // 	transition: transform ease-out 250ms;
-    // 	border-top: 1px solid white;
-    // 	border-bottom: 1px solid white;
-    // 	transform: scale(0, 1);
-    // }
-
-    // &::after {
-    // 	content: "";
-    // 	position: absolute;
-    // 	top: 1.25em;
-    // 	bottom: 1.25em;
-    // 	left: 1.25em;
-    // 	right: 1.25em;
-    // 	opacity: 1;
-    // 	transition: transform ease-out 250ms;
-    // 	border-left: 1px solid white;
-    // 	border-right: 1px solid white;
-    // 	transform: scale(1, 0);
-    // }
-
     &:hover {
         .card__text {
             opacity: 1;
@@ -183,6 +155,10 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 3.5px;
+
+        @include mq(600px) {
+            font-size: 1.2em;
+        }
     }
 }
 
