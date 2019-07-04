@@ -1941,8 +1941,7 @@ footer {
 
 @media only screen and (max-width: 800px) {
   .desc-container {
-    width: 80%;
-    margin: auto;
+    width: 100%;
   }
 }
 
@@ -2009,7 +2008,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
   .desc-container img {
-    width: 60vw;
+    width: 45vw;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -2040,6 +2039,7 @@ footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 0 25px;
   }
 }
 
@@ -2068,6 +2068,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 0 25px;
   }
 }
 

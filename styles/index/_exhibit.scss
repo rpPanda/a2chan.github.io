@@ -7,8 +7,7 @@
     overflow-x: hidden;
 
     @include mq(800px) {
-        width: 80%;
-        margin: auto;
+        width: 100%;
     }
 
     .writer-container {
@@ -64,7 +63,7 @@
 
     img {
         @include mq(700px) {
-            width: 60vw;
+            width: 45vw;
             align-self: flex-end;
         }
     }
@@ -80,6 +79,7 @@
 
         @include mq(800px) {
             flex-direction: column-reverse;
+            margin: 0 25px;
         }
     }
     .client {
@@ -94,6 +94,7 @@
 
         @include mq(800px) {
             flex-direction: column;
+            margin: 0 25px;
         }
         .desc {
             padding-left: 0;
