@@ -1033,6 +1033,10 @@ body {
   letter-spacing: 2rem;
 }
 
+.container {
+  padding-bottom: 100px;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
