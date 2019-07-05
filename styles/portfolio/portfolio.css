@@ -600,6 +600,13 @@
   margin-left: 10vw;
 }
 
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 80vw;
+    margin: auto;
+  }
+}
+
 .container .header {
   display: -ms-grid;
   display: grid;
@@ -615,6 +622,13 @@
   font-weight: 300;
 }
 
+@media only screen and (max-width: 500px) {
+  .container .header .title {
+    font-size: 1.5em;
+    padding: 1em 0;
+  }
+}
+
 .container .para {
   padding: 30px 0;
   font-family: "Montserrat", sans-serif;
@@ -622,11 +636,25 @@
   text-align: justify;
 }
 
+@media only screen and (max-width: 500px) {
+  .container .para {
+    font-size: 0.6em;
+    line-height: 2em;
+  }
+}
+
 .container .para p {
   padding-left: 10px;
+  word-wrap: break-word;
 }
 
 .container .bullets ul li {
   line-height: 3em;
+}
+
+@media only screen and (max-width: 500px) {
+  .container .bullets ul li {
+    font-size: 0.6em;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */

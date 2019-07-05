@@ -69,9 +69,12 @@
     width: 40vw;
     margin-left: 10vw;
 
+    @include mq(500px) {
+        width: 80vw;
+        margin: auto;
+    }
+
     .header {
-        // grid-column: 1/2;
-        // grid-row: 1/2;
         display: grid;
         place-content: center;
         .title {
@@ -81,28 +84,38 @@
             font-family: "Montserrat", sans-serif;
             font-size: 3em;
             font-weight: 300;
+
+            @include mq(500px) {
+                font-size: 1.5em;
+                padding: 1em 0;
+            }
         }
     }
 
     .para {
-        // grid-column: 1/2;
-        // grid-row: 2/3;
         padding: 30px 0;
         font-family: "Montserrat", sans-serif;
         line-height: 2em;
         text-align: justify;
+
+        @include mq(500px) {
+            font-size: 0.6em;
+            line-height: 2em;
+        }
         p {
             padding-left: 10px;
+            word-wrap: break-word;
         }
     }
 
     .bullets {
-        // grid-column: 1/2;
-        // grid-row: 3/4;
         ul {
-            // padding: 10px;
             li {
                 line-height: 3em;
+
+                @include mq(500px) {
+                    font-size: 0.6em;
+                }
             }
         }
     }
