@@ -52,7 +52,7 @@ $(document).ready(function() {
         menu: null,
         direction: "vertical",
         verticalCentered: true,
-        sectionsColor: ["#b2ff59", "#03a9f4", "#ffeb3b"],
+        sectionsColor: ["#ffffff", "#b2ff59", "#03a9f4", "#ffeb3b"],
         anchors: [],
         scrollingSpeed: 500,
         easing: "swing",
