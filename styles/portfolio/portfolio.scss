@@ -11,8 +11,12 @@
 
 .container.landing {
     width: 100vw;
-    height: 90vh;
-    margin: 0 0 10vh 0;
+    height: 100vh;
+    margin: 0;
+    @include mq(500px) {
+        height: 90vh;
+        margin: 0 0 10vh 0;
+    }
     background: #7c4ddf;
     display: grid;
     grid-template-columns: 1fr max-content max-content;

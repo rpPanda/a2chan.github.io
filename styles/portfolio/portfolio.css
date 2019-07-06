@@ -509,8 +509,8 @@
 
 .container.landing {
   width: 100vw;
-  height: 90vh;
-  margin: 0 0 10vh 0;
+  height: 100vh;
+  margin: 0;
   background: #7c4ddf;
   display: -ms-grid;
   display: grid;
@@ -522,6 +522,13 @@
       grid-template-rows: 1fr max-content;
   overflow-y: hidden;
   font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .container.landing {
+    height: 90vh;
+    margin: 0 0 10vh 0;
+  }
 }
 
 @media only screen and (max-width: 500px) {
