@@ -11,8 +11,8 @@
 
 .container.landing {
     width: 100vw;
-    height: 100vh;
-    margin: 0;
+    height: 90vh;
+    margin: 0 0 10vh 0;
     background: #7c4ddf;
     display: grid;
     grid-template-columns: 1fr max-content max-content;
@@ -64,7 +64,6 @@
             justify-content: left;
 
             div {
-                // padding: 0 0 0 0.3em !important;
                 margin-right: 0 !important;
                 margin-left: 20px !important;
                 line-height: 0.4em;
@@ -93,9 +92,7 @@
             height: auto;
 
             div {
-                // padding: 0 0 0 0.3em !important;
                 margin-left: 20px !important;
-                // line-height: 0.3em;
             }
         }
 

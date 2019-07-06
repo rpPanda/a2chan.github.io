@@ -54,7 +54,7 @@ if (mq.matches) {
             menu: null,
             direction: "vertical",
             verticalCentered: true,
-            sectionsColor: ["#ffffff", "#b2ff59", "#03a9f4", "#ffeb3b"],
+            sectionsColor: ["#7c4ddf", "#b2ff59", "#03a9f4", "#ffeb3b"],
             anchors: [],
             scrollingSpeed: 500,
             easing: "swing",
