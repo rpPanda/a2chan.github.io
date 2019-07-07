@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
 
     @include mq(800px) {
         width: 100%;
@@ -58,6 +59,18 @@
             p {
                 margin: 0;
             }
+        }
+
+        .button {
+            margin-top: 20px;
+            border: 1px solid black;
+            display: inline-block;
+            line-height: 3em;
+            width: 7em;
+            text-align: center;
+            letter-spacing: 2px;
+            color: white;
+            background: $base-black;
         }
     }
 
