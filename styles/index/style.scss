@@ -63,7 +63,6 @@ $p5_color5: #fdfdff;
 @import "lang-bar";
 @import "falling-letters";
 @import "indexportfolio";
-@import "carousel";
 @import "new-at-pepper";
 @import "buttons";
 @import "res-menu";
@@ -150,11 +149,10 @@ body {
     }
 
     &--card4 {
-        margin: 30vh 0;
+        padding: 30vh 0;
         z-index: 300;
-
         @include mq(700px) {
-            margin: 5vh 0;
+            padding: 5vh 0;
         }
     }
 }
