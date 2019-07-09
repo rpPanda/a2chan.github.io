@@ -56,6 +56,9 @@
             font-weight: 300;
             margin-top: 10px;
             padding: 6px 10px 10px 10px;
+            text-align: justify;
+            color: rgba($color: $base-black, $alpha: 0.8);
+            font-family: "Poppins", sans-serif;
             p {
                 margin: 0;
             }
@@ -69,7 +72,7 @@
             width: 7em;
             text-align: center;
             letter-spacing: 2px;
-            color: white;
+            color: rgba($color: white, $alpha: 0.8);
             background: $base-black;
         }
     }
@@ -132,7 +135,7 @@
     to {
         padding-left: 10px;
         background: rgb(22, 36, 73);
-        color: white;
+        color: rgba($color: white, $alpha: 0.9);
     }
 }
 @keyframes padding_10px_yellow {
@@ -144,7 +147,7 @@
     to {
         padding-left: 10px;
         background: #f9d016;
-        color: white;
+        color: rgba($color: white, $alpha: 0.9);
     }
 }
 

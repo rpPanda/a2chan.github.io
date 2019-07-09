@@ -275,147 +275,52 @@ const navSlide = () => {
 navSlide();
 
 // carousel
-var timer = 4000;
-var s_size = $(document).width();
-var i = 0;
-var max = $("#carousel > li").length;
+// var timer = 4000;
+// var s_size = $(document).width();
+// var i = 0;
+// var max = $("#carousel > li").length;
 
-$("#carousel > li")
-    .eq(i)
-    .addClass("active");
+// $("#carousel > li")
+//     .eq(i)
+//     .addClass("active");
 
-setInterval(function() {
-    $("#carousel > li").removeClass("active");
+// setInterval(function() {
+//     $("#carousel > li").removeClass("active");
 
-    $("#carousel > li")
-        .eq(i)
-        .css("transition-delay", "0.25s");
-
-    if (i < max - 1) {
-        i = i + 1;
-    } else {
-        i = 0;
-    }
-
-    $("#carousel > li")
-        .eq(i)
-        .css("left", "0")
-        .addClass("active")
-        .css("transition-delay", "0.5s");
-}, timer);
-
-// if (s_size > 900) {
 //     $("#carousel > li")
 //         .eq(i)
-//         .addClass("active")
-//         .css("left", "0");
-//     $("#carousel > li")
-//         .eq(i + 1)
-//         .addClass("active")
-//         .css("left", "25%");
-//     $("#carousel > li")
-//         .eq(i + 2)
-//         .addClass("active")
-//         .css("left", "50%");
-//     $("#carousel > li")
-//         .eq(i + 3)
-//         .addClass("active")
-//         .css("left", "75%");
+//         .css("transition-delay", "0.25s");
 
-//     setInterval(function() {
-//         $("#carousel > li").removeClass("active");
+//     if (i < max - 1) {
+//         i = i + 1;
+//     } else {
+//         i = 0;
+//     }
 
-//         $("#carousel > li")
-//             .eq(i)
-//             .css("transition-delay", "0.25s");
-//         $("#carousel > li")
-//             .eq(i + 1)
-//             .css("transition-delay", "0.5s");
-//         $("#carousel > li")
-//             .eq(i + 2)
-//             .css("transition-delay", "0.75s");
-//         $("#carousel > li")
-//             .eq(i + 3)
-//             .css("transition-delay", "1s");
-
-//         if (i < max - 4) {
-//             i = i + 4;
-//         } else {
-//             i = 0;
-//         }
-
-//         $("#carousel > li")
-//             .eq(i)
-//             .css("left", "0")
-//             .addClass("active")
-//             .css("transition-delay", "1.25s");
-//         $("#carousel > li")
-//             .eq(i + 1)
-//             .css("left", "25%")
-//             .addClass("active")
-//             .css("transition-delay", "1.5s");
-//         $("#carousel > li")
-//             .eq(i + 2)
-//             .css("left", "50%")
-//             .addClass("active")
-//             .css("transition-delay", "1.75s");
-//         $("#carousel > li")
-//             .eq(i + 3)
-//             .css("left", "75%")
-//             .addClass("active")
-//             .css("transition-delay", "2s");
-//     }, timer);
-// } else if (s_size < 900) {
 //     $("#carousel > li")
 //         .eq(i)
+//         .css("left", "0")
 //         .addClass("active")
-//         .css("left", "0");
-//     $("#carousel > li")
-//         .eq(i + 1)
-//         .addClass("active")
-//         .css("left", "50%");
+//         .css("transition-delay", "0.5s");
+// }, timer);
 
-//     setInterval(function() {
-//         $("#carousel > li").removeClass("active");
+$(".owl-carousel.carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 600,
+    animateOut: "fadeOut",
+    animateIn: "zoomIn"
+    // animateOut: "fadeOut"
+});
 
-//         $("#carousel > li")
-//             .eq(i)
-//             .css("transition-delay", "0.5s");
-//         $("#carousel > li")
-//             .eq(i + 1)
-//             .css("transition-delay", "1s");
-
-//         if (i < max - 2) {
-//             i = i + 2;
-//         } else {
-//             i = 0;
-//         }
-
-//         $("#carousel > li")
-//             .eq(i)
-//             .css("left", "0")
-//             .addClass("active")
-//             .css("transition-delay", "1.5s");
-//         $("#carousel > li")
-//             .eq(i + 1)
-//             .css("left", "50%")
-//             .addClass("active")
-//             .css("transition-delay", "2s");
-//     }, timer);
-// }
-
-// if ($(".ts-testimonial-slide").length > 0) {
-//     $(".ts-testimonial-slide").owlCarousel({
-//         autoPlay: 4000,
-//         slideSpeed: 1000,
-//         navigation: false,
-//         pagination: true,
-//         singleItem: true,
-//         items: 1
-//     });
-// }
-
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel.testimonial-slide").owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
