@@ -425,7 +425,10 @@ $(".owl-carousel").owlCarousel({
     autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
-    smartSpeed: 600
+    smartSpeed: 600,
+    animateOut: "fadeOut",
+    animateIn: "slideInRight"
+    // animateOut: "fadeOut"
 });
 
 // Intersection observer
