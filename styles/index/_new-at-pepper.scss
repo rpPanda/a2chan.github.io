@@ -1,27 +1,18 @@
-.trio_svg {
+.bg--card2__wrapper {
+    padding: 15vh 5vw;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    height: 100%;
-
-    .writer {
-        grid-column: 1/2;
-        max-height: 100%;
-    }
-
-    .editor {
-        grid-column: 3/4;
-        max-height: 100%;
+    grid-template-columns: max-content 1fr;
+    .trio_svg {
+        padding: 0 5vw;
+        .writer {
+            width: 25vw;
+        }
     }
 }
 
 #newAtPepper {
-    padding: 7em 0 0 0;
     position: relative;
-    top: 16%;
-    width: 100%;
-    display: grid;
-    place-content: center;
+    text-align: center;
 
     @include mq(600px) {
         font-size: 80%;
@@ -29,6 +20,7 @@
 
     section {
         position: relative;
+        display: inline-block;
         font-size: 180%;
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase;
@@ -69,6 +61,49 @@
                     10px 25px 5px rgba(0, 0, 0, 0.05),
                     -10px 25px 5px rgba(0, 0, 0, 0.05);
             }
+        }
+    }
+}
+
+.carouselNAP {
+    position: relative;
+    display: block;
+    ul {
+        position: relative;
+        padding: 0;
+    }
+
+    ul > li {
+        list-style-type: none;
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        text-align: center;
+        transition: 1s opacity;
+    }
+
+    .active {
+        opacity: 1;
+    }
+
+    p {
+        color: $base-black;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 0px 10px 5px rgba(0, 0, 0, 0.1),
+            10px 15px 5px rgba(0, 0, 0, 0.05),
+            -10px 15px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    strong {
+        color: $base-black;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: $base-black;
         }
     }
 }

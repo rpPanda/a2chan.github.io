@@ -404,16 +404,29 @@ setInterval(function() {
 //     }, timer);
 // }
 
-if ($(".ts-testimonial-slide").length > 0) {
-    $(".ts-testimonial-slide").owlCarousel({
-        autoPlay: 4000,
-        slideSpeed: 1000,
-        navigation: false,
-        pagination: true,
-        singleItem: true,
-        items: 1
-    });
-}
+// if ($(".ts-testimonial-slide").length > 0) {
+//     $(".ts-testimonial-slide").owlCarousel({
+//         autoPlay: 4000,
+//         slideSpeed: 1000,
+//         navigation: false,
+//         pagination: true,
+//         singleItem: true,
+//         items: 1
+//     });
+// }
+
+$(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+    dots: false,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    smartSpeed: 600
+});
 
 // Intersection observer
 

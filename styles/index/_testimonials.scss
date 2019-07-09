@@ -1,15 +1,28 @@
 .bg--card5_wrapper {
     display: grid;
-    grid-template-columns: 40vw 60vw;
+    max-width: 100%;
+    grid-template-columns: 40% 60%;
     align-items: center;
-    padding-top: 15vh;
+    padding: 15vh 5vw 0 5vw;
     margin: 0 0;
 
+    @include mq(700px) {
+        padding: 0;
+    }
+
+    @include mq(700px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
     .client-svg {
         width: 100%;
         img {
             max-width: 100%;
             height: 100%;
+
+            @include mq(700px) {
+                height: 100vw;
+            }
         }
     }
 }
@@ -18,9 +31,10 @@
 /*       TESTIMONIAL      */
 /* ---------------------- */
 
-#testimonial {
-    padding: 130px 0 95px;
-    z-index: 300;
+.testimonial-wrapper {
+    @include mq(700px) {
+        width: 100vw;
+    }
 }
 
 .testy-title {
@@ -34,71 +48,20 @@
     place-content: center;
     font-family: "Poppins", sans-serif;
 }
+
 .ts-testimonial-slide {
-    text-align: center;
-    width: 60% !important;
-    margin: 0 auto;
-    // border-top: 1px solid black;
-    p {
-        font-size: 120%;
-        line-height: 150%;
-        font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin-bottom: 35px;
-        color: rgba($color: #000000, $alpha: 0.6);
-        letter-spacing: 1px;
-        position: relative;
+    @include mq(700px) {
+        padding: 30px;
     }
-    .ts-testimonial-item {
-        margin-bottom: 15px;
 
-        .client-name {
-            padding-left: 38px;
-            font-size: 12.8px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-family: "Montserrat";
-            display: block;
-            line-height: normal;
-            white-space: nowrap;
-            color: black;
-        }
+    p {
+        text-align: center;
+        line-height: 2em;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+    }
 
-        .infor-client {
-            display: inline-block;
-            margin: 0 auto;
-            width: auto;
-        }
-
-        .icon-client {
-            width: 29px;
-            height: 29px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -ms-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
-            float: left;
-            text-align: center;
-            line-height: 29px;
-            margin-top: 2px;
-        }
-
-        .client-position {
-            font-size: 12px;
-            line-height: normal;
-            padding-left: 38px;
-            display: block;
-            text-align: left;
-            color: black;
-
-            a {
-                color: black;
-                &:hover {
-                    color: #5ed9e7;
-                }
-            }
-        }
+    .infor-client {
+        text-align: center;
     }
 }
