@@ -152,13 +152,13 @@ body {
     &--card4 {
         padding: 30vh 0 0 0;
         z-index: 300;
-        @include mq(700px) {
-            padding: 5vh 0;
-        }
     }
 
     &--card5 {
         background: #5af158;
+        @include mq(700px) {
+            padding: 5vh 0;
+        }
 
         @include mq_min(700px) {
             padding-bottom: 15vh;

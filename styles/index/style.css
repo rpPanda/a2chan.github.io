@@ -977,7 +977,7 @@
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
-  text-align: justify;
+  text-align: center;
   position: relative;
 }
 
@@ -2342,14 +2342,14 @@ body {
   z-index: 300;
 }
 
-@media only screen and (max-width: 700px) {
-  .bg-card--card4 {
-    padding: 5vh 0;
-  }
-}
-
 .bg-card--card5 {
   background: #5af158;
+}
+
+@media only screen and (max-width: 700px) {
+  .bg-card--card5 {
+    padding: 5vh 0;
+  }
 }
 
 @media only screen and (min-width: 700px) {
