@@ -156,7 +156,7 @@
         background: white;
     }
     to {
-        background: #dee3ec;
+        background: rgba($color: #dee3ec, $alpha: 0.9);
     }
 }
 @keyframes bg_lyellow {
@@ -164,7 +164,7 @@
         background: white;
     }
     to {
-        background: #f9f6de;
+        background: rgba($color: #f9f6de, $alpha: 0.9);
     }
 }
 

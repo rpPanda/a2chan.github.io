@@ -68,12 +68,12 @@
     &::before {
         content: "";
         position: absolute;
-        top: -2%;
-        bottom: -2%;
-        left: -2%;
-        right: -2%;
-        // background: #4c69ea;
-        // opacity: 0.6;
+        top: -5%;
+        bottom: -5%;
+        left: -5%;
+        right: -5%;
+        background: #5af158;
+        box-shadow: 0 10px 30px -10px #000;
     }
 
     div {
@@ -147,6 +147,7 @@
         opacity: 0;
         transition: opacity ease-out 250ms;
         font-family: "Montserrat", sans-serif;
+        text-align: center;
     }
 
     .card__title {
@@ -157,6 +158,7 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 3.5px;
+        text-align: center;
 
         @include mq(600px) {
             font-size: 1.2em;

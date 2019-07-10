@@ -104,6 +104,11 @@
         transition: 1s opacity;
     }
 
+    .slno {
+        text-align: left;
+        font-size: 3em;
+    }
+
     .active {
         opacity: 1;
     }
@@ -117,5 +122,6 @@
         font-weight: 300;
         letter-spacing: 1px;
         text-align: justify;
+        position: relative;
     }
 }

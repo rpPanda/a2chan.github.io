@@ -274,43 +274,13 @@ const navSlide = () => {
 
 navSlide();
 
-// carousel
-// var timer = 4000;
-// var s_size = $(document).width();
-// var i = 0;
-// var max = $("#carousel > li").length;
-
-// $("#carousel > li")
-//     .eq(i)
-//     .addClass("active");
-
-// setInterval(function() {
-//     $("#carousel > li").removeClass("active");
-
-//     $("#carousel > li")
-//         .eq(i)
-//         .css("transition-delay", "0.25s");
-
-//     if (i < max - 1) {
-//         i = i + 1;
-//     } else {
-//         i = 0;
-//     }
-
-//     $("#carousel > li")
-//         .eq(i)
-//         .css("left", "0")
-//         .addClass("active")
-//         .css("transition-delay", "0.5s");
-// }, timer);
-
 $(".owl-carousel.carousel").owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
     items: 1,
     dots: false,
-    nav: true,
+    nav: false,
     autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,

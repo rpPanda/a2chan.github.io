@@ -159,6 +159,10 @@ body {
 
     &--card5 {
         background: #5af158;
+
+        @include mq_min(700px) {
+            padding-bottom: 15vh;
+        }
     }
 }
 
