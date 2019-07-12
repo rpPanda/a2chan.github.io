@@ -10,8 +10,7 @@ $bot-pad: 0.5vh;
     right: 0;
     display: grid;
     place-content: center;
-    z-index: 300;
-    display: none;
+    opacity: 0;
 
     .overlay {
         position: absolute;
@@ -31,6 +30,68 @@ $bot-pad: 0.5vh;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
     background: #f7f7f7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(7, auto);
+
+    @include mq(1200px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, auto);
+    }
+
+    div:nth-child(1) {
+        grid-column: span 2;
+
+        @include mq(1200px) {
+            grid-column: span 1;
+        }
+    }
+
+    div:nth-child(2) {
+        grid-column: span 2;
+
+        @include mq(1200px) {
+            grid-column: span 1;
+        }
+    }
+
+    div:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    div:nth-child(4) {
+        grid-column: span 1;
+    }
+
+    div:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    div:nth-child(6) {
+        grid-column: span 1;
+    }
+
+    div:nth-child(7) {
+        grid-column: span 2;
+
+        @include mq(1200px) {
+            grid-column: span 1;
+        }
+    }
+    div:nth-child(8) {
+        grid-column: span 2;
+
+        @include mq(1200px) {
+            grid-column: span 1;
+        }
+    }
+    div:nth-child(9) {
+        grid-column: span 2;
+
+        @include mq(1200px) {
+            grid-column: span 1;
+        }
+    }
 
     @include mq(600px) {
         width: 70vw;
@@ -100,5 +161,45 @@ $bot-pad: 0.5vh;
             align-self: center;
             padding: 0 1vw;
         }
+    }
+}
+
+.gaq-active {
+    z-index: 300;
+    animation: gaqShow 500ms ease-in forwards;
+}
+
+.gaq-active-fadeOut {
+    animation: gaqFade 250ms ease-out forwards;
+}
+
+.gaq-form-active {
+    animation: gaqMoveup 500ms ease-in forwards;
+}
+
+@keyframes gaqFade {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes gaqShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes gaqMoveup {
+    0% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
