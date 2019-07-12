@@ -124,6 +124,9 @@
     min-width: 0;
     box-shadow: 0 10px 30px -10px #000;
 
+    img {
+        transition: all ease-in-out 500ms;
+    }
     &:hover {
         .card__text {
             opacity: 1;
@@ -135,6 +138,7 @@
 
         img {
             opacity: 0.2;
+            transform: scale(1.1);
         }
     }
 
