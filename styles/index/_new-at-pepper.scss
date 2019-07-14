@@ -36,7 +36,7 @@
         position: relative;
         top: 10%;
         display: inline-block;
-        font-size: 180%;
+        font-size: calc(16px + (28 - 16) * ((100vw - 300px) / (1600 - 300)));
         font-family: "Montserrat", sans-serif;
         text-transform: uppercase;
         letter-spacing: 3.5px;
@@ -103,7 +103,9 @@
             p {
                 color: $base-black;
                 line-height: 2em;
-                font-size: 1.2em;
+                font-size: calc(
+                    10px + (18 - 10) * ((100vw - 300px) / (1600 - 300))
+                );
                 margin: 0;
                 font-family: "Poppins", sans-serif;
                 font-weight: 300;

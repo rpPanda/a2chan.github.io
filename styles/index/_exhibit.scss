@@ -57,7 +57,9 @@
         }
 
         @include mq(800px) {
-            font-size: 0.6rem;
+            font-size: calc(
+                10px + (16 - 10) * ((100vw - 300px) / (1600 - 300))
+            );
             width: 100%;
             padding-left: 0;
             padding-bottom: 40px;
@@ -67,7 +69,9 @@
             text-transform: uppercase;
             font-weight: 400;
             letter-spacing: 4px;
-            font-size: 180%;
+            font-size: calc(
+                14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))
+            );
             position: relative;
             display: inline-block;
             padding: 10px 10px 10px 0;
@@ -97,6 +101,9 @@
             letter-spacing: 2px;
             color: rgba($color: white, $alpha: 0.8);
             background: $base-black;
+            font-size: calc(
+                10px + (16 - 10) * ((100vw - 300px) / (1600 - 300))
+            );
         }
     }
 
