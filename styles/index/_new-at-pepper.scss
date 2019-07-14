@@ -28,7 +28,6 @@
     width: 100%;
     overflow-x: hidden;
 
-    height: 60vh; //hard-coded else a scroll bar appears
     @include mq(600px) {
         font-size: 80%;
     }
@@ -55,6 +54,7 @@
         @include mq(700px) {
             font-size: 120%;
         }
+
         &::before {
             content: "";
             position: absolute;
@@ -89,39 +89,32 @@
     display: block;
     width: 80%;
     margin: auto;
-    top: 20%;
+    margin-top: 20%;
     .carousel {
         position: relative;
         padding: 0;
-    }
 
-    .carousel > .item {
-        list-style-type: none;
-        position: absolute;
-        top: 0;
-        opacity: 0;
-        text-align: center;
-        transition: 1s opacity;
-    }
+        .item {
+            list-style-type: none;
+            top: 0;
+            text-align: center;
+            transition: 1s opacity;
 
-    .slno {
-        text-align: left;
-        font-size: 3em;
+            p {
+                color: $base-black;
+                line-height: 2em;
+                font-size: 1.2em;
+                margin: 0;
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-align: center;
+                position: relative;
+            }
+        }
     }
 
     .active {
         opacity: 1;
-    }
-
-    p {
-        color: $base-black;
-        line-height: 2em;
-        font-size: 1.2em;
-        margin: 0;
-        font-family: "Poppins", sans-serif;
-        font-weight: 300;
-        letter-spacing: 1px;
-        text-align: center;
-        position: relative;
     }
 }

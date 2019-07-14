@@ -925,7 +925,6 @@
   text-align: center;
   width: 100%;
   overflow-x: hidden;
-  height: 60vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -990,7 +989,7 @@
   display: block;
   width: 80%;
   margin: auto;
-  top: 20%;
+  margin-top: 20%;
 }
 
 .carouselNAP .carousel {
@@ -998,26 +997,15 @@
   padding: 0;
 }
 
-.carouselNAP .carousel > .item {
+.carouselNAP .carousel .item {
   list-style-type: none;
-  position: absolute;
   top: 0;
-  opacity: 0;
   text-align: center;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
 }
 
-.carouselNAP .slno {
-  text-align: left;
-  font-size: 3em;
-}
-
-.carouselNAP .active {
-  opacity: 1;
-}
-
-.carouselNAP p {
+.carouselNAP .carousel .item p {
   color: #141414;
   line-height: 2em;
   font-size: 1.2em;
@@ -1027,6 +1015,10 @@
   letter-spacing: 1px;
   text-align: center;
   position: relative;
+}
+
+.carouselNAP .active {
+  opacity: 1;
 }
 
 .btn-1-1 {
