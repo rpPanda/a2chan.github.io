@@ -105,27 +105,20 @@
     }
 
     &__social {
-        position: absolute;
-        bottom: 1vh;
-        left: 0;
-        right: 0;
-        height: 3vh;
-        display: grid;
-        place-content: center;
+        position: relative;
 
         @include mq(500px) {
-            bottom: 8vh;
+            bottom: 6vh;
         }
 
-        .container {
-            i {
-                color: rgba(255, 255, 255, 0.5);
-                padding: 0 10px;
-                transition: all 200ms ease-in-out;
-
-                &:hover {
-                    color: white;
-                }
+        grid-row: 2/3;
+        grid-column: 3/4;
+        display: flex;
+        justify-content: center;
+        div {
+            margin-left: 15px;
+            img {
+                width: 20px;
             }
         }
     }

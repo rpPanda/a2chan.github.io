@@ -93,12 +93,32 @@
     .carousel {
         position: relative;
         padding: 0;
+        counter-reset: counter-name;
 
         .item {
             list-style-type: none;
             top: 0;
             text-align: center;
             transition: 1s opacity;
+            position: relative;
+
+            &::before {
+                counter-increment: counter-name;
+                content: counter(counter-name);
+                position: absolute;
+                left: -2.5em;
+                top: -0.5em;
+                background: white;
+                width: 2em;
+                height: 2em;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid gray;
+                color: gray;
+                box-sizing: border-box;
+            }
 
             p {
                 color: $base-black;

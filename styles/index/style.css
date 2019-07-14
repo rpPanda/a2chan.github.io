@@ -740,18 +740,6 @@
   }
 }
 
-.portfolio::before {
-  content: "";
-  position: absolute;
-  top: -5%;
-  bottom: -5%;
-  left: -5%;
-  right: -5%;
-  background: #5af158;
-  -webkit-box-shadow: 0 10px 30px -10px #000;
-          box-shadow: 0 10px 30px -10px #000;
-}
-
 .portfolio div {
   opacity: 0;
 }
@@ -840,8 +828,8 @@
 
 .card:hover img {
   opacity: 0.2;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card .card__text {
@@ -995,6 +983,7 @@
 .carouselNAP .carousel {
   position: relative;
   padding: 0;
+  counter-reset: counter-name;
 }
 
 .carouselNAP .carousel .item {
@@ -1003,6 +992,32 @@
   text-align: center;
   -webkit-transition: 1s opacity;
   transition: 1s opacity;
+  position: relative;
+}
+
+.carouselNAP .carousel .item::before {
+  counter-increment: counter-name;
+  content: counter(counter-name);
+  position: absolute;
+  left: -2.5em;
+  top: -0.5em;
+  background: white;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 3px solid gray;
+  color: gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .carouselNAP .carousel .item p {
@@ -1233,31 +1248,33 @@
 }
 
 .res-menu__social {
-  position: absolute;
-  bottom: 1vh;
-  left: 0;
-  right: 0;
-  height: 3vh;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (max-width: 500px) {
   .res-menu__social {
-    bottom: 8vh;
+    bottom: 6vh;
   }
 }
 
-.res-menu__social .container i {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 0 10px;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+.res-menu__social div {
+  margin-left: 15px;
 }
 
-.res-menu__social .container i:hover {
-  color: white;
+.res-menu__social div img {
+  width: 20px;
 }
 
 .res-menu--active {
@@ -2721,20 +2738,16 @@ body {
   background: #fafafa;
 }
 
-.bg-card--card3 {
+.bg-card--card4 {
   width: 100vw;
   position: relative;
   background-color: #fdfdff;
 }
 
 @media only screen and (max-device-height: 600px) {
-  .bg-card--card3 {
+  .bg-card--card4 {
     margin-top: 50px !important;
   }
-}
-
-.bg-card--card4 {
-  z-index: 300;
 }
 
 .bg-card--card5 {

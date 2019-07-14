@@ -85,7 +85,7 @@ body {
         background: #fafafa;
     }
 
-    &--card3 {
+    &--card4 {
         width: 100vw;
         position: relative;
         background-color: rgba($color: $p5_color5, $alpha: 1);
@@ -93,10 +93,6 @@ body {
         @media only screen and (max-device-height: 600px) {
             margin-top: 50px !important;
         }
-    }
-
-    &--card4 {
-        z-index: 300;
     }
 
     &--card5 {

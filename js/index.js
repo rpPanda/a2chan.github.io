@@ -389,7 +389,7 @@ const portfolio_observer = new IntersectionObserver(function(
 },
 options)
 
-// portfolio_observer.observe(portfolio)
+portfolio_observer.observe(portfolio)
 
 // topnav intersection observer
 const footer = document.querySelector("footer")
@@ -403,9 +403,9 @@ const footer_observer = new IntersectionObserver(function(
             return
         }
         footer_children.forEach(element => {
-            element.style.animation = "fadeInUp_20px 1s ease-out 2s forwards"
+            element.style.animation = "fadeInUp_20px 1s ease-out 1s forwards"
         })
-        footer.style.animation = "moveUp 1.3s ease-in-out 500ms forwards"
+        footer.style.animation = "moveUp 500ms ease-out 500ms forwards"
         footer_observer.unobserve(entry.target)
     })
 },
