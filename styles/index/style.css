@@ -2028,9 +2028,8 @@ footer {
 
 .desc-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2045,6 +2044,17 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (min-width: 1600px) {
+  .desc-container {
+    -ms-grid-columns: (minmax(800px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    -ms-grid-rows: max-content;
+        grid-template-rows: -webkit-max-content;
+        grid-template-rows: max-content;
+    height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .desc-container {
     width: 100%;
@@ -2052,7 +2062,7 @@ footer {
 }
 
 .desc-container .writer-container {
-  width: 100vw;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -2062,8 +2072,20 @@ footer {
           transform-origin: left;
 }
 
+@media only screen and (max-width: 1600px) {
+  .desc-container .writer-container {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container .writer-container {
+    height: 100vh;
+  }
+}
+
 .desc-container .client-container {
-  width: 100vw;
+  height: 100%;
   display: -ms-grid;
   display: grid;
   place-content: center;
@@ -2073,11 +2095,30 @@ footer {
           transform-origin: right;
 }
 
+@media only screen and (max-width: 1600px) {
+  .desc-container .client-container {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container .client-container {
+    height: 100vh;
+  }
+}
+
 .desc-container .desc {
   width: 35vw;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   padding-left: 5vw;
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container .desc {
+    padding-left: 0;
+    padding-right: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2127,6 +2168,18 @@ footer {
   background: #141414;
 }
 
+.desc-container img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
 @media only screen and (max-width: 700px) {
   .desc-container img {
     width: 45vw;
@@ -2152,6 +2205,15 @@ footer {
   padding: 100px 0;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container .writer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2181,6 +2243,15 @@ footer {
   padding: 100px 0;
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
+}
+
+@media only screen and (min-width: 1600px) {
+  .desc-container .client {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2650,7 +2721,6 @@ body {
 }
 
 .bg-card--card4 {
-  padding: 30vh 0 0 0;
   z-index: 300;
 }
 

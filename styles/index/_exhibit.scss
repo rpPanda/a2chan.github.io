@@ -1,9 +1,15 @@
 .desc-container {
     width: 100%;
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include mq_min(1600px) {
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+        grid-template-rows: max-content;
+        height: 100vh;
+    }
     overflow-x: hidden;
     font-family: "Montserrat", sans-serif;
 
@@ -12,7 +18,13 @@
     }
 
     .writer-container {
-        width: 100vw;
+        @include mq(1600px) {
+            width: 100vw;
+        }
+        @include mq_min(1600px) {
+            height: 100vh;
+        }
+        height: 100%;
         display: grid;
         place-content: center;
         background: #ffeb39f2;
@@ -20,7 +32,13 @@
         transform-origin: left;
     }
     .client-container {
-        width: 100vw;
+        @include mq(1600px) {
+            width: 100vw;
+        }
+        @include mq_min(1600px) {
+            height: 100vh;
+        }
+        height: 100%;
         display: grid;
         place-content: center;
         background: #4b67ffcc;
@@ -32,6 +50,11 @@
         width: 35vw;
         transition: all 1s ease-in-out;
         padding-left: 5vw;
+
+        @include mq_min(1600px) {
+            padding-left: 0;
+            padding-right: 0 !important;
+        }
 
         @include mq(800px) {
             font-size: 0.6rem;
@@ -78,6 +101,12 @@
     }
 
     img {
+        object-fit: contain;
+
+        @include mq_min(1600px) {
+            align-self: flex-end;
+        }
+
         @include mq(700px) {
             width: 45vw;
             align-self: flex-end;
@@ -93,6 +122,10 @@
         padding: 100px 0;
         animation-delay: 3s;
 
+        @include mq_min(1600px) {
+            flex-direction: column-reverse;
+        }
+
         @include mq(800px) {
             flex-direction: column-reverse;
             margin: 0 25px;
@@ -107,6 +140,10 @@
         position: relative;
         padding: 100px 0;
         animation-delay: 3s;
+
+        @include mq_min(1600px) {
+            flex-direction: column;
+        }
 
         @include mq(800px) {
             flex-direction: column;

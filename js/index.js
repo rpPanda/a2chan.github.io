@@ -389,7 +389,7 @@ const portfolio_observer = new IntersectionObserver(function(
 },
 options)
 
-portfolio_observer.observe(portfolio)
+// portfolio_observer.observe(portfolio)
 
 // topnav intersection observer
 const footer = document.querySelector("footer")
