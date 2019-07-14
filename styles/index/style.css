@@ -995,31 +995,6 @@
   position: relative;
 }
 
-.carouselNAP .carousel .item::before {
-  counter-increment: counter-name;
-  content: counter(counter-name);
-  position: absolute;
-  left: -2.5em;
-  top: -0.5em;
-  background: white;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px solid gray;
-  color: gray;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .carouselNAP .carousel .item p {
   color: #141414;
   line-height: 2em;
