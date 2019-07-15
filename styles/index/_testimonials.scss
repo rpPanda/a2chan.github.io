@@ -65,6 +65,7 @@
     display: grid;
     place-content: center;
     font-family: "Poppins", sans-serif;
+    text-align: center;
 
     @include mq(700px) {
         font-size: 8vw;
