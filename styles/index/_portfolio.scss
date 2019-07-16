@@ -50,7 +50,7 @@
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     position: relative;
     padding: 10px 4px;
     min-height: 0;

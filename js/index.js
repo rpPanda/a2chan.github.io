@@ -351,45 +351,55 @@ desc_card.forEach(card => {
     observer.observe(card)
 })
 
-const one = document.querySelector(".portfolio .card:nth-child(1)")
-const two = document.querySelector(".portfolio .card:nth-child(2)")
-const three = document.querySelector(".portfolio .card:nth-child(3)")
-const four = document.querySelector(".portfolio .card:nth-child(4)")
-const five = document.querySelector(".portfolio .card:nth-child(5)")
-const six = document.querySelector(".portfolio .card:nth-child(6)")
-const seven = document.querySelector(".portfolio .card:nth-child(7)")
-const eight = document.querySelector(".portfolio .card:nth-child(8)")
-const nine = document.querySelector(".portfolio .card:nth-child(9)")
-const ten = document.querySelector(".portfolio .card:nth-child(10)")
-const eleven = document.querySelector(".portfolio .card:nth-child(11)")
-const twelve = document.querySelector(".portfolio .card:nth-child(12)")
+// const one = document.querySelector(".portfolio .card:nth-child(1)")
+// const two = document.querySelector(".portfolio .card:nth-child(2)")
+// const three = document.querySelector(".portfolio .card:nth-child(3)")
+// const four = document.querySelector(".portfolio .card:nth-child(4)")
+// const five = document.querySelector(".portfolio .card:nth-child(5)")
+// const six = document.querySelector(".portfolio .card:nth-child(6)")
+// const seven = document.querySelector(".portfolio .card:nth-child(7)")
+// const eight = document.querySelector(".portfolio .card:nth-child(8)")
+// const nine = document.querySelector(".portfolio .card:nth-child(9)")
+// const ten = document.querySelector(".portfolio .card:nth-child(10)")
+// const eleven = document.querySelector(".portfolio .card:nth-child(11)")
+// const twelve = document.querySelector(".portfolio .card:nth-child(12)")
 
-const portfolio_observer = new IntersectionObserver(function(
-    entries,
-    portfolio_observer
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        }
-        one.classList.toggle("fadeInLeft")
-        five.classList.toggle("fadeInLeft")
-        nine.classList.toggle("fadeInLeft")
-        four.classList.toggle("fadeInRight")
-        eight.classList.toggle("fadeInRight")
-        twelve.classList.toggle("fadeInRight")
-        two.classList.toggle("fadeInDown")
-        three.classList.toggle("fadeInDown")
-        ten.classList.toggle("fadeInUp")
-        eleven.classList.toggle("fadeInUp")
-        six.classList.toggle("fadeIn")
-        seven.classList.toggle("fadeIn")
-        portfolio_observer.unobserve(entry.target)
-    })
-},
-options)
+// const portfolio_observer = new IntersectionObserver(function(
+//     entries,
+//     portfolio_observer
+// ) {
+//     entries.forEach(entry => {
+//         if (!entry.isIntersecting) {
+//             return
+//         }
+//         one.classList.toggle("fadeInLeft")
+//         five.classList.toggle("fadeInLeft")
+//         nine.classList.toggle("fadeInLeft")
+//         four.classList.toggle("fadeInRight")
+//         eight.classList.toggle("fadeInRight")
+//         twelve.classList.toggle("fadeInRight")
+//         two.classList.toggle("fadeInDown")
+//         three.classList.toggle("fadeInDown")
+//         ten.classList.toggle("fadeInUp")
+//         eleven.classList.toggle("fadeInUp")
+//         six.classList.toggle("fadeIn")
+//         seven.classList.toggle("fadeIn")
+//         portfolio_observer.unobserve(entry.target)
+//     })
+// },
+// options)
 
-portfolio_observer.observe(portfolio)
+// portfolio_observer.observe(portfolio)
+
+function addingImages() {
+    for (var i = 1; i <= 20; i++) {
+        var image = document.createElement("img")
+        image.setAttribute("src", "../assets/logos/" + i + ".webp")
+        document.querySelector(".portfolio").appendChild(image)
+    }
+}
+
+addingImages()
 
 // topnav intersection observer
 const footer = document.querySelector("footer")
