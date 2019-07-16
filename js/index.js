@@ -392,7 +392,7 @@ desc_card.forEach(card => {
 // portfolio_observer.observe(portfolio)
 
 function addingImages() {
-    for (var i = 1; i <= 20; i++) {
+    for (var i = 1; i <= 91; i++) {
         var image = document.createElement("img")
         image.setAttribute("src", "../assets/logos/" + i + ".webp")
         document.querySelector(".portfolio").appendChild(image)
