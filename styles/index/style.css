@@ -2103,6 +2103,7 @@ footer {
 }
 
 .desc-container {
+  position: relative;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -2112,6 +2113,7 @@ footer {
 }
 
 .desc-container > div {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: max-content;
@@ -2134,6 +2136,7 @@ footer {
 }
 
 .desc-container > div .title {
+  position: relative;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -2144,6 +2147,7 @@ footer {
 }
 
 .desc-container > div .desc {
+  position: relative;
   max-width: 500px;
   width: calc(300px + (500 - 300) * ((100vw - 300px) / (1920 - 300)));
   border-radius: 25px;
@@ -2156,6 +2160,7 @@ footer {
 }
 
 .desc-container > div .desc .text {
+  position: relative;
   width: 90%;
   margin: auto;
   display: -ms-grid;
@@ -2163,7 +2168,14 @@ footer {
   place-content: center;
 }
 
+@media only screen and (min-width: 1200px) {
+  .desc-container > div .desc .text {
+    width: 80%;
+  }
+}
+
 .desc-container > div .desc .text p {
+  position: relative;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -2173,6 +2185,7 @@ footer {
 }
 
 .desc-container > div img {
+  position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
   -webkit-filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.4));
