@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     place-content: center;
 
     > div {
@@ -38,7 +38,7 @@
             max-width: 500px;
             width: calc(300px + (500 - 300) * ((100vw - 300px) / (1920 - 300)));
             border-radius: 25px;
-            background: rgba($color: #fff, $alpha: 0.98);
+            background: rgba($color: #fff, $alpha: 0.96);
             box-shadow: rgba($color: #000, $alpha: 0.16) 0px 0px 99px;
             display: grid;
             place-content: center;
