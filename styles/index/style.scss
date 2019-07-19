@@ -1,6 +1,7 @@
 $base-yellow: #fcd116;
 $base-grey: #333333;
 $base-black: #141414;
+$base-orange: #f7a306;
 
 @import "abstracts";
 @import "nav";
@@ -29,8 +30,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: "Work Sans", sans-serif;
-    font-family: "Montserrat", sans-serif;
     max-width: 100%;
     overflow-x: hidden;
     cursor: default;
@@ -44,38 +43,7 @@ body {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-        background: rgba($color: #162449, $alpha: 0.89);
-
-        .color-stripes {
-            display: grid;
-            grid-template-columns: 1fr;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-
-            .stripe1 {
-                // background: #ffff00;
-                background: #ffeb3b;
-                clip-path: polygon(0px 0px, 52.09% 0px, 35% 100%, 0% 100%);
-            }
-            // .stripe2 {
-            //     // background: #ffd740;
-            //     background: #ffc107;
-            //     // background: white;
-            // }
-            // .stripe3 {
-            //     // background: #ffab40;
-            //     // background: #ff9800;
-            //     background: #ffc107;
-            // }
-            // .stripe4 {
-            //     // background: #ff6e40;
-            //     // background: #ff5722;
-            //     background: #ffc107;
-            // }
-        }
+        background: $base-orange;
     }
 
     &--card2 {
