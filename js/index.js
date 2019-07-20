@@ -342,10 +342,8 @@ const observer = new IntersectionObserver((entries, observer) => {
     })
 }, options)
 
-// TODO activate intersection observer
-
 function addingImages() {
-    for (var i = 1; i <= 91; i++) {
+    for (var i = 1; i <= 61; i++) {
         var image = document.createElement("img")
         image.setAttribute("src", "../assets/logos/" + i + ".webp")
         document.querySelector(".portfolio").appendChild(image)
@@ -371,21 +369,6 @@ const footer_observer = new IntersectionObserver(function(
     })
 },
 options)
-
-// get a quote
-function showGAQ() {
-    const gaq = document.querySelector(".gaq-wrapper")
-    const form = document.querySelector(".gaq-form")
-    gaq.classList.toggle("gaq-active")
-    form.classList.toggle("gaq-form-active")
-}
-
-function submitGAQ() {
-    const gaq = document.querySelector(".gaq-wrapper")
-    const form = document.querySelector(".gaq-form")
-    gaq.classList.toggle("gaq-active")
-    form.classList.toggle("gaq-form-active")
-}
 
 $(document).ready(() => {
     fallingLetters()

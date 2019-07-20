@@ -54,6 +54,33 @@
     overflow: hidden;
     max-height: 100%;
 
+    // > img {
+    //     &:nth-child(6) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(31) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(43) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(56) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(59) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(60) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    // }
+
     @include mq_min(1200px) {
         width: 90%;
     }
