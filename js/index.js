@@ -78,7 +78,7 @@ function fallingLetters() {
             for (let i = 0; i < 6; i++) {
                 color += colorGen[Math.floor(Math.random() * len)]
             }
-            color = "black"
+            color = "#16264f"
             return color
         }
 
@@ -274,8 +274,6 @@ const navSlide = () => {
     })
 }
 
-navSlide()
-
 $(".owl-carousel.carousel").owlCarousel({
     loop: true,
     margin: 10,
@@ -345,9 +343,6 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, options)
 
 // TODO activate intersection observer
-desc_card.forEach(card => {
-    observer.observe(card)
-})
 
 function addingImages() {
     for (var i = 1; i <= 91; i++) {
@@ -356,8 +351,6 @@ function addingImages() {
         document.querySelector(".portfolio").appendChild(image)
     }
 }
-
-addingImages()
 
 // topnav intersection observer
 const footer = document.querySelector("footer")
@@ -379,8 +372,6 @@ const footer_observer = new IntersectionObserver(function(
 },
 options)
 
-footer_observer.observe(footer)
-
 // get a quote
 function showGAQ() {
     const gaq = document.querySelector(".gaq-wrapper")
@@ -395,3 +386,13 @@ function submitGAQ() {
     gaq.classList.toggle("gaq-active")
     form.classList.toggle("gaq-form-active")
 }
+
+$(document).ready(() => {
+    fallingLetters()
+    footer_observer.observe(footer)
+    addingImages()
+    navSlide()
+    desc_card.forEach(card => {
+        observer.observe(card)
+    })
+})

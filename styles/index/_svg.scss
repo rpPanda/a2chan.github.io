@@ -38,16 +38,26 @@
 
 .big_logo {
     position: absolute;
-    left: 35%;
-    width: 100vw;
-    height: 100vh;
-    top: 60%;
-    transform: translateY(-50%);
-    padding-right: 6vw;
-    overflow: hidden;
-    fill: rgba($color: #ffeb3b, $alpha: 0.8);
 
-    @include mq(1000px) {
-        left: 3vw !important;
+    @include mq(1200px) {
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include mq_min(1200px) {
+        right: 0;
+        top: 2%;
+    }
+    img {
+        position: relative;
+        right: 0;
+        top: 2vh;
+        height: 100vh;
+
+        @include mq(1000px) {
+            top: 0;
+            height: 40vh;
+        }
     }
 }
