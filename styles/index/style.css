@@ -1420,6 +1420,13 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
+@media only screen and (max-width: 700px) {
+  .testimonial-wrapper::before {
+    left: 0;
+    right: 0;
+  }
+}
+
 .testy-title {
   font-size: calc(32px + (90 - 32) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bolder;

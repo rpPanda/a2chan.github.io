@@ -52,6 +52,11 @@
         left: -3%;
         right: -3%;
         background: rgba($color: white, $alpha: 0.3);
+
+        @include mq(700px) {
+            left: 0;
+            right: 0;
+        }
     }
 }
 
