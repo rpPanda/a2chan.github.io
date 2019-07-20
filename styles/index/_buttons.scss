@@ -9,18 +9,8 @@
         color: $base-black;
         letter-spacing: 1px;
         font-family: "Raleway", sans-serif;
-        font-weight: 400;
-        @include mq(700px) {
-            font-size: 0.9em;
-        }
-
-        @include mq(500px) {
-            font-size: 0.7em;
-        }
-
-        @include mq_h(600px) {
-            font-size: 0.6em;
-        }
+        font-weight: 600;
+        color: white;
     }
 
     &__btn-1,
@@ -29,7 +19,7 @@
         display: block;
         float: left;
         clear: left;
-        font-size: 180%;
+        font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1920 - 300)));
         margin-bottom: 2%;
         padding-bottom: 10px;
         transition: all 400ms ease-in-out;
@@ -39,6 +29,7 @@
             position: absolute;
             left: -45px;
             transition: all 400ms ease-in-out;
+            color: $base-white;
         }
         &::after {
             content: "";
@@ -47,7 +38,7 @@
             bottom: 0;
             width: 100%;
             height: 2px;
-            background-color: $base-black;
+            background-color: $base-white;
             transform: scaleX(0);
             transform-origin: left;
             transition: all 300ms ease-in-out;
