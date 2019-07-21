@@ -100,15 +100,8 @@
     .btn-1-1 {
         position: relative;
         margin-left: 45px;
-
-        .link {
-            text-decoration: none;
-            color: $base-black;
-            letter-spacing: 1px;
-            font-family: "Raleway", sans-serif;
-            font-weight: 500;
-            color: white;
-        }
+        display: flex;
+        flex-direction: column;
 
         &__btn-1,
         &__btn-2 {
@@ -128,22 +121,34 @@
                 transition: all 400ms ease-in-out;
                 color: $base-white;
             }
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 2px;
-                background-color: $base-white;
-                transform: scaleX(0);
-                transform-origin: left;
-                transition: all 300ms ease-in-out;
+
+            div {
+                position: relative;
+                text-decoration: none;
+                color: $base-black;
+                letter-spacing: 1px;
+                font-family: "Raleway", sans-serif;
+                font-weight: 500;
+                color: white;
+                display: inline-block;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $base-white;
+                    transform: scaleX(0.001);
+                    transform-origin: left;
+                    transition: all 300ms ease-in-out;
+                }
             }
 
             &:hover {
                 transform: translateX(8px);
-                &::after {
+                & div::after {
                     transform: scaleX(1);
                 }
 

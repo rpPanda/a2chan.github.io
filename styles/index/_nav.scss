@@ -23,7 +23,7 @@
             list-style-type: none;
             position: relative;
             margin: 0 20px;
-            a {
+            > a {
                 text-decoration: none;
                 text-transform: uppercase;
                 letter-spacing: 1px;
@@ -72,6 +72,48 @@
                     transition: transform 300ms ease-in-out;
                     border-left: 1px solid $base-yellow;
                     border-right: 1px solid $base-yellow;
+                }
+            }
+
+            &.dropdown {
+                position: relative;
+
+                .drop-title {
+                    position: relative;
+                    z-index: 1;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    color: $base-white;
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                    font-family: "Raleway", sans-serif;
+                    background: rgba($color: #fff, $alpha: 0.2);
+                    &:hover {
+                        .drop-menu > div {
+                            transform: translateY(0);
+                        }
+                    }
+                }
+
+                .drop-menu {
+                    position: absolute;
+                    overflow: hidden;
+                    height: 180px;
+                    width: 100%;
+
+                    div {
+                        height: 30px;
+                        width: 100%;
+                        transform: translateY(-180px);
+                        transition: all 1s ease-in-out;
+                        text-align: center;
+                        background: rgba($color: #fff, $alpha: 0.2);
+                        a {
+                            text-decoration: none;
+                            font-family: "Mukta", sans-serif;
+                            color: $base-white;
+                        }
+                    }
                 }
             }
         }

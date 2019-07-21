@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Raleway:100,200,300,400,500,600,700|Poppins:100,200,300,400,500,600,700|Mukta:300,400,500&display=swap"
             rel="stylesheet"
         />
 
@@ -38,6 +38,18 @@
                 <li><a href="#">About</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="#">Contact Us</a></li>
+                <li class= dropdown>
+                    <div class="drop-title">
+                        <span>Lang</span>
+                        <div class="drop-menu">
+                            <div><a href="#!">Eng</a></div>
+                            <div><a href="#!">தமிழ்</a></div>
+                            <div><a href="#!">ગુજરાતી</a></div>
+                            <div><a href="#!">বাংলা</a></div>
+                            <div><a href="#!">हिंदी</a></div>
+                        </div>
+                    </div>
+                </li>
             </ul>
             <div class="topnav__burger" id="burger">
                 <span></span>
@@ -220,7 +232,7 @@
                                         languages.
                                     </div>
                                 </div>
-                            </div>
+                            </li>
                         </div>
                     </div>
                 </div>
@@ -346,8 +358,10 @@
                                 name="phone"
                                 placeholder="Contact no."
                             />
-                            <textarea name="message" placeholder="Message">
-                            </textarea>
+                            <textarea
+                                name="message"
+                                placeholder="Message"
+                            ></textarea>
                             <button
                                 id="submit"
                                 type="submit"

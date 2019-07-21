@@ -371,11 +371,11 @@ const footer_observer = new IntersectionObserver(function(
 options)
 
 $(document).ready(() => {
-    fallingLetters()
-    footer_observer.observe(footer)
-    addingImages()
+    // fallingLetters()
+    // footer_observer.observe(footer)
+    // addingImages()
     navSlide()
-    desc_card.forEach(card => {
-        observer.observe(card)
-    })
+    // desc_card.forEach(card => {
+    //     observer.observe(card)
+    // })
 })
