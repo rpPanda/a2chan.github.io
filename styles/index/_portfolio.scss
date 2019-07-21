@@ -3,6 +3,8 @@
 
 .portfolio-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
 
     @include mq(1000px) {
         margin-top: 150px;
@@ -10,7 +12,7 @@
 
     @include mq_min(1200px) {
         display: flex;
-        height: 100vh;
+        min-height: 100vh;
     }
 }
 
@@ -18,39 +20,31 @@
 .portfolio-title {
     position: relative;
     z-index: 1;
-    color: white;
+    color: black;
     display: grid;
     place-content: center;
-    background: $base-black;
-    width: 80%;
-    margin: auto;
-    font-size: calc(18px + (32 - 18) * ((100vw - 300px) / (1600 - 300)));
-    div {
-        padding: 10px;
-
-        @include mq_min(1200px) {
-            transform: translateX(-10%);
-            padding: 0;
-        }
-    }
-
-    @include mq_min(1200px) {
-        font-size: 100px;
-        writing-mode: sideways-lr;
-        width: 10%;
-        margin: 0 0;
-    }
+    background: rgba($color: #000000, $alpha: 0);
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 15px;
+    width: 100%;
+    margin: 0;
+    font-size: calc(18px + (42 - 18) * ((100vw - 300px) / (1600 - 300)));
+    font-family: "Raleway", sans-serif;
+    padding: 2rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
 }
 
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     position: relative;
-    padding: 30px 30px;
+    padding: 2rem;
     min-height: 0;
     min-width: 0;
-    grid-gap: 30px;
-    width: 100%;
+    grid-gap: 2.5rem;
+    width: 90%;
+    margin: auto;
     overflow: hidden;
     max-height: 100%;
 
@@ -80,10 +74,6 @@
     //         grid-column: span 2;
     //     }
     // }
-
-    @include mq_min(1200px) {
-        width: 90%;
-    }
 
     @include mq(800px) {
         grid-gap: 10px;

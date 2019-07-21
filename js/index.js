@@ -372,10 +372,10 @@ options)
 
 $(document).ready(() => {
     // fallingLetters()
-    // footer_observer.observe(footer)
-    // addingImages()
+    footer_observer.observe(footer)
+    addingImages()
     navSlide()
-    // desc_card.forEach(card => {
-    //     observer.observe(card)
-    // })
+    desc_card.forEach(card => {
+        observer.observe(card)
+    })
 })
