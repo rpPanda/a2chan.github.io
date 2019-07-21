@@ -31,11 +31,32 @@
             font-family: "Raleway", sans-serif;
             text-align: center;
             font-size: calc(
-                36px + (48 - 36) * ((100vw - 300px) / (1920 - 300))
+                30px + (48 - 30) * ((100vw - 300px) / (1920 - 300))
             );
             font-weight: 600;
             color: white;
             letter-spacing: 2px;
+
+            span {
+                position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    height: 3px;
+                    background: black;
+                    width: 100%;
+                    transform: scaleX(0.3);
+                    transition: all 0.35s ease-in-out;
+                }
+
+                &:hover {
+                    &::before {
+                        transform: scaleX(1);
+                    }
+                }
+            }
         }
 
         .desc {

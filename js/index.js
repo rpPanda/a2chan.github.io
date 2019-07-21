@@ -333,7 +333,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 }, options)
 
 function addingImages() {
-    for (var i = 1; i <= 61; i++) {
+    for (var i = 1; i <= 51; i++) {
         var image = document.createElement("img")
         image.setAttribute("src", "../assets/logos/" + i + ".webp")
         document.querySelector(".portfolio").appendChild(image)

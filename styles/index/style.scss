@@ -65,13 +65,6 @@ body {
 
     &--card5 {
         background: #5af158;
-        @include mq(700px) {
-            padding: 5vh 0;
-        }
-
-        @include mq_min(700px) {
-            padding-bottom: 15vh;
-        }
     }
 }
 
