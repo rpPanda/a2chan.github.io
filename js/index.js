@@ -325,18 +325,8 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
         if (entry.target.className == "writer animated") {
             entry.target.classList.toggle("fadeInLeft")
-            // writer_title.style.animation =
-            //     "padding_10px_yellow 1s ease-in-out 3.5s forwards"
-            // writer_text.style.animation =
-            //     "bg_lyellow 1s ease-in-out 3.5s forwards"
-            // writer_bg.style.animation = "bg_expand 2s ease-in-out 0.5s forwards"
         } else {
             entry.target.classList.toggle("fadeInRight")
-            // client_title.style.animation =
-            //     "padding_10px_blue 1s ease 3.5s forwards"
-            // client_text.style.animation =
-            //     "bg_lblue 1s ease-in-out 3.5s forwards"
-            // client_bg.style.animation = "bg_expand 2s ease-in-out 0.5s forwards"
         }
         observer.unobserve(entry.target)
     })

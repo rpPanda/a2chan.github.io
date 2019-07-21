@@ -127,39 +127,41 @@
 .topnav__nav-links li > a::before {
   content: "";
   display: block;
-  background-color: rgba(252, 209, 22, 0);
+  background-color: rgba(245, 245, 245, 0);
   position: absolute;
   bottom: -14px;
   top: -14px;
   left: -14px;
   right: -14px;
+  z-index: -1;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transition: -webkit-transform 300ms ease-in-out;
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  border-top: 1px solid #fcd116;
-  border-bottom: 1px solid #fcd116;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
 }
 
 .topnav__nav-links li > a::after {
   content: "";
   display: block;
-  background-color: rgba(252, 209, 22, 0);
+  background-color: rgba(245, 245, 245, 0);
   position: absolute;
   bottom: -14px;
   top: -14px;
   left: -14px;
   right: -14px;
+  z-index: -1;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transition: -webkit-transform 300ms ease-in-out;
   transition: -webkit-transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out;
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
-  border-left: 1px solid #fcd116;
-  border-right: 1px solid #fcd116;
+  border-left: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
 }
 
 .topnav__nav-links li.dropdown {
@@ -875,6 +877,7 @@
         grid-template-columns: repeat(auto-fit, 50px);
     place-content: center;
     width: 100%;
+    padding: 1rem;
   }
 }
 
@@ -1660,21 +1663,19 @@
   white-space: pre-wrap;
   overflow-wrap: break-word;
   margin: 0em;
-  font: 400 calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300))) Arial;
+  font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
   border-width: 1px;
   border-style: solid;
   border-color: darkgray;
   -o-border-image: initial;
      border-image: initial;
-  padding: 2px;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
   outline: none;
   padding: 10px 0 14px;
   font-family: "Raleway", sans-serif;
-  font-size: 13px;
-  line-height: 1.4em;
+  line-height: 1.4rem;
   color: #5f5f5f;
   margin: 0;
   width: 100%;
@@ -2173,6 +2174,7 @@ footer {
   grid-gap: 4rem;
   place-content: center;
   padding: 5rem 0 5rem 0;
+  opacity: 0;
 }
 
 .desc-container > div.writer {

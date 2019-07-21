@@ -33,21 +33,18 @@
         white-space: pre-wrap;
         overflow-wrap: break-word;
         margin: 0em;
-        font: 400 calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)))
-            Arial;
+        font-size: calc(10px + (14 - 10) * ((100vw - 300px) / (1600 - 300)));
         border-width: 1px;
         border-style: solid;
         border-color: rgb(169, 169, 169);
         border-image: initial;
-        padding: 2px;
         background-color: transparent;
         border: 0;
         border-bottom: 1px solid #e5e5e5;
         outline: none;
         padding: 10px 0 14px;
         font-family: "Raleway", sans-serif;
-        font-size: 13px;
-        line-height: 1.4em;
+        line-height: 1.4rem;
         color: #5f5f5f;
         margin: 0;
         width: 100%;
