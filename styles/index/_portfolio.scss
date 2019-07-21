@@ -5,15 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
-    @include mq(1000px) {
-        margin-top: 150px;
-    }
-
-    @include mq_min(1200px) {
-        display: flex;
-        min-height: 100vh;
-    }
+    min-height: 100vh;
 }
 
 // portfolio
@@ -48,7 +40,21 @@
     overflow: hidden;
     max-height: 100%;
 
-    // > img {
+    @include mq(800px) {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fit, 50px);
+        place-content: center;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+        transition: opacity ease-out 250ms;
+        object-fit: fill;
+    }
+
+    // > img {    // > img {    // > img {    // > img {
     //     &:nth-child(6) {
     //         grid-row: span 2;
     //         grid-column: span 2;
@@ -75,16 +81,81 @@
     //     }
     // }
 
-    @include mq(800px) {
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, 50px);
-        place-content: center;
-    }
+    //     &:nth-child(6) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(31) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(43) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(56) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(59) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(60) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    // }
 
-    img {
-        width: 100%;
-        display: block;
-        transition: opacity ease-out 250ms;
-        object-fit: fill;
-    }
+    //     &:nth-child(6) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(31) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(43) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(56) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(59) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(60) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    // }
+
+    //     &:nth-child(6) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(31) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(43) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(56) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(59) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    //     &:nth-child(60) {
+    //         grid-row: span 2;
+    //         grid-column: span 2;
+    //     }
+    // }
 }
