@@ -2,18 +2,6 @@
     display: none;
 }
 
-.topnav {
-    &__nav-logo {
-        position: absolute;
-        height: 7vh;
-        width: 7vh;
-        left: 1.5vw;
-        top: 50%;
-        transform: translateY(-50%);
-        fill: rgba($color: $base-black, $alpha: 1);
-    }
-}
-
 .res-menu {
     &__nav-logo {
         position: absolute;
