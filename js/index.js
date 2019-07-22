@@ -361,7 +361,7 @@ const footer_observer = new IntersectionObserver(function(
 options)
 
 $(document).ready(() => {
-    // fallingLetters()
+    fallingLetters()
     footer_observer.observe(footer)
     addingImages()
     navSlide()
