@@ -351,7 +351,6 @@ const footer_observer = new IntersectionObserver((entries, footer_observer) => {
 
 // topnav
 const topnav_options = {
-    // root: document.querySelector(".topnav"),
     root: null,
     threshold: 0,
     rootMargin: "0px 0px -800px 0px"
@@ -374,21 +373,6 @@ const topnav_observer = new IntersectionObserver((entries, topnav_observer) => {
     })
 }, topnav_options)
 
-// topnav_observer.root.style.border = "2px solid #44aa44"
-
-// topnav footer observer
-// const topnav__footer_observer = new IntersectionObserver(
-//     (entries, topnav_footer_observer) => {
-//         entries.forEach(entry => {
-//             if (!entry.isIntersecting) {
-//                 return
-//             }
-//             topnav.classList.toggle("top-nav-footer-color-change")
-//         })
-//     },
-//     options
-// )
-
 function addingImages() {
     for (var i = 1; i <= 51; i++) {
         var image = document.createElement("img")
@@ -397,12 +381,19 @@ function addingImages() {
     }
 }
 
+function observe_topnav(x) {
+    if (x.matches) {
+        topnav_observer.observe(bg_card)
+    }
+}
+
+var x = window.matchMedia("(min-width: 1200px)")
+x.addListener(observe_topnav)
+
 $(document).ready(() => {
     // fallingLetters()
     footer_observer.observe(footer)
-    // topnav_footer_observer.observe(footer)
-    // bg_card.forEach(card => {
-    topnav_observer.observe(bg_card)
+    observe_topnav(x)
     // })
 
     desc_card.forEach(card => {

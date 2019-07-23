@@ -1,5 +1,6 @@
 .bg--card2__wrapper {
-    padding: 15vh 5vw;
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: max-content 1fr;
 
@@ -13,7 +14,7 @@
         display: grid;
         place-content: center;
         .writer {
-            width: 25vw;
+            width: 22vw;
 
             @include mq(700px) {
                 width: 40vw;
