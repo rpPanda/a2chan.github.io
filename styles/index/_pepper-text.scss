@@ -74,7 +74,7 @@
                 width: 100%;
                 height: 2px;
                 background-color: $base-white;
-                transform: scaleX(0);
+                transform: scaleX(0.001);
                 transform-origin: right;
                 transition: transform 400ms ease-in-out;
                 transition-delay: 0ms;
@@ -82,7 +82,7 @@
 
             &:hover {
                 &::after {
-                    transform: scaleX(0);
+                    transform: scaleX(0.001);
                     transition-delay: 0ms;
                     transform-origin: right;
                 }

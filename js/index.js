@@ -242,36 +242,34 @@ const navSlide = () => {
     const navLinks = document.querySelectorAll(".res-menu__red li")
     const langLinks = document.querySelectorAll(".res-menu__lang li")
     const resMenuLogo = document.querySelector(".res-menu__nav-logo")
-    // toggle nav
-    burger.addEventListener("click", () => {
-        nav.classList.toggle("nav-active")
-        burger.classList.toggle("open")
-        resmenu.classList.toggle("res-menu--active")
 
-        navLinks.forEach(function(link, index) {
-            time = index / 5 + 0.3
-            if (link.style.animation) {
-                link.style.animation = ""
-            } else {
-                link.style.animation =
-                    "navLinkFade 0.5s ease forwards " + time + "s"
-            }
-        })
-        langLinks.forEach(function(link, index) {
-            time = index / 5 + 0.3
-            if (link.style.animation) {
-                link.style.animation = ""
-            } else {
-                link.style.animation =
-                    "langLinkFade 0.5s ease forwards " + time + "s"
-            }
-        })
-        if (resMenuLogo.style.animation) {
-            resMenuLogo.style.animation = ""
+    nav.classList.toggle("nav-active")
+    burger.classList.toggle("open")
+    resmenu.classList.toggle("res-menu--active")
+
+    navLinks.forEach(function(link, index) {
+        time = index / 5 + 0.3
+        if (link.style.animation) {
+            link.style.animation = ""
         } else {
-            resMenuLogo.style.animation = "svgLogo 2s ease forwards"
+            link.style.animation =
+                "navLinkFade 0.5s ease forwards " + time + "s"
         }
     })
+    langLinks.forEach(function(link, index) {
+        time = index / 5 + 0.3
+        if (link.style.animation) {
+            link.style.animation = ""
+        } else {
+            link.style.animation =
+                "langLinkFade 0.5s ease forwards " + time + "s"
+        }
+    })
+    if (resMenuLogo.style.animation) {
+        resMenuLogo.style.animation = ""
+    } else {
+        resMenuLogo.style.animation = "svgLogo 2s ease forwards"
+    }
 }
 
 $(".owl-carousel.carousel").owlCarousel({
@@ -306,8 +304,9 @@ $(".owl-carousel.testimonial-slide").owlCarousel({
     // animateOut: "fadeOut"
 })
 
-// Intersection observer
+// Intersection observers
 
+//exhibit cards
 const desc_card = document.querySelectorAll(".desc-container > div")
 const writer_bg = document.querySelector(".writer-container")
 const client_bg = document.querySelector(".client-container")
@@ -332,6 +331,64 @@ const observer = new IntersectionObserver((entries, observer) => {
     })
 }, options)
 
+// footer intersection observer
+let footer_count = 0
+const footer = document.querySelector("footer")
+const footer_children = document.querySelectorAll(".footer-bg > div")
+const footer_observer = new IntersectionObserver((entries, footer_observer) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return
+        }
+
+        footer_children.forEach(element => {
+            element.style.animation = "fadeInUp_20px 1s ease-out 1s forwards"
+        })
+        footer.style.animation = "moveUp 500ms ease-out 500ms forwards"
+        // footer_observer.unobserve(entry.target)
+    })
+}, options)
+
+// topnav
+const topnav_options = {
+    // root: document.querySelector(".topnav"),
+    root: null,
+    threshold: 0,
+    rootMargin: "0px 0px -800px 0px"
+}
+const bg_card = document.querySelector(".bg-card--card1")
+const topnav = document.querySelector(".topnav")
+
+const topnav_observer = new IntersectionObserver((entries, topnav_observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && topnav.className === "topnav burger-show") {
+            topnav.classList.remove("burger-show")
+            topnav.classList.add("burger-hide")
+        } else if (
+            !entry.isIntersecting &&
+            topnav.className === "topnav burger-hide"
+        ) {
+            topnav.classList.remove("burger-hide")
+            topnav.classList.add("burger-show")
+        }
+    })
+}, topnav_options)
+
+// topnav_observer.root.style.border = "2px solid #44aa44"
+
+// topnav footer observer
+// const topnav__footer_observer = new IntersectionObserver(
+//     (entries, topnav_footer_observer) => {
+//         entries.forEach(entry => {
+//             if (!entry.isIntersecting) {
+//                 return
+//             }
+//             topnav.classList.toggle("top-nav-footer-color-change")
+//         })
+//     },
+//     options
+// )
+
 function addingImages() {
     for (var i = 1; i <= 51; i++) {
         var image = document.createElement("img")
@@ -340,32 +397,16 @@ function addingImages() {
     }
 }
 
-// topnav intersection observer
-const footer = document.querySelector("footer")
-const footer_children = document.querySelectorAll(".footer-bg > div")
-const footer_observer = new IntersectionObserver(function(
-    entries,
-    footer_observer
-) {
-    entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return
-        }
-        footer_children.forEach(element => {
-            element.style.animation = "fadeInUp_20px 1s ease-out 1s forwards"
-        })
-        footer.style.animation = "moveUp 500ms ease-out 500ms forwards"
-        footer_observer.unobserve(entry.target)
-    })
-},
-options)
-
 $(document).ready(() => {
-    fallingLetters()
+    // fallingLetters()
     footer_observer.observe(footer)
-    addingImages()
-    navSlide()
+    // topnav_footer_observer.observe(footer)
+    // bg_card.forEach(card => {
+    topnav_observer.observe(bg_card)
+    // })
+
     desc_card.forEach(card => {
         observer.observe(card)
     })
+    addingImages()
 })
