@@ -46,7 +46,7 @@
             font-size: calc(
                 38px + (60 - 38) * ((100vw - 300px) / (1920 - 300))
             );
-            text-transform: capitalize;
+            text-transform: none;
             font-weight: 800;
             margin-bottom: 5rem;
 

@@ -32,26 +32,31 @@ footer {
             position: relative;
 
             @include mq_min(1200px) {
-                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
 
             > .title {
                 margin: auto;
                 text-align: center;
-                grid-column: span 1;
+                grid-column: 1/2;
                 position: relative;
                 color: $footer-light-gray;
-                font-family: "Raleway", sans-serif;
-                font-size: calc(
-                    50px + (72 - 50) * ((100vw - 300px) / (1920 - 300))
-                );
-                text-transform: capitalize;
-                font-weight: 600;
+                // font-family: "Raleway", sans-serif;
+                // font-size: calc(
+                //     50px + (72 - 50) * ((100vw - 300px) / (1920 - 300))
+                // );
+                // text-transform: capitalize;
+                // font-weight: 600;
                 align-self: center;
+                width: 400px;
 
-                @include mq(750px) {
-                    grid-column: span 2;
-                    padding-bottom: 2.5rem;
+                .svg {
+                    height: 100% !important;
+                    width: 100% !important;
+
+                    path {
+                        fill: #454545 !important;
+                    }
                 }
             }
 
@@ -90,6 +95,7 @@ footer {
             }
 
             .quick-links {
+                grid-column: 3/4;
                 .contain {
                     position: relative;
                     font-family: "Raleway", sans-serif;
@@ -135,7 +141,7 @@ footer {
             }
 
             .address-wrapper {
-                grid-column: 3/4;
+                grid-column: 4/5;
                 font-size: 80%;
 
                 .address {
@@ -206,12 +212,12 @@ footer {
                 }
                 &.anirudh {
                     grid-row: 3/4;
-                    grid-column: 2/3;
+                    grid-column: 3/4;
                 }
 
                 &.rishabh {
                     grid-row: 3/4;
-                    grid-column: 3/4;
+                    grid-column: 4/5;
                 }
             }
         }
