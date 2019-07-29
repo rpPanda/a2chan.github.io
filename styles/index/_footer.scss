@@ -4,8 +4,6 @@ $footer-light-gray: #bfbfbf;
 
 footer {
     position: relative;
-    text-transform: uppercase;
-    transform-origin: bottom;
     width: 100vw;
     display: grid;
     place-content: center;
@@ -17,12 +15,40 @@ footer {
     }
 
     .about-us {
+        background: $footer-light-gray;
+        .container {
+            display: grid;
+            grid-template-columns: max-content;
+
+            @include mq_min(1200px) {
+                grid-template-columns: max-content 1fr;
+                padding: 4rem;
+            }
+
+            .title {
+                font-family: "Raleway", sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: calc(
+                    50px + (72 - 50) * ((100vw - 300px) / (1920 - 300))
+                );
+            }
+            .content {
+                font-family: "Poppins", sans-serif;
+                font-weight: 300;
+                font-size: calc(
+                    18px + (24 - 18) * ((100vw - 300px) / (1920 - 300))
+                );
+                text-transform: none;
+            }
+        }
     }
 
     .bottom-wrapper {
         width: 100%;
         background: #262626;
         display: grid;
+        text-transform: uppercase;
         place-content: center;
 
         .bottom {
