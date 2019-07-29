@@ -237,13 +237,11 @@ function fallingLetters() {
 // top nav bar begins
 const navSlide = () => {
     const burger = document.querySelector(".topnav__burger")
-    const nav = document.querySelector(".topnav__nav-links")
     const resmenu = document.querySelector(".res-menu")
     const navLinks = document.querySelectorAll(".res-menu__red li")
     const langLinks = document.querySelectorAll(".res-menu__lang li")
     const resMenuLogo = document.querySelector(".res-menu__nav-logo")
 
-    nav.classList.toggle("nav-active")
     burger.classList.toggle("open")
     resmenu.classList.toggle("res-menu--active")
 
@@ -391,10 +389,11 @@ function observe_topnav(x) {
     }
 }
 
+// If the screen size is >1200px then add observer else the default is burger anyway
 var x = window.matchMedia("(min-width: 1200px)")
 x.addListener(observe_topnav)
 
-//inlinging svg
+//inlining svg
 jQuery("img.svg").each(function() {
     var $img = jQuery(this)
     var imgID = $img.attr("id")

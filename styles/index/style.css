@@ -937,7 +937,7 @@
   margin-top: 10%;
   display: inline-block;
   font-size: calc(12px + (28 - 12) * ((100vw - 300px) / (1600 - 300)));
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   font-weight: 400;
@@ -1237,7 +1237,7 @@
   text-decoration: none;
   color: whitesmoke;
   font-weight: 500;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase;
   font-size: calc( 14px + (20 - 14) * ((100vw - 300px) / (1600 - 300)));
@@ -1795,8 +1795,8 @@
   height: 51px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   background-color: #202020;
   display: inline-block;
   width: auto;
@@ -1813,9 +1813,6 @@
 
 footer {
   position: relative;
-  text-transform: uppercase;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
   width: 100vw;
   display: -ms-grid;
   display: grid;
@@ -1832,11 +1829,47 @@ footer {
   }
 }
 
+footer .about-us {
+  background: #bfbfbf;
+}
+
+footer .about-us .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+}
+
+@media only screen and (min-width: 1200px) {
+  footer .about-us .container {
+    -ms-grid-columns: max-content 1fr;
+        grid-template-columns: -webkit-max-content 1fr;
+        grid-template-columns: max-content 1fr;
+    padding: 4rem;
+  }
+}
+
+footer .about-us .container .title {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: calc( 50px + (72 - 50) * ((100vw - 300px) / (1920 - 300)));
+}
+
+footer .about-us .container .content {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: calc( 18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+  text-transform: none;
+}
+
 footer .bottom-wrapper {
   width: 100%;
   background: #262626;
   display: -ms-grid;
   display: grid;
+  text-transform: uppercase;
   place-content: center;
 }
 
