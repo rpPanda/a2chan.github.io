@@ -9,6 +9,20 @@
     transform-origin: right;
     transition: all 500ms ease-in-out;
 
+    &__nav-logo {
+        position: absolute;
+        top: 2vh;
+        left: 30px;
+        transform-origin: bottom;
+
+        svg {
+            height: 100px;
+            path {
+                fill: rgba($color: whitesmoke, $alpha: 1) !important;
+            }
+        }
+    }
+
     &__red {
         margin: 30vh 20vw 40vh 20vw;
         display: inline-block;
@@ -147,5 +161,17 @@
     100% {
         opacity: 1;
         transform: scaleY(1);
+    }
+}
+
+@keyframes svgLogo {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

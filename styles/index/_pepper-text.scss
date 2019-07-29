@@ -1,3 +1,29 @@
+.big_logo {
+    position: absolute;
+
+    @include mq(1200px) {
+        top: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    @include mq_min(1200px) {
+        right: 0;
+        top: 2%;
+    }
+    img {
+        position: relative;
+        right: 0;
+        top: 2vh;
+        height: 100vh;
+
+        @include mq(1000px) {
+            top: 0;
+            height: 40vh;
+        }
+    }
+}
+
 .pepper-wrapper {
     position: relative;
     top: 50%;
