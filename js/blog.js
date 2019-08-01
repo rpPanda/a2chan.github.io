@@ -1,39 +1,47 @@
-// top nav bar begins
-const navSlide = () => {
-    const burger = document.querySelector(".topnav__burger");
-    const nav = document.querySelector(".topnav__nav-links");
-    const resmenu = document.querySelector(".res-menu");
-    const navLinks = document.querySelectorAll(".res-menu__red li");
-    const langLinks = document.querySelectorAll(".res-menu__lang li");
-    const resMenuLogo = document.querySelector(".res-menu__nav-logo");
-    // toggle nav
-    burger.addEventListener("click", () => {
-        nav.classList.toggle("nav-active");
-        burger.classList.toggle("open");
-        resmenu.classList.toggle("res-menu--active");
+var top=$(window).scrollTop();
+var ht = $(window).height();
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-        navLinks.forEach(function (link, index) {
-            time = index / 5 + 0.3;
-            if (link.style.animation) {
-                link.style.animation = "";
-            } else {
-                link.style.animation = "navLinkFade 0.5s ease forwards " + time + "s";
-            }
-        });
-        langLinks.forEach(function (link, index) {
-            time = index / 5 + 0.3;
-            if (link.style.animation) {
-                link.style.animation = "";
-            } else {
-                link.style.animation = "langLinkFade 0.5s ease forwards " + time + "s";
-            }
-        });
-        if (resMenuLogo.style.animation) {
-            resMenuLogo.style.animation = "";
-        } else {
-            resMenuLogo.style.animation = "svgLogo 2s ease forwards";
-        }
-    });
-};
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight+10 + "px";
+      content.style.height = content.scrollHeight + 10 + "px";
 
-navSlide();
+      var top=$(window).scrollTop();
+      console.log(top);
+      setTimeout(
+        function()
+        {
+            $("html, body").animate({ scrollTop:  top+ht*0.8}, 600);
+            console.log("Jello");
+        }, 50);
+    }
+  });
+}
+
+// var scrolling = document.getElementById("featured");
+//
+// scrolling.addEventListener("click", function() {
+//   $("html, body").animate({ scrollTop:  60}, 400);
+//
+// });
+//
+// var scrolling1 = document.getElementById("new");
+//
+// scrolling1.addEventListener("click", function() {
+//   $("html, body").animate({ scrollTop:  ht+160}, 800);
+//
+// });
+//
+// var scrolling2 = document.getElementById("popular");
+//
+// scrolling2.addEventListener("click", function() {
+//   $("html, body").animate({ scrollTop:  2*ht+260}, 1400);
+//
+// });
