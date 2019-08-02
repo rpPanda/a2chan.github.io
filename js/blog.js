@@ -18,7 +18,7 @@ for (i = 0; i < coll.length; i++) {
       setTimeout(
         function()
         {
-            $("html, body").animate({ scrollTop:  top+ht*0.8}, 600);
+            $(".parallax").animate({ scrollTop:  8*ht}, 1600);
             console.log("Jello");
         }, 50);
     }

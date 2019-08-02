@@ -137,12 +137,7 @@
       background: rgb(153,216,101);
       background-image: url("./assets/crissxcross.png");
 
-      /* background-image: url(./pen.png); */
-
     }
-    /* #group3 .parallax__layer--fore {
-      background-image: url(./pen.png);
-    } */
 
     #group4 {
       z-index: 2; /* slide under group 3 and 5 */
@@ -160,8 +155,6 @@
       background: rgb(214,229,100);
       background-image: url("./assets/crissxcross.png");
 
-      /* background-image: url(./pen.png); */
-
     }
 
     #group6 {
@@ -175,7 +168,7 @@
 
     #group7 {
       z-index: 3;
-      max-height: 85vh;
+      max-height: 100vh;
       /* slide over group 7 */
     }
     #group7 .parallax__layer--base {
@@ -204,14 +197,18 @@
           <span>E</span>
           <span>D</span>
         </div>
+
       </div>
       <div class="parallax__layer parallax__layer--base">
-      </div>
+        <img src="./assets/pen.png" style="max-height:85vh;float:right;margin-right:5vw;margin-top:5vh;"></img>
+        </div>
 
     </div>
     <div id="group2" class="parallax__group">
       <div class="parallax__layer parallax__layer--back">
         <div class="slideshow-container-2">
+          <a class="prev" onclick="plusSlides2(-1)"></a>
+          <a class="next" onclick="plusSlides2(1)"></a>
 
           <!-- Full-width images with number and caption text -->
           <div class="mySlides2 fade">
@@ -275,9 +272,7 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides2(-1)"></a>
-          <a class="next" onclick="plusSlides2(1)"></a>
-        </div>
+          </div>
         <br>
 
       </div>
@@ -292,8 +287,8 @@
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base">
-
-      </div>
+        <img src="./assets/pen.png" style="max-height:85vh;float:right;margin-right:5vw;margin-top:5vh;"></img>
+        </div>
     </div>
     <div id="group4" class="parallax__group">
 
@@ -369,6 +364,7 @@
         <br>
 
       </div>
+
     </div>
     <div id="group5" class="parallax__group">
       <div class="parallax__layer parallax__layer--fore">
@@ -383,7 +379,8 @@
         </div>
       </div>
       <div class="parallax__layer parallax__layer--base">
-      </div>
+        <img src="./assets/pen.png" style="max-height:85vh;float:right;margin-right:5vw;margin-top:5vh;"></img>
+        </div>
     </div>
     <div id="group6" class="parallax__group">
       <div class="parallax__layer parallax__layer--back">
@@ -452,137 +449,141 @@
           </div>
 
           <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides1(-1)"></a>
+          <a class="next" onclick="plusSlides1(1)"></a>
         </div>
         <br>
 
       </div>
+      <div class="parallax__layer parallax__layer--base">
+        </div>
+
     </div>
     <div id="group7" class="parallax__group">
+
       <div class="parallax__layer parallax__layer--base">
         <div class="title">Still want more<br> Scroll down</div>
+        <div class="row"style="margin-top:85vh;">
+          <button class="collapsible">Rest of articles</button>
+          <div class="content">
+            <div class="grid-container">
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
 
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <button class="collapsible">Rest of articles</button>
-    <div class="content">
-      <div class="grid-container">
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
+        <div class="row">
+          <button class="collapsible">Rest of articles</button>
+          <div class="content">
+            <div class="grid-container">
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="grid-item">
+                <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
+                  style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
+                  <div>
+                    <h1>Basic types of HTML tags</h1>
+                    <p>Learn about some of the most common HTML tags…</p>
+                    <div class="date">9 Oct 2017</div>
+                    <div class="tags">
+                      <div class="tag">HTML</div>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
 
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <button class="collapsible">Rest of articles</button>
-    <div class="content">
-      <div class="grid-container">
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="grid-item">
-          <a class="card-b" href="https://codetheweb.blog/2017/10/09/basic-types-of-html-tags/"
-            style="--bg-img: url('https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=1500&url=https://codetheweb.blog/assets/img/posts/basic-types-of-html-tags/cover.jpg')">
-            <div>
-              <h1>Basic types of HTML tags</h1>
-              <p>Learn about some of the most common HTML tags…</p>
-              <div class="date">9 Oct 2017</div>
-              <div class="tags">
-                <div class="tag">HTML</div>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
   </div>
