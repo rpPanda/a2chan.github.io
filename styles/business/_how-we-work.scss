@@ -4,9 +4,13 @@
 
     > .title {
         position: relative;
-        @include res-font-size(18, 24);
+        @include res-font-size(32, 48);
         text-transform: capitalize;
         text-align: center;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        color: $primary-blue;
+        margin: 3rem 0;
     }
 
     .container {
@@ -14,11 +18,12 @@
         width: 100%;
 
         @include mq_dl() {
-            width: 80%;
+            width: 70%;
             margin: auto;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
             grid-template-rows: repeat(3, auto);
+            grid-row-gap: 3rem;
         }
 
         .card {
@@ -40,22 +45,39 @@
             display: grid;
             grid-template-columns: max-content 1fr;
             grid-template-rows: auto auto;
+            font-family: "Poppins", sans-serif;
+            grid-column-gap: 20px;
 
             .title {
                 grid-row: 1/2;
                 grid-column: 2/3;
+                color: $primary-pink;
+                @include res-font-size(18, 26);
+                font-weight: 500;
             }
 
             .serial {
                 grid-row: 2/3;
                 grid-column: 1/2;
+                color: $primary-pink;
+                align-self: flex-start;
+                font-weight: 600;
+                @include res-font-size(24, 84);
+                line-height: 100%;
             }
 
             .content {
                 grid-row: 2/3;
                 grid-column: 2/3;
                 max-width: 100%;
-                word-wrap: break-word;
+                @include res-font-size(14, 18);
+                color: $primary-pink;
+                box-shadow: 4px 9px 11px -4px rgba(0, 0, 0, 0.75);
+                border-radius: 20px;
+
+                .description {
+                    padding: 1.5rem;
+                }
             }
         }
     }
