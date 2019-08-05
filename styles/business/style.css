@@ -1,0 +1,229 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+.how-we-work {
+  width: 100%;
+  position: relative;
+}
+
+.how-we-work > .title {
+  position: relative;
+  font-size: calc( 18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.how-we-work .container {
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1224px) {
+  .how-we-work .container {
+    /* Styles */
+    width: 80%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[10];
+        grid-template-columns: repeat(10, 1fr);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+  }
+}
+
+.how-we-work .container .card--1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / span 6;
+}
+
+.how-we-work .container .card--2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-column: 3 / span 6;
+}
+
+.how-we-work .container .card--3 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 6;
+  grid-column: 5 / span 6;
+}
+
+.how-we-work .container .card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+}
+
+.how-we-work .container .card .title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.how-we-work .container .card .serial {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.how-we-work .container .card .content {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.offerings {
+  position: relative;
+}
+
+@media only screen and (min-width: 1224px) {
+  .offerings {
+    /* Styles */
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.offerings > .title {
+  position: relative;
+  font-size: calc( 26px + (32 - 26) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.offerings .cascade {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (max-content)[9];
+      grid-template-rows: repeat(9, -webkit-max-content);
+      grid-template-rows: repeat(9, max-content);
+  grid-row-gap: 2rem;
+}
+
+.offerings .cascade .card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offerings .cascade .card:nth-child(odd) .image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.offerings .cascade .card:nth-child(odd) .content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.offerings .cascade .card:nth-child(even) .image {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.offerings .cascade .card:nth-child(even) .content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.offerings .cascade .card .image {
+  position: relative;
+}
+
+.offerings .cascade .card .image .container {
+  position: relative;
+}
+
+@media only screen and (min-width: 1224px) {
+  .offerings .cascade .card .image .container {
+    /* Styles */
+    height: 3rem;
+  }
+}
+
+.offerings .cascade .card .content {
+  position: relative;
+}
+
+.offerings .cascade .card .content .title {
+  position: relative;
+  font-size: calc( 20px + (28 - 20) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.offerings .cascade .card .content .description {
+  position: relative;
+  font-size: calc( 12px + (16 - 12) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.bg-card {
+  width: 100vw;
+}
+/*# sourceMappingURL=style.css.map */

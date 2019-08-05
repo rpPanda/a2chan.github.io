@@ -100,11 +100,15 @@
         font-weight: 300;
         width: 80% !important;
         margin: auto;
-        font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1600 - 300)));
+        font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1920 - 300)));
     }
 
     .infor-client {
+        font-family: "Raleway", sans-serif;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 15px;
+        font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+        font-weight: 600;
+        text-transform: uppercase;
     }
 }
