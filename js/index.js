@@ -376,7 +376,7 @@ const topnav_observer = new IntersectionObserver((entries, topnav_observer) => {
 }, topnav_options)
 
 function addingImages() {
-    for (var i = 1; i <= 51; i++) {
+    for (var i = 1; i <= 52; i++) {
         var image = document.createElement("img")
         image.setAttribute("src", "../assets/logos/" + i + ".webp")
         document.querySelector(".portfolio").appendChild(image)
