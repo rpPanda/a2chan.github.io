@@ -274,7 +274,84 @@ body {
   font-size: calc( 12px + (16 - 12) * ((100vw - 300px) / (1920 - 300)));
 }
 
-.bg-card {
-  width: 100vw;
+.cc {
+  position: relative;
+  width: 100%;
+}
+
+.cc .background {
+  width: 90%;
+  margin: auto;
+}
+
+.cc .background svg path {
+  fill: rgba(37, 110, 155, 0.1);
+}
+
+.cc .content {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 40%;
+}
+
+.cc .content .title {
+  position: relative;
+  font-size: calc( 24px + (32 - 24) * ((100vw - 300px) / (1920 - 300)));
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fc808a;
+  text-transform: uppercase;
+}
+
+.cc .content .desc {
+  position: relative;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fc808a;
+}
+
+.cc .content .cards {
+  position: relative;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 2rem 0;
+}
+
+.cc .content .cards .card {
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(252, 128, 138, 0.5);
+          box-shadow: 0 0 10px rgba(252, 128, 138, 0.5);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: #fcfdff;
+}
+
+.cc .content .cards .card .strong {
+  position: relative;
+  font-size: calc( 44px + (48 - 44) * ((100vw - 300px) / (1920 - 300)));
+  text-transform: uppercase;
+  color: #fc808a;
+  padding: 2rem 1rem;
+}
+
+.cc .content .cards .card .strong span {
+  font-size: calc( 38px + (42 - 38) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.cc .content .cards .card .text {
+  position: relative;
+  font-size: calc( 14px + (22 - 14) * ((100vw - 300px) / (1920 - 300)));
+  text-transform: uppercase;
+  padding: 1rem 2rem 2rem 2rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.section {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,73 @@
+.cc {
+    position: relative;
+    width: 100%;
+    .background {
+        width: 90%;
+        margin: auto;
+
+        svg {
+            path {
+                fill: rgba($color: $primary-blue, $alpha: 0.1);
+            }
+        }
+    }
+
+    .content {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 40%;
+
+        .title {
+            position: relative;
+            @include res-font-size(24, 32);
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            color: $primary-pink;
+            text-transform: uppercase;
+        }
+
+        .desc {
+            position: relative;
+            @include res-font-size(16, 20);
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            color: $primary-pink;
+        }
+
+        .cards {
+            position: relative;
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4rem;
+            padding: 2rem 0;
+
+            .card {
+                position: relative;
+                box-shadow: 0 0 10px rgba($color: $primary-pink, $alpha: 0.5);
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                background: #fcfdff;
+
+                .strong {
+                    position: relative;
+                    @include res-font-size(44, 48);
+                    text-transform: uppercase;
+                    color: $primary-pink;
+                    padding: 2rem 1rem;
+
+                    span {
+                        @include res-font-size(38, 42);
+                    }
+                }
+                .text {
+                    position: relative;
+                    @include res-font-size(14, 22);
+                    text-transform: uppercase;
+                    padding: 1rem 2rem 2rem 2rem;
+                    color: rgba($color: #000, $alpha: 0.8);
+                }
+            }
+        }
+    }
+}
