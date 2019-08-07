@@ -1,0 +1,247 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+/* Desktops and laptops ----------- */
+/* Large screens ----------- */
+.section--1 {
+  position: relative;
+  height: 100vh;
+}
+
+.section--1 .fancy-writer {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--1 .fancy-writer {
+    /* Styles */
+    height: 60vh;
+    margin: 30vh 0 10vh 0;
+  }
+}
+
+.section--1 .container {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--1 .container {
+    /* Styles */
+    top: 30%;
+    left: 10%;
+  }
+}
+
+.section--1 .container .heading {
+  position: relative;
+  font-size: calc( 32px + (48 - 32) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.section--1 .container .sub-heading {
+  position: relative;
+  font-size: calc( 18px + (22 - 18) * ((100vw - 300px) / (1920 - 300)));
+  margin: 1rem 0;
+}
+
+.section--1 .container .button {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.section--1 .container .button button {
+  font-weight: 500;
+  font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (1920 - 300)));
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 1rem 1.5rem;
+}
+
+.section--3 {
+  position: relative;
+}
+
+.section--3 .how-we-do {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.section--3 .how-we-do > .title {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: calc( 56px + (72 - 56) * ((100vw - 300px) / (1920 - 300)));
+  text-align: right;
+}
+
+.section--3 .how-we-do .cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+
+.section--3 .how-we-do .cards .card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--3 .how-we-do .cards .card {
+    /* Styles */
+    grid-gap: 6rem;
+    padding: 4rem;
+  }
+  .section--3 .how-we-do .cards .card .image {
+    height: 300px;
+  }
+}
+
+.section--3 .how-we-do .cards .card .mask {
+  position: absolute;
+  opacity: 0.1;
+  height: 450px;
+}
+
+.section--3 .how-we-do .cards .card .mask--1 {
+  top: -15%;
+  left: 0;
+}
+
+.section--3 .how-we-do .cards .card .mask--2 {
+  right: 0;
+  top: -15%;
+}
+
+.section--3 .how-we-do .cards .card .mask--3 {
+  left: -25%;
+  height: 600px;
+}
+
+.section--3 .how-we-do .cards .card .mask--4 {
+  right: -30%;
+  top: -40%;
+  height: 900px;
+}
+
+.section--3 .how-we-do .cards .card .mask--4 #Group_114 {
+  display: none;
+}
+
+.section--3 .how-we-do .cards:nth-child(odd) {
+  -ms-grid-columns: 1fr max-content;
+      grid-template-columns: 1fr -webkit-max-content;
+      grid-template-columns: 1fr max-content;
+}
+
+.section--3 .how-we-do .cards:nth-child(odd) .content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.section--3 .how-we-do .cards:nth-child(odd) .image {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.section--3 .how-we-do .cards:nth-child(even) {
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+}
+
+.section--3 .how-we-do .cards:nth-child(even) .content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.section--3 .how-we-do .cards:nth-child(even) .image {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.section--3 .how-we-do .cards .content {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  -ms-grid-rows: max-content 1fr;
+      grid-template-rows: -webkit-max-content 1fr;
+      grid-template-rows: max-content 1fr;
+  color: #262626;
+}
+
+.section--3 .how-we-do .cards .content .title {
+  position: relative;
+  font-size: calc( 56px + (72 - 56) * ((100vw - 300px) / (1920 - 300)));
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.section--3 .how-we-do .cards .content .desc {
+  position: relative;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.section {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

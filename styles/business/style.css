@@ -8,6 +8,8 @@
 body {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -302,6 +304,11 @@ body {
   font-weight: 600;
   color: #fc808a;
   text-transform: uppercase;
+}
+
+.cc .content .title span {
+  display: block;
+  height: calc( 24px + (32 - 24) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .cc .content .desc {

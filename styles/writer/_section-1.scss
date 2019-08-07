@@ -1,0 +1,51 @@
+.section--1 {
+    position: relative;
+    height: 100vh;
+
+    .fancy-writer {
+        position: absolute;
+        top: 0;
+        right: 10%;
+
+        @include mq_dl() {
+            height: 60vh;
+            margin: 30vh 0 10vh 0;
+        }
+    }
+
+    .container {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+
+        @include mq_dl() {
+            top: 30%;
+            left: 10%;
+        }
+
+        .heading {
+            position: relative;
+            @include res-font-size(32, 48);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .sub-heading {
+            position: relative;
+            @include res-font-size(18, 22);
+            margin: 1rem 0;
+        }
+
+        .button {
+            position: relative;
+            margin: 1rem 0;
+            button {
+                font-weight: 500;
+                @include res-font-size(20, 24);
+                text-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.2);
+                border-radius: 25px;
+                padding: 1rem 1.5rem;
+            }
+        }
+    }
+}

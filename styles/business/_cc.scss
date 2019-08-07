@@ -25,6 +25,13 @@
             font-weight: 600;
             color: $primary-pink;
             text-transform: uppercase;
+
+            span {
+                display: block;
+                height: calc(
+                    24px + (32 - 24) * ((100vw - 300px) / (1920 - 300))
+                );
+            }
         }
 
         .desc {
