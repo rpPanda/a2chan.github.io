@@ -64,6 +64,7 @@ $(".owl-carousel").owlCarousel({
     slideTransition: "linear",
     autoplayTimeout: 5000,
     autoplaySpeed: 5000,
+
     responsive: {
         0: {
             items: 1
