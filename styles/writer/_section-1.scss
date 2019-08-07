@@ -9,7 +9,7 @@
 
         @include mq_dl() {
             height: 60vh;
-            margin: 30vh 0 10vh 0;
+            margin: 20vh 0 20vh 0;
         }
     }
 
@@ -19,7 +19,7 @@
         display: inline-block;
 
         @include mq_dl() {
-            top: 30%;
+            margin-top: 30vh;
             left: 10%;
         }
 
