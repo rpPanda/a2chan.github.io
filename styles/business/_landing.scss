@@ -1,0 +1,59 @@
+.section--1 {
+    position: relative;
+
+    @include mq_dl() {
+        height: 100vh;
+    }
+
+    .fancy-business {
+        position: relative;
+        height: 55vh;
+        display: flex;
+        justify-content: flex-end;
+        top: 50%;
+        transform: translateY(-50%);
+
+        img {
+            position: relative;
+            height: 100%;
+        }
+    }
+
+    .container {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        font-family: "Poppins", sans-serif;
+
+        @include mq_dl() {
+            left: 5vw;
+        }
+
+        .heading {
+            position: relative;
+            @include res-font-size(32, 48);
+            font-weight: 600;
+            margin: 1rem 0;
+        }
+
+        .sub-heading {
+            position: relative;
+            @include res-font-size(18, 22);
+            margin: 1rem 0;
+        }
+
+        .button {
+            position: relative;
+            margin: 1rem 0;
+            button {
+                font-weight: 500;
+                @include res-font-size(20, 24);
+                text-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.2);
+                border-radius: 25px;
+                padding: 1rem 1.5rem;
+                background: $primary-blue;
+                color: white;
+            }
+        }
+    }
+}
