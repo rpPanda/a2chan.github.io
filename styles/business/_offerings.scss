@@ -61,20 +61,8 @@ $pink-1: #fc808a;
                     position: relative;
                     display: inline-block;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        background: $primary-pink;
-                        height: 200%;
-                        width: 200%;
-                        top: 50%;
-                        left: 50%;
-                        transform: translateY(-50%) translateX(-50%);
-                        border-radius: 50%;
-                    }
-
                     @include mq_dl {
-                        height: 3rem;
+                        height: 10rem;
                     }
 
                     svg {

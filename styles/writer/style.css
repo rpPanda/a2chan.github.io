@@ -86,7 +86,7 @@ body {
 .section--3 .how-we-do {
   position: relative;
   width: 90%;
-  margin: auto;
+  margin: 20vh auto;
 }
 
 .section--3 .how-we-do > .title {
@@ -94,6 +94,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: calc( 56px + (72 - 56) * ((100vw - 300px) / (1920 - 300)));
   text-align: right;
+  margin: 10vh 0;
 }
 
 .section--3 .how-we-do .cards {
