@@ -30,11 +30,13 @@ body {
   -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.37);
           box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.37);
   z-index: 100;
+  background: -webkit-gradient(linear, left top, right top, from(#ff846f), color-stop(#fb5575), to(#fb5575));
+  background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
 }
 
 .top-nav ul {
   position: relative;
-  width: 90%;
+  width: 95%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,14 +46,36 @@ body {
           justify-content: flex-end;
   list-style: none;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
   font-size: calc( 18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
-  padding: 0;
+  padding: 0.2rem 0;
 }
 
 .top-nav ul li {
   position: relative;
-  padding: 1rem 2rem;
-  margin: 0;
+  padding: 1rem 0;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.top-nav ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background: #fff;
+  width: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.top-nav ul li:hover::before, .top-nav ul li:focus::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .section--1 {
