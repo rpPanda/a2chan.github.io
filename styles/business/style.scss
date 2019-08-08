@@ -20,4 +20,8 @@ body {
 
 .section {
     width: 100%;
+
+    &:not(.section--1) {
+        margin: 10vh 0;
+    }
 }

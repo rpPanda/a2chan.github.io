@@ -1,26 +1,75 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 365.1 365.099">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="365.1" height="365.099" viewBox="0 0 365.1 365.099">
+  <defs>
+    <style>
+      .cls-1, .cls-3, .cls-5, .cls-6, .cls-8 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3, .cls-6 {
+        stroke: #ff826e;
+      }
+
+      .cls-1 {
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3, .cls-5 {
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        stroke: #fff;
+      }
+
+      .cls-6 {
+        stroke-width: 25px;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1.301" y2="0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="0" stop-color="#ff816e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+  </defs>
   <g id="Group_105" data-name="Group 105" transform="translate(-1107 -4214)">
     <g id="Group_102" data-name="Group 102" transform="translate(1173.493 4309.074)">
-      <path id="ic_insert_drive_file_24px" d="M21.543,2A17.519,17.519,0,0,0,4.088,19.543L4,159.884a17.519,17.519,0,0,0,17.455,17.543H126.8a17.594,17.594,0,0,0,17.543-17.543V54.628L91.713,2Zm61.4,61.4V15.157L131.184,63.4Z" transform="translate(-4 -2)" fill="none" stroke="#2b44ff" stroke-width="10"/>
-      <path id="Path_102" data-name="Path 102" d="M13966.969,6172.068V6219.3h46.058Z" transform="translate(-13886.901 -6157.28)" fill="#2b44ff" stroke="#707070" stroke-width="1"/>
-      <circle id="Ellipse_6" data-name="Ellipse 6" cx="15.016" cy="15.016" r="15.016" transform="translate(21.075 35.827)" fill="#2b44ff"/>
-      <line id="Line_5" data-name="Line 5" x2="43.73" transform="translate(21.338 88.777)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_6" data-name="Line 6" x2="83.245" transform="translate(21.338 101.949)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_8" data-name="Line 8" x2="83.245" transform="translate(21.338 115.121)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="5"/>
+      <path id="ic_insert_drive_file_24px" class="cls-1" d="M21.543,2A17.519,17.519,0,0,0,4.088,19.543L4,159.884a17.519,17.519,0,0,0,17.455,17.543H126.8a17.594,17.594,0,0,0,17.543-17.543V54.628L91.713,2Zm61.4,61.4V15.157L131.184,63.4Z" transform="translate(-4 -2)"/>
+      <path id="Path_102" data-name="Path 102" class="cls-2" d="M13966.969,6172.068V6219.3h46.058Z" transform="translate(-13886.901 -6157.28)"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-2" cx="15.016" cy="15.016" r="15.016" transform="translate(21.075 35.827)"/>
+      <line id="Line_5" data-name="Line 5" class="cls-3" x2="43.73" transform="translate(21.338 88.777)"/>
+      <line id="Line_6" data-name="Line 6" class="cls-3" x2="83.245" transform="translate(21.338 101.949)"/>
+      <line id="Line_8" data-name="Line 8" class="cls-3" x2="83.245" transform="translate(21.338 115.121)"/>
     </g>
     <g id="Group_103" data-name="Group 103" transform="translate(1266.662 4304.074)">
-      <path id="ic_insert_drive_file_24px-2" data-name="ic_insert_drive_file_24px" d="M22.643,2A18.618,18.618,0,0,0,4.093,20.643L4,169.784a18.618,18.618,0,0,0,18.549,18.643H134.5a18.7,18.7,0,0,0,18.643-18.643V57.928L97.213,2ZM87.892,67.249V15.982l51.267,51.267Z" transform="translate(-4 -2)" fill="#2b44ff"/>
-      <circle id="Ellipse_6-2" data-name="Ellipse 6" cx="15.957" cy="15.957" r="15.957" transform="translate(22.396 38.074)" fill="#e0e3ff"/>
-      <line id="Line_5-2" data-name="Line 5" x2="46.472" transform="translate(22.676 94.344)" fill="none" stroke="#e0e3ff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_6-2" data-name="Line 6" x2="88.465" transform="translate(22.676 108.342)" fill="none" stroke="#e0e3ff" stroke-linecap="round" stroke-width="5"/>
-      <line id="Line_8-2" data-name="Line 8" x2="88.465" transform="translate(22.676 122.34)" fill="none" stroke="#e0e3ff" stroke-linecap="round" stroke-width="5"/>
+      <path id="ic_insert_drive_file_24px-2" data-name="ic_insert_drive_file_24px" class="cls-2" d="M22.643,2A18.618,18.618,0,0,0,4.093,20.643L4,169.784a18.618,18.618,0,0,0,18.549,18.643H134.5a18.7,18.7,0,0,0,18.643-18.643V57.928L97.213,2ZM87.892,67.249V15.982l51.267,51.267Z" transform="translate(-4 -2)"/>
+      <circle id="Ellipse_6-2" data-name="Ellipse 6" class="cls-4" cx="15.957" cy="15.957" r="15.957" transform="translate(22.396 38.074)"/>
+      <line id="Line_5-2" data-name="Line 5" class="cls-5" x2="46.472" transform="translate(22.676 94.344)"/>
+      <line id="Line_6-2" data-name="Line 6" class="cls-5" x2="88.465" transform="translate(22.676 108.342)"/>
+      <line id="Line_8-2" data-name="Line 8" class="cls-5" x2="88.465" transform="translate(22.676 122.34)"/>
     </g>
     <g id="Group_104" data-name="Group 104" transform="translate(1117 4230)">
-      <g id="Ellipse_8" data-name="Ellipse 8" transform="translate(-10 -16)" fill="none" stroke="#2b44ff" stroke-width="25">
-        <circle cx="182.55" cy="182.55" r="182.55" stroke="none"/>
-        <circle cx="182.55" cy="182.55" r="170.05" fill="none"/>
+      <g id="Ellipse_8" data-name="Ellipse 8" class="cls-6" transform="translate(-10 -16)">
+        <circle class="cls-7" cx="182.55" cy="182.55" r="182.55"/>
+        <circle class="cls-8" cx="182.55" cy="182.55" r="170.05"/>
       </g>
-      <line id="Line_15" data-name="Line 15" x2="239.725" y2="239.725" transform="translate(58.746 46.628)" fill="none" stroke="#2b44ff" stroke-width="25"/>
+      <line id="Line_15" data-name="Line 15" class="cls-6" x2="239.725" y2="239.725" transform="translate(58.746 46.628)"/>
     </g>
   </g>
 </svg>

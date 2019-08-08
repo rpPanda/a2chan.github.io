@@ -1,13 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 443.662 315.47">
-  <g id="Group_116" data-name="Group 116" transform="translate(-355.307 -5081.422)">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="352.57" height="227.578" viewBox="0 0 352.57 227.578">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ff826e;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 20px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1.301" y2="0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="0" stop-color="#ff816e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_122" data-name="Group 122" transform="translate(-355.307 -5081.422)">
     <g id="Group_114" data-name="Group 114" transform="translate(-1142 1785.922)">
-      <line id="Line_16" data-name="Line 16" x2="137.197" transform="translate(1507.307 3305.5)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
-      <line id="Line_19" data-name="Line 19" x2="137.197" transform="translate(1535.407 3346.824)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
-      <line id="Line_17" data-name="Line 17" x2="133.252" transform="translate(1509.279 3388.627)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
-      <line id="Line_20" data-name="Line 20" x2="133.252" transform="translate(1537.38 3429.951)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
-      <line id="Line_18" data-name="Line 18" x2="133.252" transform="translate(1509.279 3471.754)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
-      <line id="Line_21" data-name="Line 21" x2="133.252" transform="translate(1537.38 3513.078)" fill="none" stroke="#2b44ff" stroke-linecap="round" stroke-width="20"/>
+      <line id="Line_16" data-name="Line 16" class="cls-1" x2="137.197" transform="translate(1507.307 3305.5)"/>
+      <line id="Line_19" data-name="Line 19" class="cls-1" x2="137.197" transform="translate(1535.407 3346.824)"/>
+      <line id="Line_17" data-name="Line 17" class="cls-1" x2="133.252" transform="translate(1509.279 3388.627)"/>
+      <line id="Line_20" data-name="Line 20" class="cls-1" x2="133.252" transform="translate(1537.38 3429.951)"/>
+      <line id="Line_18" data-name="Line 18" class="cls-1" x2="133.252" transform="translate(1509.279 3471.754)"/>
+      <line id="Line_21" data-name="Line 21" class="cls-1" x2="133.252" transform="translate(1537.38 3513.078)"/>
     </g>
-    <path id="ic_monetization_on_24px" d="M107.448,2C49.241,2,2,52.767,2,115.32s47.241,113.32,105.448,113.32S212.9,177.872,212.9,115.32,165.655,2,107.448,2Zm14.868,182.331v21.644H94.162V184.1C76.13,180.025,60.84,167.56,59.68,145.576H80.348c1.054,11.9,8.647,21.191,27.944,21.191,20.668,0,25.308-11.105,25.308-18.018,0-9.406-4.64-18.244-28.155-24.25-26.151-6.8-44.077-18.358-44.077-41.588,0-19.491,14.657-32.183,32.794-36.376V24.664h28.155v22.1c19.613,5.1,29.42,21.077,30.053,38.415H131.7c-.527-12.578-6.749-21.191-23.409-21.191-15.817,0-25.308,7.706-25.308,18.584,0,9.519,6.854,15.751,28.155,21.644s44.077,15.751,44.077,44.308c-.105,20.738-14.552,32.069-32.9,35.809Z" transform="translate(586.072 5168.252)" fill="#2b44ff"/>
+    <path id="ic_monetization_on_24px" class="cls-2" d="M61.9,2C28.836,2,2,30.839,2,66.374s26.836,64.374,59.9,64.374,59.9-28.839,59.9-64.374S94.968,2,61.9,2Zm8.446,103.577v12.3H54.354V105.449c-10.243-2.317-18.929-9.4-19.588-21.887H46.507c.6,6.759,4.912,12.038,15.874,12.038,11.741,0,14.377-6.309,14.377-10.235,0-5.343-2.636-10.364-15.994-13.776C45.908,67.726,35.725,61.159,35.725,47.963c0-11.072,8.326-18.282,18.63-20.664V14.875H70.348V27.428C81.49,30.324,87.061,39.4,87.42,49.25H75.68c-.3-7.145-3.834-12.038-13.3-12.038C53.4,37.212,48,41.59,48,47.77,48,53.177,51.9,56.718,64,60.065s25.039,8.948,25.039,25.17c-.06,11.78-8.267,18.218-18.689,20.342Z" transform="translate(586.072 5168.252)"/>
   </g>
 </svg>

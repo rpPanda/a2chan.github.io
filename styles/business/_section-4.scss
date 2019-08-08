@@ -13,7 +13,7 @@ $pink-1: #fc808a;
         text-align: center;
         font-family: "Poppins", sans-serif;
         color: $primary-blue;
-        margin: 3rem 0;
+        margin: 0 0 3rem 0;
     }
 
     .cascade {
@@ -23,6 +23,12 @@ $pink-1: #fc808a;
         grid-template-rows: repeat(9, max-content);
         grid-row-gap: 4rem;
 
+        @include mq_sp() {
+            width: 80%;
+            margin: auto;
+            grid-row-gap: 3rem;
+        }
+
         .card {
             position: relative;
             display: grid;
@@ -31,25 +37,37 @@ $pink-1: #fc808a;
             align-items: center;
             font-family: "Poppins", sans-serif;
 
-            &:nth-child(even) {
-                .image {
-                    grid-column: 1/2;
-                    grid-row: 1/2;
+            @include mq_dl() {
+                &:nth-child(even) {
+                    .image {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                    }
+                    .content {
+                        grid-column: 2/4;
+                        grid-row: 1/2;
+                    }
                 }
-                .content {
-                    grid-column: 2/4;
-                    grid-row: 1/2;
+
+                &:nth-child(odd) {
+                    .image {
+                        grid-column: 3/4;
+                        grid-row: 1/2;
+                    }
+                    .content {
+                        grid-column: 1/3;
+                        grid-row: 1/2;
+                    }
                 }
             }
 
-            &:nth-child(odd) {
-                .image {
-                    grid-column: 3/4;
-                    grid-row: 1/2;
-                }
+            @include mq_sp() {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+
                 .content {
-                    grid-column: 1/3;
-                    grid-row: 1/2;
+                    grid-row: 2 / span 2;
                 }
             }
 
@@ -60,9 +78,14 @@ $pink-1: #fc808a;
                 .container {
                     position: relative;
                     display: inline-block;
+                    height: 100%;
 
                     @include mq_dl {
                         height: 10rem;
+                    }
+
+                    @include mq_sp() {
+                        width: 25%;
                     }
 
                     img {
