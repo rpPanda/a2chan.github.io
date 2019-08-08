@@ -13,6 +13,10 @@ body {
   background: #ffeeee;
 }
 
+body a {
+  text-decoration: none !important;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 /* Smartphones (landscape) ----------- */
 /* Smartphones (portrait) ----------- */
@@ -30,6 +34,16 @@ body {
     /* Styles */
     height: 100vh;
   }
+}
+
+.section--1 .tri-square {
+  position: absolute;
+  top: -33vh;
+  left: -10vw;
+}
+
+.section--1 .tri-square img {
+  height: 150vh;
 }
 
 .section--1 .fancy-writer {
@@ -72,6 +86,7 @@ body {
   position: relative;
   font-size: calc( 18px + (22 - 18) * ((100vw - 300px) / (1920 - 300)));
   margin: 1rem 0;
+  font-weight: 500;
 }
 
 .section--1 .container .button {
@@ -79,14 +94,16 @@ body {
   margin: 1rem 0;
 }
 
-.section--1 .container .button button {
+.section--1 .container .button .button-in {
+  display: inline-block;
   font-weight: 500;
   font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (1920 - 300)));
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 1rem 1.5rem;
   background: #283ac4;
   color: #fff;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .section--2 {
