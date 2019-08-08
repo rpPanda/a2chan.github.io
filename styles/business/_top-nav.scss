@@ -12,10 +12,6 @@
     display: flex;
     justify-content: flex-end;
 
-    @include mq_sp() {
-        // flex-direction: column-reverse;
-    }
-
     .burger {
         width: 25px;
         position: relative;

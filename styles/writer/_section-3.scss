@@ -41,6 +41,7 @@ $text-black: #262626;
                     position: absolute;
                     opacity: 0.1;
                     height: 450px;
+                    width: 450px;
 
                     &--1 {
                         top: -15%;
@@ -59,33 +60,31 @@ $text-black: #262626;
 
                     &--4 {
                         right: -30%;
-                        top: -40%;
-                        height: 900px;
-                        #Group_114 {
-                            display: none;
-                        }
+                        top: 30%;
+                        height: auto !important;
+                        width: 500px !important;
                     }
                 }
 
                 &:nth-child(odd) {
-                    grid-template-columns: 1fr max-content;
+                    grid-template-columns: repeat(3, 1fr);
 
                     .content {
-                        grid-column: 1/2;
+                        grid-column: 1/3;
                         grid-row: 1/2;
                     }
 
                     .image {
-                        grid-column: 2/3;
+                        grid-column: 3/4;
                         grid-row: 1/2;
                     }
                 }
 
                 &:nth-child(even) {
-                    grid-template-columns: max-content 1fr;
+                    grid-template-columns: repeat(3, 1fr);
 
                     .content {
-                        grid-column: 2/3;
+                        grid-column: 2/4;
                         grid-row: 1/2;
                     }
 
