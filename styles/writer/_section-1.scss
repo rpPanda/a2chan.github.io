@@ -17,6 +17,7 @@
         position: relative;
         font-family: "Poppins", sans-serif;
         display: inline-block;
+        color: #fff;
 
         @include mq_dl() {
             margin-top: 30vh;

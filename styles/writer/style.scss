@@ -8,6 +8,14 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-image: linear-gradient(
+        #3d54ff,
+        #f5f0e7,
+        #edfce5,
+        #f6f6ff,
+        #c5ccff,
+        #2b44ff
+    );
 }
 
 @import "abstracts";

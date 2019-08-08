@@ -10,6 +10,8 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d54ff), color-stop(#f5f0e7), color-stop(#edfce5), color-stop(#f6f6ff), color-stop(#c5ccff), to(#2b44ff));
+  background-image: linear-gradient(#3d54ff, #f5f0e7, #edfce5, #f6f6ff, #c5ccff, #2b44ff);
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -43,6 +45,7 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   display: inline-block;
+  color: #fff;
 }
 
 @media only screen and (min-width: 1224px) {
@@ -314,6 +317,7 @@ body {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-size: calc( 20px + (26 - 20) * ((100vw - 300px) / (1920 - 300)));
+  color: #fff;
   padding: 0;
   margin: 0;
 }
