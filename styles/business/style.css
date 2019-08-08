@@ -322,32 +322,75 @@ body {
   }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .section--2 .caption {
+    /* Styles */
+    margin: 2rem 0;
+  }
+}
+
 .section--2 .cards {
   position: relative;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-  grid-gap: 2rem;
-  width: 70%;
-  margin: auto;
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--2 .cards {
+    /* Styles */
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    grid-gap: 2rem;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .section--2 .cards {
+    /* Styles */
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2rem;
+    width: 60%;
+    margin: auto;
+  }
 }
 
 .section--2 .cards .card {
-  width: calc(100px + (300 - 100) * ((100vw - 300px) / (1600 - 300)));
-  height: calc( 100px + (300 - 100) * ((100vw - 300px) / (1600 - 300)));
   position: relative;
   -webkit-perspective: 150em;
           perspective: 150em;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   -webkit-box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
           box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 4%;
   background: -webkit-gradient(linear, left bottom, left top, from(#ff846f), to(#fb5575));
   background: linear-gradient(0deg, #ff846f, #fb5575);
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--2 .cards .card {
+    /* Styles */
+    width: calc( 100px + (300 - 100) * ((100vw - 300px) / (1600 - 300)));
+    height: calc( 100px + (300 - 100) * ((100vw - 300px) / (1600 - 300)));
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .section--2 .cards .card {
+    /* Styles */
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .section--2 .cards .card .content {
