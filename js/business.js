@@ -41,3 +41,10 @@ jQuery("img.svg").each(function() {
         "xml"
     )
 })
+
+const animateBurger = () => {
+    const burger = document.querySelector(".burger")
+    const ul = document.querySelector(".top-nav ul")
+    burger.classList.toggle("burger-open")
+    ul.classList.toggle("show-dropdown")
+}

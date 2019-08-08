@@ -1,6 +1,9 @@
 .section--1 {
     position: relative;
-    height: 100vh;
+
+    @include mq_dl() {
+        height: 100vh;
+    }
 
     .fancy-writer {
         position: absolute;

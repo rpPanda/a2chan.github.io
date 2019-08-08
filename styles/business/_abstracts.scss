@@ -20,7 +20,7 @@ $primary-blue: #256e9b;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@mixin mq_sp_pl() {
+@mixin mq_sp() {
     @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         /* Styles */
         @content;
@@ -44,7 +44,7 @@ $primary-blue: #256e9b;
 }
 
 /* iPads (portrait and landscape) ----------- */
-@mixin mq_ipad_pl() {
+@mixin mq_ipad() {
     @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
         /* Styles */
         @content;

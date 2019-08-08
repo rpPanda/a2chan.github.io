@@ -23,7 +23,13 @@ body {
 /* Large screens ----------- */
 .section--1 {
   position: relative;
-  height: 100vh;
+}
+
+@media only screen and (min-width: 1224px) {
+  .section--1 {
+    /* Styles */
+    height: 100vh;
+  }
 }
 
 .section--1 .fancy-writer {
