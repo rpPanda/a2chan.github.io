@@ -10,8 +10,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#3d54ff), color-stop(#f5f0e7), color-stop(#edfce5), color-stop(#f6f6ff), color-stop(#c5ccff), to(#2b44ff));
-  background-image: linear-gradient(#3d54ff, #f5f0e7, #edfce5, #f6f6ff, #c5ccff, #2b44ff);
+  background: #ffeeee;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -45,7 +44,7 @@ body {
   position: relative;
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  color: #fff;
+  color: #272727;
 }
 
 @media only screen and (min-width: 1224px) {
@@ -80,6 +79,70 @@ body {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 1rem 1.5rem;
+  background: #283ac4;
+  color: #fff;
+}
+
+.section--2 {
+  position: relative;
+}
+
+.section--2 .caption {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: calc( 36px + (72 - 36) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 600;
+  color: #f64976;
+  width: 90%;
+  margin: 0 auto 5vh auto;
+}
+
+.section--2 .what-we-do {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  width: 80%;
+  margin: auto;
+  grid-gap: 2rem;
+}
+
+.section--2 .what-we-do .card {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: max-content 1fr;
+      grid-template-columns: -webkit-max-content 1fr;
+      grid-template-columns: max-content 1fr;
+  grid-gap: 0.2rem 1rem;
+  font-family: "Poppins", sans-serif;
+  border: dashed 4px rgba(246, 73, 118, 0.6);
+  padding: 2rem;
+}
+
+.section--2 .what-we-do .card .sl {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  font-size: calc( 32px + (50 - 32) * ((100vw - 300px) / (1920 - 300)));
+}
+
+.section--2 .what-we-do .card .content {
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: calc( 18px + (26 - 18) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .section--3 {
@@ -89,15 +152,17 @@ body {
 .section--3 .how-we-do {
   position: relative;
   width: 90%;
-  margin: 20vh auto;
+  margin: auto;
 }
 
 .section--3 .how-we-do > .title {
   position: relative;
   font-family: "Poppins", sans-serif;
-  font-size: calc( 56px + (72 - 56) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc( 36px + (72 - 36) * ((100vw - 300px) / (1920 - 300)));
   text-align: right;
-  margin: 10vh 0;
+  margin: 0 0 10vh 0;
+  color: #f64976;
+  font-weight: 600;
 }
 
 .section--3 .how-we-do .cards {
@@ -317,7 +382,7 @@ body {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-size: calc( 20px + (26 - 20) * ((100vw - 300px) / (1920 - 300)));
-  color: #fff;
+  color: #262626;
   padding: 0;
   margin: 0;
 }
@@ -331,5 +396,9 @@ body {
 
 .section {
   width: 100%;
+}
+
+.section:not(.section--1) {
+  margin: 10vh 0;
 }
 /*# sourceMappingURL=style.css.map */

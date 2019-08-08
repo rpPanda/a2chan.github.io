@@ -6,14 +6,16 @@ $text-black: #262626;
     .how-we-do {
         position: relative;
         width: 90%;
-        margin: 20vh auto;
+        margin: auto;
 
         > .title {
             position: relative;
             font-family: "Poppins", sans-serif;
-            @include res-font-size(56, 72);
+            @include res-font-size(36, 72);
             text-align: right;
-            margin: 10vh 0;
+            margin: 0 0 10vh 0;
+            color: rgba($color: $primary-red, $alpha: 1);
+            font-weight: 600;
         }
 
         .cards {

@@ -17,7 +17,7 @@
         position: relative;
         font-family: "Poppins", sans-serif;
         display: inline-block;
-        color: #fff;
+        color: $text-black;
 
         @include mq_dl() {
             margin-top: 30vh;
@@ -46,6 +46,8 @@
                 text-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.2);
                 border-radius: 25px;
                 padding: 1rem 1.5rem;
+                background: $primary-blue;
+                color: #fff;
             }
         }
     }
