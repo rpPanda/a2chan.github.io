@@ -2,6 +2,8 @@ $primary-pink: #fc808a;
 $primary-blue: #256e9c;
 $text-white: #fff;
 
+$primary-font: "Poppins", sans-serif;
+
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
         @content;
