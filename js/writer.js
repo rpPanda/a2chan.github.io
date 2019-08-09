@@ -55,7 +55,7 @@ function addingImages() {
 
 addingImages()
 
-$(".owl-carousel").owlCarousel({
+$(".owl-carousel.slide-track").owlCarousel({
     loop: true,
     margin: 10,
     nav: false,
@@ -74,6 +74,28 @@ $(".owl-carousel").owlCarousel({
         },
         1000: {
             items: 7
+        }
+    }
+})
+
+$(".owl-carousel.cards").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 1000,
+
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
     }
 })

@@ -1,0 +1,78 @@
+.section--4 {
+    position: relative;
+
+    .testimonials {
+        position: relative;
+
+        .caption {
+            position: relative;
+
+            font-family: $primary-font;
+            @include res-font-size(32, 72);
+            font-weight: 500;
+            color: $primary-red;
+
+            @include mq_dl() {
+                width: 90%;
+                margin: 0 auto 5vh auto;
+            }
+
+            @include mq_sp() {
+                width: 80%;
+                margin: 0 auto 5vh auto;
+            }
+        }
+        .cards {
+            position: relative;
+            width: 80%;
+            margin: auto;
+
+            .owl-item {
+                display: flex;
+                justify-content: center;
+            }
+
+            .card {
+                position: relative;
+
+                @include res-height(280, 450);
+                @include res-width(200, 400);
+
+                display: flex;
+                flex-direction: column;
+                background: $primary-white;
+                text-align: center;
+                justify-content: center;
+
+                border-radius: 10%;
+
+                .image {
+                    position: relative;
+                    margin-bottom: 5%;
+
+                    @include res-height(25, 60);
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                .content {
+                    position: relative;
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-top: 5%;
+
+                    font-family: "Poppins", sans-serif;
+                    @include res-font-size(14, 20);
+
+                    .name {
+                        position: relative;
+                        font-weight: 600;
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

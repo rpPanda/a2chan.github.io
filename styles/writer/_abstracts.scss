@@ -4,6 +4,8 @@ $primary-red: #f64976;
 $primary-orange: #ff826e;
 $primary-white: #fff;
 
+$primary-font: "Poppins", sans-serif;
+
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
         @content;
@@ -92,8 +94,14 @@ $primary-white: #fff;
     );
 }
 
-@mixin res-line-height($min, $max) {
-    line-height: calc(
+@mixin res-height($min, $max) {
+    height: calc(
+        #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
+    );
+}
+
+@mixin res-width($min, $max) {
+    width: calc(
         #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
     );
 }

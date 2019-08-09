@@ -22,7 +22,7 @@
 
         @include mq_sp() {
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(4, 1fr);
+            grid-template-rows: repeat(4, max-content);
         }
 
         .card {
