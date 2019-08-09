@@ -5,6 +5,16 @@
         height: 100vh;
     }
 
+    .back-panel {
+        background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+    }
+
     .fancy-business {
         position: relative;
         height: 55vh;
@@ -16,6 +26,18 @@
         img {
             position: relative;
             height: 100%;
+        }
+
+        .panel-1 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(
+                0px 0px,
+                63.12% 0.31%,
+                43.42% 62.64%,
+                2px 77.15%
+            );
         }
     }
 
@@ -34,6 +56,7 @@
             @include res-font-size(32, 48);
             font-weight: 600;
             margin: 1rem 0;
+            color: $text-white;
         }
 
         .sub-heading {
@@ -44,15 +67,18 @@
 
         .button {
             position: relative;
-            margin: 1rem 0;
-            button {
+            margin: 2rem 0;
+            .button-in {
+                display: inline-block;
                 font-weight: 500;
                 @include res-font-size(20, 24);
-                text-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.2);
                 border-radius: 25px;
                 padding: 1rem 1.5rem;
                 background: $primary-blue;
-                color: white;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+                box-shadow: 1.8px 3px 14px rgba($color: #000000, $alpha: 0.3);
             }
         }
     }

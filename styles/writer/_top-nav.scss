@@ -33,7 +33,7 @@
             position: relative;
             height: 3px;
             width: 100%;
-            background: #fff;
+            background: #000000;
             border-radius: 9px;
             left: 0;
             transform: rotate(0deg);
@@ -81,9 +81,14 @@
             width: 100vw;
             margin: 0;
             padding: 0;
-            top: 100%;
-            transform: translateY(-110%);
+            transform: translateY(-100%);
             transition: transform 500ms ease-in-out;
+            background: linear-gradient(
+                to right,
+                $primary-orange,
+                $primary-red
+            );
+            color: #fff;
         }
 
         li {
@@ -97,30 +102,41 @@
                 padding: 0;
                 margin: 0 2rem;
                 height: 100%;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    background: $text-black;
+                    width: 100%;
+                    transition: all 0.4s ease-in-out;
+                    transform: scaleX(0);
+                }
+
+                &:hover,
+                &:focus {
+                    &::before {
+                        transform: scaleX(1);
+                    }
+                }
             }
 
             @include mq_sp() {
                 width: 100%;
                 height: 4rem;
-            }
 
-            &::before {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 2px;
-                background: $text-black;
-                width: 100%;
-                transition: all 0.4s ease-in-out;
-                transform: scaleX(0);
-            }
-
-            &:hover,
-            &:focus {
-                &::before {
-                    transform: scaleX(1);
-                }
+                // &::after {
+                //     content: "";
+                //     position: absolute;
+                //     top: 0;
+                //     left: 50%;
+                //     transform: translateX(-50%);
+                //     height: 0.5px;
+                //     background: $primary-white;
+                //     width: 70%;
+                // }
             }
         }
     }

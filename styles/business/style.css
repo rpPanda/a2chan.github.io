@@ -103,7 +103,7 @@ body a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   color: #fff;
-  font-size: calc( 18px + (24 - 18) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
 }
 
 @media only screen and (min-width: 1224px) {
@@ -144,8 +144,8 @@ body a {
     margin: 0;
     padding: 0;
     top: 100%;
-    -webkit-transform: translateY(-110%);
-            transform: translateY(-110%);
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
     -webkit-transition: -webkit-transform 500ms ease-in-out;
     transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
@@ -239,6 +239,18 @@ body a {
   }
 }
 
+.section--1 .back-panel {
+  background: -webkit-gradient(linear, left top, right top, from(#ff846f), color-stop(#fb5575), to(#fb5575));
+  background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+          clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+}
+
 .section--1 .fancy-business {
   position: relative;
   height: 55vh;
@@ -256,6 +268,14 @@ body a {
 .section--1 .fancy-business img {
   position: relative;
   height: 100%;
+}
+
+.section--1 .fancy-business .panel-1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+          clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
 }
 
 .section--1 .container {
@@ -278,6 +298,7 @@ body a {
   font-size: calc( 32px + (48 - 32) * ((100vw - 300px) / (1920 - 300)));
   font-weight: 600;
   margin: 1rem 0;
+  color: #fff;
 }
 
 .section--1 .container .sub-heading {
@@ -288,17 +309,21 @@ body a {
 
 .section--1 .container .button {
   position: relative;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
-.section--1 .container .button button {
+.section--1 .container .button .button-in {
+  display: inline-block;
   font-weight: 500;
   font-size: calc( 20px + (24 - 20) * ((100vw - 300px) / (1920 - 300)));
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   padding: 1rem 1.5rem;
-  background: #256e9b;
-  color: white;
+  background: #256e9c;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-box-shadow: 1.8px 3px 14px rgba(0, 0, 0, 0.3);
+          box-shadow: 1.8px 3px 14px rgba(0, 0, 0, 0.3);
 }
 
 .section--2 {
@@ -309,7 +334,7 @@ body a {
 .section--2 .caption {
   position: relative;
   font-family: "Poppins", sans-serif;
-  color: #256e9b;
+  color: #256e9c;
   font-size: calc( 32px + (48 - 32) * ((100vw - 300px) / (1920 - 300)));
 }
 
@@ -411,7 +436,7 @@ body a {
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #256e9b;
+  color: #256e9c;
   margin: 0 0 3rem 0;
 }
 
@@ -550,7 +575,7 @@ body a {
   font-size: calc( 32px + (48 - 32) * ((100vw - 300px) / (1920 - 300)));
   text-align: center;
   font-family: "Poppins", sans-serif;
-  color: #256e9b;
+  color: #256e9c;
   margin: 0 0 3rem 0;
 }
 
@@ -701,7 +726,7 @@ body a {
 }
 
 .cc .background svg path {
-  fill: rgba(37, 110, 155, 0.1);
+  fill: rgba(37, 110, 156, 0.1);
 }
 
 .cc .content {

@@ -7,21 +7,40 @@
 
     .tri-square {
         position: absolute;
-        top: -33vh;
-        left: -10vw;
-        img {
-            height: 150vh;
+
+        @include mq_dl() {
+            top: -33vh;
+            left: -10vw;
+            img {
+                height: 150vh;
+            }
+        }
+
+        @include mq_sp() {
+            top: -10vh;
+            left: -10vw;
+            img {
+                height: 40vh;
+            }
         }
     }
 
     .fancy-writer {
         position: absolute;
-        top: 0;
-        right: 10%;
 
         @include mq_dl() {
             height: 60vh;
             margin: 20vh 0 20vh 0;
+            top: 0;
+            right: 10%;
+        }
+
+        @include mq_sp() {
+            position: relative;
+            display: inline-block;
+            height: 40vh;
+            left: 100%;
+            transform: translateX(-120%);
         }
     }
 
@@ -31,6 +50,12 @@
         display: inline-block;
         color: $text-black;
 
+        @include mq_sp() {
+            width: 80%;
+            left: 10%;
+            margin-top: 15%;
+        }
+
         @include mq_dl() {
             margin-top: 30vh;
             left: 10%;
@@ -38,14 +63,14 @@
 
         .heading {
             position: relative;
-            @include res-font-size(32, 48);
+            @include res-font-size(28, 48);
             font-weight: 700;
             margin: 1rem 0;
         }
 
         .sub-heading {
             position: relative;
-            @include res-font-size(18, 22);
+            @include res-font-size(16, 22);
             margin: 1rem 0;
             font-weight: 500;
         }
@@ -56,13 +81,17 @@
             .button-in {
                 display: inline-block;
                 font-weight: 500;
-                @include res-font-size(20, 24);
+                @include res-font-size(18, 24);
                 border-radius: 25px;
                 padding: 1rem 1.5rem;
                 background: $primary-blue;
                 color: #fff;
                 font-weight: 600;
                 cursor: pointer;
+
+                @include mq_sp() {
+                    padding: 0.5rem 1rem;
+                }
             }
         }
     }

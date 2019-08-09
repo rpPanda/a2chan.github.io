@@ -20,6 +20,11 @@
         margin: auto;
         grid-gap: 2rem;
 
+        @include mq_sp() {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+
         .card {
             position: relative;
             display: grid;
@@ -28,6 +33,14 @@
             font-family: "Poppins", sans-serif;
             border: dashed 4px rgba($color: $primary-red, $alpha: 0.6);
             padding: 2rem;
+
+            @include mq_sp() {
+                grid-gap: 0 0.2rem;
+
+                .sl {
+                    line-height: 100%;
+                }
+            }
 
             .sl {
                 position: relative;

@@ -1,3 +1,9 @@
+$primary-blue: #283ac4;
+$text-black: #272727;
+$primary-red: #f64976;
+$primary-orange: #ff826e;
+$primary-white: #fff;
+
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
         @content;
@@ -82,6 +88,12 @@
 
 @mixin res-font-size($min, $max) {
     font-size: calc(
+        #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
+    );
+}
+
+@mixin res-line-height($min, $max) {
+    line-height: calc(
         #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
     );
 }

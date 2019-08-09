@@ -1,5 +1,6 @@
 $primary-pink: #fc808a;
-$primary-blue: #256e9b;
+$primary-blue: #256e9c;
+$text-white: #fff;
 
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
