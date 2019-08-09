@@ -12,6 +12,10 @@
         }
     }
 
+    @include mq_sp() {
+        display: none;
+    }
+
     .content {
         position: absolute;
         top: 20%;

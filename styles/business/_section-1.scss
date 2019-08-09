@@ -1,19 +1,21 @@
+.back-panel {
+    background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+
+    @include mq_sp() {
+        clip-path: polygon(0px 0px, 100% 0%, 100% 82%, 0px 96%);
+    }
+}
+
 .section--1 {
     position: relative;
 
-    @include mq_dl() {
-        height: 100vh;
-    }
-
-    .back-panel {
-        background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
-    }
+    height: 100vh;
 
     .fancy-business {
         position: relative;
@@ -22,6 +24,10 @@
         justify-content: flex-end;
         top: 50%;
         transform: translateY(-50%);
+
+        @include mq_sp() {
+            display: none;
+        }
 
         img {
             position: relative;
@@ -42,13 +48,21 @@
     }
 
     .container {
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-        font-family: "Poppins", sans-serif;
+        font-family: $primary-font;
 
         @include mq_dl() {
             left: 5vw;
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+        }
+
+        @include mq_sp() {
+            position: relative;
+            padding-top: 10vh;
+            // left: 5%;
+            width: 85%;
+            margin: auto;
         }
 
         .heading {
@@ -63,6 +77,15 @@
             position: relative;
             @include res-font-size(18, 22);
             margin: 1rem 0;
+        }
+
+        .sub-text {
+            position: relative;
+            @include res-font-size(15, 22);
+
+            @include mq_dl() {
+                display: none;
+            }
         }
 
         .button {

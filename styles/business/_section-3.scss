@@ -74,6 +74,10 @@
                 font-weight: 600;
                 @include res-font-size(24, 84);
                 line-height: 100%;
+
+                @include mq_sp() {
+                    grid-row: 1/2;
+                }
             }
 
             .content {
@@ -84,6 +88,10 @@
                 color: $primary-pink;
                 box-shadow: 9px 10px 13px -8px rgba(0, 0, 0, 0.75);
                 border-radius: 20px;
+
+                @include mq_sp() {
+                    grid-column: 1/3;
+                }
 
                 .description {
                     padding: 1.5rem;
