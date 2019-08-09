@@ -115,11 +115,15 @@ $pink-1: #fc808a;
                     right: 20px;
                     color: #707070;
                     font-size: 20px;
+                    transition: all 500ms ease-out;
                 }
 
                 .image {
                     position: relative;
                     text-align: center;
+
+                    grid-row: 1/2;
+                    grid-column: 1/2;
 
                     .container {
                         position: relative;
@@ -135,6 +139,8 @@ $pink-1: #fc808a;
                 }
 
                 .title {
+                    grid-row: 1/2;
+                    grid-column: 2/3;
                     position: relative;
                     @include res-font-size(20, 32);
                     color: $primary-pink;
@@ -145,11 +151,52 @@ $pink-1: #fc808a;
                 }
 
                 .description {
-                    display: none;
-                    position: relative;
-                    @include res-font-size(12, 16);
+                    position: absolute;
+                    z-index: 10;
+
+                    top: 120%;
+
+                    @include res-font-size(16, 18);
+                    color: $text-black;
+
+                    overflow: hidden;
+                    visibility: hidden;
+
+                    .wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        height: 100%;
+                        width: 100%;
+
+                        background: $text-white;
+                        box-shadow: 0px 3px 55px
+                            rgba($color: #000000, $alpha: 0.16);
+
+                        transform: translateY(-120%);
+                        transition: all 500ms ease-out;
+
+                        .text {
+                            position: relative;
+                            padding: 2rem 1.5rem;
+                            text-align: center;
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+.expand-section--4-card {
+    &::before {
+        transform: rotate(45deg) !important;
+    }
+
+    .description {
+        visibility: visible !important;
+    }
+
+    .wrapper {
+        transform: translateY(0) !important;
     }
 }

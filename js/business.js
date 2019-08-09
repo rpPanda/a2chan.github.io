@@ -48,3 +48,14 @@ const animateBurger = () => {
     burger.classList.toggle("burger-open")
     ul.classList.toggle("show-dropdown")
 }
+
+var cascade_cards = document
+    .getElementById("cascade")
+    .getElementsByClassName("card")
+var i
+
+for (i = 0; i < cascade_cards.length; i++) {
+    cascade_cards[i].addEventListener("click", function() {
+        this.classList.toggle("expand-section--4-card")
+    })
+}

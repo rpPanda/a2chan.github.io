@@ -12,6 +12,10 @@
     display: flex;
     justify-content: flex-end;
 
+    @include mq_sp() {
+        justify-content: flex-start;
+    }
+
     .burger {
         width: 25px;
         position: relative;
@@ -50,6 +54,7 @@
             }
             &:nth-child(4) {
                 margin-top: 5px;
+                width: 50%;
             }
         }
     }
@@ -81,7 +86,6 @@
             width: 100vw;
             margin: 0;
             padding: 0;
-            top: 100%;
             transform: translateY(-150%);
             transition: transform 500ms ease-in-out;
         }

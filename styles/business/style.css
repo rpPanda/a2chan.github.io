@@ -43,6 +43,15 @@ body a {
           justify-content: flex-end;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .top-nav {
+    /* Styles */
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .top-nav .burger {
   width: 25px;
   position: relative;
@@ -95,6 +104,7 @@ body a {
 
 .top-nav .burger span:nth-child(4) {
   margin-top: 5px;
+  width: 50%;
 }
 
 .top-nav ul {
@@ -143,7 +153,6 @@ body a {
     width: 100vw;
     margin: 0;
     padding: 0;
-    top: 100%;
     -webkit-transform: translateY(-150%);
             transform: translateY(-150%);
     -webkit-transition: -webkit-transform 500ms ease-in-out;
@@ -714,10 +723,18 @@ body a {
     right: 20px;
     color: #707070;
     font-size: 20px;
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
   }
   .offerings .cascade .card .image {
     position: relative;
     text-align: center;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
   }
   .offerings .cascade .card .image .container {
     position: relative;
@@ -730,6 +747,12 @@ body a {
     height: 100%;
   }
   .offerings .cascade .card .title {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
     position: relative;
     font-size: calc( 20px + (32 - 20) * ((100vw - 300px) / (1920 - 300)));
     color: #fc808a;
@@ -739,10 +762,46 @@ body a {
     margin: auto;
   }
   .offerings .cascade .card .description {
-    display: none;
-    position: relative;
-    font-size: calc( 12px + (16 - 12) * ((100vw - 300px) / (1920 - 300)));
+    position: absolute;
+    z-index: 10;
+    top: 120%;
+    font-size: calc( 16px + (18 - 16) * ((100vw - 300px) / (1920 - 300)));
+    color: #675f58;
+    overflow: hidden;
+    visibility: hidden;
   }
+  .offerings .cascade .card .description .wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 55px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 3px 55px rgba(0, 0, 0, 0.16);
+    -webkit-transform: translateY(-120%);
+            transform: translateY(-120%);
+    -webkit-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+  }
+  .offerings .cascade .card .description .wrapper .text {
+    position: relative;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+}
+
+.expand-section--4-card::before {
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+.expand-section--4-card .description {
+  visibility: visible !important;
+}
+
+.expand-section--4-card .wrapper {
+  -webkit-transform: translateY(0) !important;
+          transform: translateY(0) !important;
 }
 
 .cc {
