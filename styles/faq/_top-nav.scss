@@ -114,6 +114,11 @@
             display: grid;
             place-content: center;
 
+            a {
+                text-decoration: none;
+                color: $text-white;
+            }
+
             @include mq_dl() {
                 padding: 0;
                 margin: 0 2rem;
