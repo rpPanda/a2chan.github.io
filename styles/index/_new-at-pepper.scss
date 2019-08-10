@@ -140,6 +140,17 @@
                 border-radius: 4%;
 
                 &--front {
+                    .mask {
+                        position: absolute;
+                        z-index: 0;
+
+                        height: 70%;
+                        left: 55%;
+                        transform: translateX(-50%) translateY(-50%);
+                        top: 50%;
+
+                        fill: rgba($color: #000, $alpha: 0.08) !important;
+                    }
                     &-1 {
                         background-image: linear-gradient(
                             to right bottom,
