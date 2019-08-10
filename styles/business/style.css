@@ -14,6 +14,7 @@ body {
 
 body a {
   text-decoration: none !important;
+  color: inherit !important;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -64,7 +65,7 @@ body a {
   }
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .top-nav .logo {
     /* Styles */
     justify-self: flex-start;
@@ -136,7 +137,7 @@ body a {
   font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .top-nav ul {
     /* Styles */
     height: 100%;
@@ -191,7 +192,7 @@ body a {
   place-content: center;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .top-nav ul li {
     /* Styles */
     padding: 0;
@@ -321,7 +322,7 @@ body a {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 .container {
     /* Styles */
     left: 5vw;
@@ -361,7 +362,7 @@ body a {
   font-size: calc( 15px + (22 - 15) * ((100vw - 300px) / (1920 - 300)));
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 .container .sub-text {
     /* Styles */
     display: none;
@@ -399,7 +400,7 @@ body a {
   font-size: calc( 32px + (48 - 32) * ((100vw - 300px) / (1920 - 300)));
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--2 .caption {
     /* Styles */
     margin: 2rem 0 4rem 0;
@@ -417,7 +418,7 @@ body a {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--2 .cards {
     /* Styles */
     display: -ms-grid;
@@ -463,6 +464,13 @@ body a {
           align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .section--2 .cards .card {
+    /* Styles */
+    padding: 2rem 0;
+  }
+}
+
 .section--2 .cards .card::before {
   content: "";
   position: absolute;
@@ -495,7 +503,7 @@ body a {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--2 .cards .card .content {
     /* Styles */
   }
@@ -522,7 +530,7 @@ body a {
   width: 100%;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .how-we-work .container {
     /* Styles */
     width: 70%;
@@ -657,7 +665,7 @@ body a {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .offerings {
     /* Styles */
     width: 55%;
@@ -700,7 +708,7 @@ body a {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .offerings .cascade .card {
     /* Styles */
     display: -ms-grid;
@@ -983,7 +991,7 @@ footer {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   footer {
     /* Styles */
   }

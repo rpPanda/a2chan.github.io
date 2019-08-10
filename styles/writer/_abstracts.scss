@@ -75,7 +75,7 @@ $tertiary-font: "Montserrat", sans-serif;
 
 /* Desktops and laptops ----------- */
 @mixin mq_dl() {
-    @media only screen and (min-width: 1224px) {
+    @media only screen and (min-width: 768px) {
         /* Styles */
         @content;
     }

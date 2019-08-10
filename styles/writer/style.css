@@ -15,6 +15,7 @@ body {
 
 body a {
   text-decoration: none !important;
+  color: inherit !important;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -29,7 +30,7 @@ body a {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 {
     /* Styles */
     height: 100vh;
@@ -40,7 +41,7 @@ body a {
   position: absolute;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 .tri-square {
     /* Styles */
     top: -33vh;
@@ -66,7 +67,7 @@ body a {
   position: absolute;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 .fancy-writer {
     /* Styles */
     height: 60vh;
@@ -104,7 +105,7 @@ body a {
   }
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--1 .container {
     /* Styles */
     margin-top: 30vh;
@@ -287,7 +288,7 @@ body a {
   display: grid;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--3 .how-we-do .cards .card {
     /* Styles */
     grid-gap: 6rem;
@@ -365,7 +366,7 @@ body a {
   font-family: "Poppins", sans-serif;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--3 .how-we-do .cards .card .content {
     /* Styles */
     display: -ms-grid;
@@ -426,7 +427,7 @@ body a {
   height: 100%;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--3 .how-we-do .cards .card .image {
     /* Styles */
     height: 300px;
@@ -457,7 +458,7 @@ body a {
   }
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--3 .how-we-do .cards .card .mask {
     /* Styles */
   }
@@ -497,7 +498,7 @@ body a {
   color: #f64976;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .section--4 .testimonials .caption {
     /* Styles */
     width: 90%;
@@ -530,7 +531,7 @@ body a {
 
 .section--4 .testimonials .cards .card {
   position: relative;
-  height: calc( 280px + (450 - 280) * ((100vw - 300px) / (1920 - 300)));
+  height: calc( 320px + (450 - 320) * ((100vw - 300px) / (1920 - 300)));
   width: calc( 200px + (400 - 200) * ((100vw - 300px) / (1920 - 300)));
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,7 +564,7 @@ body a {
   margin: 0 auto;
   margin-top: 5%;
   font-family: "Poppins", sans-serif;
-  font-size: calc( 14px + (20 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc( 12px + (18 - 12) * ((100vw - 300px) / (1920 - 300)));
 }
 
 .section--4 .testimonials .cards .card .content .name {
@@ -705,7 +706,7 @@ body a {
   font-size: calc( 20px + (26 - 20) * ((100vw - 300px) / (1920 - 300)));
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .top-nav ul {
     /* Styles */
     height: 100%;
@@ -762,7 +763,7 @@ body a {
   place-content: center;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   .top-nav ul li {
     /* Styles */
     padding: 0;
@@ -829,7 +830,7 @@ footer {
   position: relative;
 }
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   footer {
     /* Styles */
   }

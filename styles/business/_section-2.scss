@@ -46,6 +46,10 @@
             display: grid;
             align-items: center;
 
+            @include mq_dl() {
+                padding: 2rem 0;
+            }
+
             &::before {
                 content: "";
                 position: absolute;

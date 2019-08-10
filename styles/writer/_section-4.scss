@@ -35,7 +35,7 @@
             .card {
                 position: relative;
 
-                @include res-height(280, 450);
+                @include res-height(320, 450);
                 @include res-width(200, 400);
 
                 display: flex;
@@ -64,7 +64,7 @@
                     margin-top: 5%;
 
                     font-family: "Poppins", sans-serif;
-                    @include res-font-size(14, 20);
+                    @include res-font-size(12, 18);
 
                     .name {
                         position: relative;
