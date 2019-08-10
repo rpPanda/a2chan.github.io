@@ -1872,8 +1872,11 @@ footer .bottom {
   }
   footer .bottom .group .social .icons {
     position: relative;
-    padding: 0 1rem;
+    padding: 0 10px;
     height: 20px;
+  }
+  footer .bottom .group .social .icons svg {
+    width: auto !important;
   }
   footer .bottom .group .info {
     position: relative;
