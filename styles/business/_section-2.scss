@@ -46,13 +46,26 @@
             display: grid;
             align-items: center;
 
-            @include mq_dl() {
-                // width: calc(
-                //     100px + (300 - 100) * ((100vw - 300px) / (1600 - 300))
-                // );
-                // height: calc(
-                //     100px + (300 - 100) * ((100vw - 300px) / (1600 - 300))
-                // );
+            &::before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                background: $text-white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                background: $text-white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
             }
 
             .content {

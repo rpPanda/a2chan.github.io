@@ -463,10 +463,26 @@ body a {
           align-items: center;
 }
 
-@media only screen and (min-width: 1224px) {
-  .section--2 .cards .card {
-    /* Styles */
-  }
+.section--2 .cards .card::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.section--2 .cards .card::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 .section--2 .cards .card .content {

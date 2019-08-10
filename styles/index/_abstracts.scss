@@ -6,6 +6,10 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
+$primary-font: "Raleway", sans-serif;
+$secondary-font: "Poppins", sans-serif;
+$tertiary-font: "Montserrat", sans-serif;
+
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
         @content;
@@ -24,48 +28,72 @@ $color-tertiary-dark: #5643fa;
     }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    /* Styles */
+//* Smartphones (portrait and landscape) ----------- */
+@mixin mq_sp() {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-    /* Styles */
+@mixin mq_sp_l() {
+    @media only screen and (min-width: 321px) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-    /* Styles */
+@mixin mq_sp_p() {
+    @media only screen and (max-width: 320px) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Styles */
+@mixin mq_ipad() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    /* Styles */
+@mixin mq_ipad_l() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-    /* Styles */
+@mixin mq_ipad_p() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-    /* Styles */
+@mixin mq_dl() {
+    @media only screen and (min-width: 1224px) {
+        /* Styles */
+        @content;
+    }
 }
 
 /* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-    /* Styles */
+@mixin mq_large {
+    @media only screen and (min-width: 1824px) {
+        /* Styles */
+        @content;
+    }
 }
 
-/* iPhone 4 ----------- */
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-    only screen and (min-device-pixel-ratio: 1.5) {
-    /* Styles */
+@mixin res-font-size($min, $max) {
+    font-size: calc(
+        #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
+    );
 }
