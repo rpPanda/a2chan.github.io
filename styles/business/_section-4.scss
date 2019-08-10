@@ -7,6 +7,11 @@ $pink-1: #fc808a;
         margin: 10vh auto;
     }
 
+    @include mq_rest {
+        width: 80%;
+        margin: 10vh auto;
+    }
+
     > .title {
         position: relative;
         @include res-font-size(32, 48);
@@ -34,7 +39,72 @@ $pink-1: #fc808a;
 
             font-family: $primary-font;
 
-            @include mq_dl() {
+            @include mq_rest {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: max-content 1fr;
+                align-items: center;
+
+                &:nth-child(even) {
+                    .image {
+                        grid-column: 1/2;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 2/4;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 2/4;
+                        grid-row: 2/3;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .image {
+                        grid-column: 3/4;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 1/3;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 1/3;
+                        grid-row: 2/3;
+                    }
+                }
+
+                .image {
+                    position: relative;
+                    text-align: center;
+
+                    .container {
+                        position: relative;
+                        display: inline-block;
+                        height: 6rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .title {
+                    position: relative;
+                    @include res-font-size(24, 32);
+                    color: $primary-pink;
+                    font-weight: 500;
+                }
+
+                .description {
+                    position: relative;
+                    @include res-font-size(12, 16);
+                }
+            }
+
+            @include mq_dl {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: max-content 1fr;
@@ -99,7 +169,7 @@ $pink-1: #fc808a;
                 }
             }
 
-            @include mq_sp() {
+            @include mq_sp {
                 display: grid;
                 grid-template-columns: max-content 1fr;
                 grid-template-rows: 1fr;

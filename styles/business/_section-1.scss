@@ -5,9 +5,13 @@
     bottom: 0;
     left: 0;
     right: 0;
-    clip-path: polygon(0px 0px, 63.12% 0.31%, 43.42% 62.64%, 2px 77.15%);
+    clip-path: polygon(0px 0px, 63.12% 0%, 43.42% 62.64%, 2px 77.15%);
 
-    @include mq_sp() {
+    @include mq_rest {
+        clip-path: polygon(0px 0px, 92.14% 0px, 68.93% 71.57%, 0px 86.92%);
+    }
+
+    @include mq_sp {
         clip-path: polygon(0px 0px, 100% 0%, 100% 82%, 0px 96%);
     }
 }
@@ -25,7 +29,24 @@
         top: 50%;
         transform: translateY(-50%);
 
-        @include mq_sp() {
+        @include mq_sp {
+            display: none;
+        }
+
+        @include mq_rest {
+            position: absolute;
+            right: 0;
+            height: 35vh;
+            display: flex;
+            justify-content: flex-end;
+            top: 50%;
+        }
+
+        @media only screen and (min-device-width: 480px) and (max-device-width: 1000px) {
+            top: 80%;
+        }
+
+        @media only screen and (min-device-width: 480px) and (max-device-width: 780px) {
             display: none;
         }
 
@@ -50,19 +71,25 @@
     .container {
         font-family: $primary-font;
 
-        @include mq_dl() {
+        @include mq_dl {
             left: 5vw;
             position: absolute;
             top: 40%;
             transform: translateY(-50%);
         }
 
-        @include mq_sp() {
+        @include mq_sp {
             position: relative;
             padding-top: 10vh;
-            // left: 5%;
             width: 85%;
             margin: auto;
+        }
+
+        @include mq_rest {
+            position: relative;
+            padding-top: 10vh;
+            width: 50%;
+            left: 5vw;
         }
 
         .heading {
