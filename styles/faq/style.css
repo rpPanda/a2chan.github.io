@@ -38,6 +38,10 @@
   }
 }
 
+.top-nav .logo svg {
+  width: auto !important;
+}
+
 .top-nav .logo svg path {
   fill: white !important;
 }

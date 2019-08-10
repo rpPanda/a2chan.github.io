@@ -49,15 +49,19 @@ body a {
   justify-self: flex-start;
 }
 
+.top-nav .logo svg {
+  width: auto !important;
+}
+
+.top-nav .logo svg path {
+  fill: white !important;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .top-nav .logo {
     /* Styles */
     justify-self: flex-end;
   }
-}
-
-.top-nav .logo svg path {
-  fill: white !important;
 }
 
 @media only screen and (min-width: 1224px) {

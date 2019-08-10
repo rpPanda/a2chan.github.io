@@ -17,13 +17,15 @@
         margin: auto 10px;
         justify-self: flex-start;
 
-        @include mq_sp() {
-            justify-self: flex-end;
-        }
         svg {
+            width: auto !important;
             path {
                 fill: white !important;
             }
+        }
+
+        @include mq_sp() {
+            justify-self: flex-end;
         }
 
         @include mq_dl() {
