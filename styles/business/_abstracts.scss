@@ -4,6 +4,7 @@ $text-white: #fff;
 $text-black: #675f58;
 
 $primary-font: "Poppins", sans-serif;
+$tertiary-font: "Montserrat", sans-serif;
 
 @mixin mq($size) {
     @media only screen and (max-width: $size) {

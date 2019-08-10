@@ -5,6 +5,7 @@ $primary-orange: #ff826e;
 $primary-white: #fff;
 
 $primary-font: "Poppins", sans-serif;
+$tertiary-font: "Montserrat", sans-serif;
 
 @mixin mq($size) {
     @media only screen and (max-width: $size) {
