@@ -5,6 +5,10 @@
         height: 100vh;
     }
 
+    @include mq_custom(1000px, 1224px) {
+        height: 100vh;
+    }
+
     .tri-square {
         position: absolute;
 
@@ -13,6 +17,22 @@
             left: -10vw;
             img {
                 height: 150vh;
+            }
+        }
+
+        @include mq_custom(1000px, 1224px) {
+            top: -23vh;
+            left: -10vw;
+            img {
+                height: 120vh;
+            }
+        }
+
+        @include mq_custom(480px, 1000px) {
+            top: -10vh;
+            left: -10vw;
+            img {
+                height: 80vh;
             }
         }
 
@@ -35,6 +55,20 @@
             right: 10%;
         }
 
+        @include mq_custom(1000px, 1224px) {
+            height: 60vh;
+            margin: 20vh 0 20vh 0;
+            top: 0;
+            right: 7vw;
+        }
+
+        @include mq_custom(480px, 1000px) {
+            position: relative;
+            display: block;
+            height: 40vh;
+            left: 20%;
+        }
+
         @include mq_sp() {
             position: relative;
             display: inline-block;
@@ -50,15 +84,26 @@
         display: inline-block;
         color: $text-black;
 
-        @include mq_sp() {
-            width: 80%;
+        @include mq_dl() {
+            margin-top: 30vh;
+            left: 10%;
+        }
+
+        @include mq_custom(1000px, 1224px) {
+            margin-top: 15vh;
+            left: 10%;
+        }
+
+        @include mq_custom(480px, 1000px) {
+            width: 60%;
             left: 10%;
             margin-top: 15%;
         }
 
-        @include mq_dl() {
-            margin-top: 30vh;
+        @include mq_sp() {
+            width: 80%;
             left: 10%;
+            margin-top: 15%;
         }
 
         .heading {

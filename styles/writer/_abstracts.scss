@@ -75,8 +75,23 @@ $tertiary-font: "Montserrat", sans-serif;
 
 /* Desktops and laptops ----------- */
 @mixin mq_dl() {
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 1224px) {
         /* Styles */
+        @content;
+    }
+}
+
+// Between smartphone and desktop/laptop - LOL
+@mixin mq_rest {
+    @media only screen and (min-device-width: 480px) and (max-device-width: 1224px) {
+        /*Styles*/
+        @content;
+    }
+}
+
+@mixin mq_custom($min, $max) {
+    @media only screen and (min-device-width: $min) and (max-device-width: $max) {
+        /*Styles*/
         @content;
     }
 }

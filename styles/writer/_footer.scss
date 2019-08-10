@@ -1,7 +1,7 @@
 footer {
     position: relative;
 
-    @include mq_dl() {
+    @include mq_dl {
         .bottom {
             position: relative;
             width: 80%;
@@ -238,7 +238,477 @@ footer {
         }
     }
 
-    @include mq_sp() {
+    @include mq_sp {
+        .bottom {
+            position: relative;
+            width: 90%;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(8, max-content);
+
+            margin: 5vh auto 8vh auto;
+
+            font-family: $tertiary-font;
+
+            .title {
+                position: relative;
+                text-align: center;
+
+                grid-row: 1 / span 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 1px;
+                    background: #000;
+                    width: 30%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 1px;
+                    background: #000;
+                    width: 30%;
+                }
+
+                margin: 2rem 0 1.5rem 0;
+
+                .text {
+                    position: relative;
+                    text-align: center;
+                    display: inline-block;
+
+                    @include res-font-size(26, 48);
+                    font-weight: 300;
+                }
+            }
+
+            .social {
+                position: relative;
+
+                grid-row: 2 / span 1;
+
+                text-align: center;
+
+                .wrapper {
+                    position: relative;
+                    display: inline-flex;
+
+                    .icons {
+                        position: relative;
+                        height: 30px;
+
+                        margin: 0 5px;
+
+                        svg {
+                            width: auto !important;
+
+                            path {
+                                fill: #000 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .vertical-line {
+                position: relative;
+                text-align: center;
+                display: grid;
+                place-items: center;
+
+                padding: 2rem 0;
+
+                grid-row: 3 / span 1;
+
+                .line {
+                    position: relative;
+                    width: 1px;
+                    height: 10vh;
+                    margin: auto;
+                    background: #000;
+                }
+            }
+
+            .address {
+                position: relative;
+
+                grid-row: 4 / span 1;
+
+                .text {
+                    position: relative;
+
+                    @include res-font-size(16, 20);
+                    font-weight: 300;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    > div {
+                        position: relative;
+
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            .quick-links {
+                position: relative;
+
+                grid-row: 5 / span 1;
+
+                margin: 0 0 2rem 0;
+
+                .links {
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include res-font-size(16, 20);
+                    font-weight: 300;
+                    text-transform: uppercase;
+
+                    .linkItems {
+                        position: relative;
+
+                        margin: 1rem 0;
+
+                        a {
+                            position: relative;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            .anirudh {
+                position: relative;
+                text-align: center;
+                padding: 1rem 0;
+
+                grid-row: 6 / span 1;
+
+                .content {
+                    position: relative;
+                    padding: 0.5rem;
+
+                    text-align: center;
+                    @include res-font-size(14, 18);
+                    font-weight: 300;
+
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    border: 1px solid #000;
+
+                    .name {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+
+                    .mail {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .rishabh {
+                position: relative;
+                text-align: center;
+                padding: 1rem 0;
+
+                grid-row: 7 / span 1;
+
+                .content {
+                    position: relative;
+                    padding: 0.5rem;
+
+                    text-align: center;
+                    @include res-font-size(14, 18);
+                    font-weight: 300;
+
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    border: 1px solid #000;
+
+                    .name {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+
+                    .mail {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .info {
+                position: relative;
+
+                text-align: center;
+                @include res-font-size(12, 16);
+
+                grid-row: span 1/-1;
+
+                margin: 3rem 0;
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 700px) and (max-device-width: 1224px) {
+        .bottom {
+            position: relative;
+            width: 80%;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(5, max-content);
+
+            margin: 5vh auto 8vh auto;
+
+            font-family: $tertiary-font;
+
+            .title {
+                position: relative;
+                text-align: center;
+
+                grid-row: 1 / span 1;
+                grid-column: 1 / span 3;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 1px;
+                    background: #000;
+                    width: 40%;
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    height: 1px;
+                    background: #000;
+                    width: 40%;
+                }
+
+                margin: 2rem 0;
+
+                .text {
+                    position: relative;
+                    text-align: center;
+                    display: inline-block;
+
+                    @include res-font-size(26, 48);
+                    font-weight: 300;
+                }
+            }
+
+            .quick-links {
+                position: relative;
+
+                grid-row: 2 / span 2;
+                grid-column: 1 / span 1;
+
+                margin: 0 0 2rem 0;
+
+                .links {
+                    position: relative;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    @include res-font-size(16, 20);
+                    font-weight: 300;
+                    text-transform: uppercase;
+
+                    .linkItems {
+                        position: relative;
+
+                        margin: 1rem 0;
+
+                        a {
+                            position: relative;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+
+            .address {
+                position: relative;
+
+                grid-row: 2 / span 2;
+                grid-column: span 1/-1;
+
+                .text {
+                    position: relative;
+
+                    @include res-font-size(16, 20);
+                    font-weight: 300;
+                    text-align: center;
+                    text-transform: uppercase;
+
+                    > div {
+                        position: relative;
+
+                        margin: 1rem 0;
+                    }
+                }
+            }
+
+            .anirudh {
+                position: relative;
+                text-align: center;
+
+                grid-row: 4 / span 1;
+                grid-column: span 1/-1;
+
+                .content {
+                    position: relative;
+                    padding: 1rem;
+
+                    text-align: center;
+                    @include res-font-size(14, 18);
+                    font-weight: 300;
+
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    border: 1px solid #000;
+
+                    .name {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+
+                    .mail {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .rishabh {
+                position: relative;
+                text-align: center;
+
+                grid-row: 4 / span 1;
+                grid-column: 1 / span 1;
+
+                .content {
+                    position: relative;
+                    padding: 1rem;
+
+                    text-align: center;
+                    @include res-font-size(14, 18);
+                    font-weight: 300;
+
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    border: 1px solid #000;
+
+                    .name {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+
+                    .mail {
+                        position: relative;
+                        display: inline-block;
+                        margin: 5px 0;
+                    }
+                }
+            }
+
+            .social {
+                position: relative;
+
+                grid-row: 2 / span 1;
+                grid-column: 2 / span 1;
+
+                text-align: center;
+
+                .wrapper {
+                    position: relative;
+                    display: inline-flex;
+
+                    .icons {
+                        position: relative;
+                        height: 30px;
+
+                        margin: 0 5px;
+
+                        svg {
+                            width: auto !important;
+
+                            path {
+                                fill: #000 !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info {
+                position: relative;
+
+                text-align: center;
+                @include res-font-size(12, 16);
+
+                grid-row: span 1/-1;
+                grid-column: 2 / span 1;
+
+                margin: 3rem 0;
+            }
+
+            .vertical-line {
+                position: relative;
+                text-align: center;
+                display: grid;
+                place-items: center;
+
+                grid-row: 3 / span 2;
+                grid-column: 2 / span 1;
+
+                .line {
+                    position: relative;
+                    width: 1px;
+                    height: 80%;
+                    margin: auto;
+                    background: #000;
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-device-width: 480px) and (max-device-width: 700px) {
         .bottom {
             position: relative;
             width: 90%;

@@ -9,7 +9,11 @@
     display: flex;
     justify-content: flex-end;
 
-    @include mq_sp() {
+    @include mq_sp {
+        height: 7vh;
+    }
+
+    @include mq_rest {
         height: 7vh;
     }
 
@@ -24,7 +28,11 @@
         margin: 0 2rem;
         display: none;
 
-        @include mq_sp() {
+        @include mq_sp {
+            display: block;
+        }
+
+        @include mq_rest {
             display: block;
         }
 
@@ -62,7 +70,7 @@
         color: $text-black;
         @include res-font-size(20, 26);
 
-        @include mq_dl() {
+        @include mq_dl {
             height: 100%;
             margin: 0;
             display: flex;
@@ -71,7 +79,27 @@
             padding: 0.2rem 0;
         }
 
-        @include mq_sp() {
+        @include mq_sp {
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            justify-content: center;
+            align-items: flex-start;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            transform: translateY(-100%);
+            transition: transform 500ms ease-in-out;
+            background: linear-gradient(
+                to right,
+                $primary-orange,
+                $primary-red
+            );
+            color: #fff;
+        }
+
+        @include mq_rest {
             position: absolute;
             display: grid;
             grid-template-columns: 1fr;
@@ -98,7 +126,7 @@
             display: grid;
             place-content: center;
 
-            @include mq_dl() {
+            @include mq_dl {
                 padding: 0;
                 margin: 0 2rem;
                 height: 100%;
@@ -123,20 +151,14 @@
                 }
             }
 
-            @include mq_sp() {
+            @include mq_sp {
                 width: 100%;
                 height: 4rem;
+            }
 
-                // &::after {
-                //     content: "";
-                //     position: absolute;
-                //     top: 0;
-                //     left: 50%;
-                //     transform: translateX(-50%);
-                //     height: 0.5px;
-                //     background: $primary-white;
-                //     width: 70%;
-                // }
+            @include mq_rest {
+                width: 100%;
+                height: 4rem;
             }
         }
     }

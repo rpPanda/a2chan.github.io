@@ -94,7 +94,7 @@ $(".owl-carousel.cards").owlCarousel({
         600: {
             items: 2
         },
-        1000: {
+        1300: {
             items: 3
         }
     }
