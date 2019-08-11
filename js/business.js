@@ -54,6 +54,25 @@ const toggleForm = () => {
     document.querySelector(".query-form").classList.toggle("showForm")
 }
 
+// get a quote submit
+
+const $form = $("form#contact-form"),
+    url =
+        "https://script.google.com/macros/s/AKfycbzpiGzH3MutiGViWdXYrIwmK0CWNMgyAeVuhuM-qvJvoH4wE7aI/exec"
+$("#submit-form").on("click", function(e) {
+    e.preventDefault()
+    var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject(),
+        success: () => {
+            toggleForm()
+            document.getElementById("contact-form").reset()
+        }
+    })
+})
+
 var cascade_cards = document
     .getElementById("cascade")
     .getElementsByClassName("card")
