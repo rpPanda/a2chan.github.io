@@ -187,14 +187,11 @@
     padding-left: 25px;
   }
 }
-
-
 body {
   background-color: #fb9;
   color: darkslategrey;
   font-size: 40px;
 }
-
 
 .text_fancy {
   display: -webkit-box;
@@ -267,7 +264,6 @@ body {
   text-align: left;
   outline: none;
   font-size: 15px;
-  z-index: -20;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -284,8 +280,7 @@ body {
   overflow: hidden;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
-  /* overflow-x: auto; */
-  z-index: -20;
+  overflow-x: auto;
 }
 
 .panel-heading a:after {
@@ -568,10 +563,9 @@ body {
    * Components
    */
 .post {
-  height: 96vh;
+  height: 90vh;
   width: 100%;
   border: 0.1em solid #888;
-  /* z-index: 100; */
 }
 
 @media (min-width: 54em) {

@@ -1,0 +1,53 @@
+@mixin white-gradient {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.slider {
+    position: absolute;
+    bottom: 30px;
+    background: white;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    display: none;
+
+    &::before,
+    &::after {
+        @include white-gradient;
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 100px;
+        z-index: 2;
+    }
+
+    &::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    &::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slide {
+        height: 100px;
+        width: 150px;
+        display: grid;
+        place-content: center;
+
+        img {
+            height: 100px !important;
+            width: 100px !important;
+        }
+    }
+}

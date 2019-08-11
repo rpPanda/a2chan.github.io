@@ -1,0 +1,151 @@
+.section--1 {
+    position: relative;
+
+    @include mq_dl() {
+        height: 100vh;
+    }
+
+    @include mq_custom(1000px, 1224px) {
+        height: 100vh;
+    }
+
+    .tri-square {
+        position: absolute;
+
+        @include mq_dl() {
+            top: -33vh;
+            left: -10vw;
+            img {
+                height: 150vh;
+            }
+        }
+
+        @include mq_custom(1000px, 1224px) {
+            top: -23vh;
+            left: -10vw;
+            img {
+                height: 120vh;
+            }
+        }
+
+        @include mq_custom(480px, 1000px) {
+            top: -10vh;
+            left: -10vw;
+            img {
+                height: 80vh;
+            }
+        }
+
+        @include mq_sp() {
+            top: -10vh;
+            left: -10vw;
+            img {
+                height: 40vh;
+            }
+        }
+    }
+
+    .fancy-writer {
+        position: absolute;
+
+        @include mq_dl() {
+            height: 60vh;
+            margin: 20vh 0 20vh 0;
+            top: 0;
+            right: 10%;
+        }
+
+        @include mq_custom(1000px, 1224px) {
+            height: 60vh;
+            margin: 20vh 0 20vh 0;
+            top: 0;
+            right: 7vw;
+        }
+
+        @include mq_custom(480px, 1000px) {
+            position: relative;
+            display: block;
+            height: 40vh;
+            left: 20%;
+        }
+
+        @include mq_sp() {
+            position: relative;
+            display: inline-block;
+            height: 40vh;
+            left: 100%;
+            transform: translateX(-120%);
+        }
+    }
+
+    .container {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        display: inline-block;
+        color: $text-black;
+
+        @include mq_dl() {
+            margin-top: 30vh;
+            left: 10%;
+        }
+
+        @include mq_custom(1000px, 1224px) {
+            margin-top: 15vh;
+            left: 10%;
+        }
+
+        @include mq_custom(480px, 1000px) {
+            width: 60%;
+            left: 10%;
+            margin-top: 15%;
+        }
+
+        @include mq_sp() {
+            width: 80%;
+            left: 10%;
+            margin-top: 15%;
+        }
+
+        .heading {
+            position: relative;
+            @include res-font-size(28, 48);
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .sub-heading {
+            position: relative;
+            @include res-font-size(16, 22);
+            margin: 1rem 0;
+            font-weight: 500;
+        }
+
+        .button {
+            position: relative;
+            margin: 1rem 0;
+            .button-in {
+                display: inline-block;
+                font-weight: 500;
+                @include res-font-size(18, 24);
+                border-radius: 25px;
+                padding: 1rem 1.5rem;
+                background: $primary-blue;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+                margin: 20px 0;
+                box-shadow: 0px 10px 14px rgba($color: #000000, $alpha: 0.3);
+                transition: all 200ms ease-out;
+
+                &:hover,
+                &:focus {
+                    box-shadow: 0px 5px 8px rgba($color: #000000, $alpha: 0.3);
+                }
+
+                @include mq_sp() {
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+}

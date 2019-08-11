@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="901.955" height="901.955" viewBox="0 0 901.955 901.955">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        filter: url(#Polygon_24);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1.301" y2="0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="0" stop-color="#ff816e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+    <filter id="Polygon_24" x="0" y="0" width="901.955" height="901.955" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Polygon_24-2" data-name="Polygon 24" class="cls-1" d="M371.267,70.711a100,100,0,0,1,141.421,0L813.244,371.267a100,100,0,0,1,0,141.421L512.688,813.244a100,100,0,0,1-141.421,0L70.711,512.688a100,100,0,0,1,0-141.421Z" transform="translate(889.96 3) rotate(90)"/>
+  </g>
+</svg>

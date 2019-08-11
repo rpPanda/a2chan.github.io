@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 357.198 398.874">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+        stroke: #ff826e;
+        stroke-width: 10px;
+      }
+
+      .cls-2 {
+        fill: #ff826e;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke-linecap: round;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="1.301" y2="0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="0" stop-color="#ff816e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_99" data-name="Group 99" transform="translate(-1346 -3134)">
+    <g id="Group_101" data-name="Group 101">
+      <path id="ic_insert_drive_file_24px" class="cls-1" d="M37.3,2A33.252,33.252,0,0,0,4.166,35.3L4,301.665a33.252,33.252,0,0,0,33.13,33.3H237.072a33.394,33.394,0,0,0,33.3-33.3V101.888L170.48,2ZM153.832,118.536V26.972L245.4,118.536Z" transform="translate(1347 3137)"/>
+      <path id="Path_102" data-name="Path 102" class="cls-2" d="M13959.979,6156.672V6266.1h109.428Z" transform="translate(-12464 -3005)"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" class="cls-3" cx="28.5" cy="28.5" r="28.5" transform="translate(1391 3207)"/>
+      <line id="Line_5" data-name="Line 5" class="cls-4" x2="83" transform="translate(1391.5 3307.5)"/>
+      <line id="Line_6" data-name="Line 6" class="cls-4" x2="158" transform="translate(1391.5 3332.5)"/>
+      <line id="Line_8" data-name="Line 8" class="cls-4" x2="158" transform="translate(1391.5 3357.5)"/>
+    </g>
+    <path id="ic_thumb_up_24px" class="cls-3" d="M201.283,183.075H164.868V73.83h36.415ZM1,82.934A18.261,18.261,0,0,1,19.208,64.726H76.652L68,23.122l-.273-2.913a13.7,13.7,0,0,1,4.006-9.65L81.386,1l59.9,59.994A17.8,17.8,0,0,1,146.66,73.83v91.038a18.261,18.261,0,0,1-18.208,18.208H46.519a18.085,18.085,0,0,1-16.751-11.107L2.275,107.787A17.986,17.986,0,0,1,1,101.141V83.753l.091-.091Z" transform="translate(1501.916 3349.799)"/>
+  </g>
+</svg>

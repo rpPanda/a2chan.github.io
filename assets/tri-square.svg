@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 1352.063 1864.488">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        filter: url(#Polygon_6);
+      }
+
+      .cls-4 {
+        filter: url(#Polygon_5);
+      }
+
+      .cls-5 {
+        filter: url(#Polygon_4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.597" y1="0.14" x2="0.45" y2="1.098" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+    <filter id="Polygon_4" x="7.891" y="0" width="901.955" height="901.955" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Polygon_5" x="0" y="962.533" width="901.955" height="901.955" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="1.301" y2="0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff826e"/>
+      <stop offset="0" stop-color="#ff816e"/>
+      <stop offset="1" stop-color="#f64976"/>
+    </linearGradient>
+    <filter id="Polygon_6" x="450.108" y="485" width="901.955" height="901.955" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(38.655 678.481)">
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, -38.66, -678.48)">
+      <path id="Polygon_4-2" data-name="Polygon 4" class="cls-1" d="M371.267,70.711a100,100,0,0,1,141.421,0L813.244,371.267a100,100,0,0,1,0,141.421L512.688,813.244a100,100,0,0,1-141.421,0L70.711,512.688a100,100,0,0,1,0-141.421Z" transform="translate(897.85 3) rotate(90)"/>
+    </g>
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, -38.66, -678.48)">
+      <path id="Polygon_5-2" data-name="Polygon 5" class="cls-1" d="M371.267,70.711a100,100,0,0,1,141.421,0L813.244,371.267a100,100,0,0,1,0,141.421L512.688,813.244a100,100,0,0,1-141.421,0L70.711,512.688a100,100,0,0,1,0-141.421Z" transform="translate(889.96 965.53) rotate(90)"/>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, -38.66, -678.48)">
+      <path id="Polygon_6-2" data-name="Polygon 6" class="cls-2" d="M371.267,70.711a100,100,0,0,1,141.421,0L813.244,371.267a100,100,0,0,1,0,141.421L512.688,813.244a100,100,0,0,1-141.421,0L70.711,512.688a100,100,0,0,1,0-141.421Z" transform="translate(1340.06 488) rotate(90)"/>
+    </g>
+  </g>
+</svg>

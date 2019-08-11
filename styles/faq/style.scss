@@ -1,0 +1,40 @@
+@import "abstracts";
+@import "top-nav";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-style: $primary-font !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 110vh;
+
+    a {
+        text-decoration: none !important;
+    }
+}
+
+.collapsible {
+    position: relative;
+    top: 10vh;
+
+    @include mq_dl() {
+        width: 70%;
+        margin: auto;
+    }
+
+    @include mq_sp() {
+        width: 90%;
+        margin: auto;
+    }
+
+    .serial {
+        position: relative;
+        margin-right: 10px;
+    }
+}
