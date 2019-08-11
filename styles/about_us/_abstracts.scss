@@ -79,6 +79,7 @@ $primary-font: "Poppins", sans-serif;
     }
 }
 
+// Between smartphone and desktop/laptop - LOL
 @mixin mq_rest {
     @media only screen and (min-device-width: 480px) and (max-device-width: 1224px) {
         /*Styles*/

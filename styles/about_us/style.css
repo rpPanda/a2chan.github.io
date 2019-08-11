@@ -15,8 +15,6 @@
   -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.37);
           box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.37);
   z-index: 100;
-  background: -webkit-gradient(linear, left top, right top, from(#ff846f), color-stop(#fb5575), to(#fb5575));
-  background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -302,7 +300,6 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-style: "Poppins", sans-serif !important;
 }
 
 body {
@@ -310,36 +307,123 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 110vh;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ee6352), color-stop(purple), to(#ee6352));
+  background-image: linear-gradient(90deg, #ee6352, purple, #ee6352);
+  background-size: 300%;
+  -webkit-animation: bg-animation 25s infinite alternate;
+          animation: bg-animation 25s infinite alternate;
 }
 
 body a {
   text-decoration: none !important;
 }
 
-.collapsible {
+.about_us {
   position: relative;
-  top: 10vh;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  margin-top: 10vh;
 }
 
 @media only screen and (min-width: 1224px) {
-  .collapsible {
+  .about_us {
     /* Styles */
+    width: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 700px) and (max-device-width: 1224px) {
+  .about_us {
+    /*Styles*/
     width: 70%;
-    margin: auto;
+  }
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 700px) {
+  .about_us {
+    /*Styles*/
+    width: 80%;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .collapsible {
+  .about_us {
     /* Styles */
     width: 90%;
+  }
+}
+
+.about_us .title-wrap {
+  position: relative;
+  background: #fff;
+  padding: 1rem 3rem;
+  display: inline-block;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 3vh;
+}
+
+.about_us .title-wrap .title {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc( 32px + (72 - 32) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 600;
+  color: #fc808a;
+}
+
+.about_us .text {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  line-height: 200%;
+}
+
+@media only screen and (min-width: 1224px) {
+  .about_us .text {
+    /* Styles */
+    width: 80%;
     margin: auto;
   }
 }
 
-.collapsible .serial {
+.about_us .text div {
   position: relative;
-  margin-right: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border: 1px solid #fff;
+}
+
+.about_us .text div:nth-child(1) {
+  text-align: left;
+}
+
+.about_us .text div:nth-child(2) {
+  text-align: right;
+}
+
+.about_us .text div:nth-child(3) {
+  text-align: left;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 /*# sourceMappingURL=style.css.map */
