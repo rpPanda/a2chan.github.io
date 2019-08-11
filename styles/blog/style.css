@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700");
 
-#first
-{
-  width: 45px;
-}
 /*PEN STYLES*/
 .blog-card {
   display: flex;
@@ -154,7 +150,7 @@
   left: 0%;
 }
 @media (min-width: 640px) {
-  
+
   .blog-card {
     flex-direction: row;
     max-width: 700px;
