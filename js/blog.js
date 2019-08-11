@@ -1,30 +1,5 @@
 var top=$(window).scrollTop();
 var ht = $(window).height();
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight+10 + "px";
-      content.style.height = content.scrollHeight + 10 + "px";
-
-      var top=$(window).scrollTop();
-      console.log(top);
-      setTimeout(
-        function()
-        {
-            $(".parallax").animate({ scrollTop:  8*ht}, 1600);
-            console.log("Jello");
-        }, 50);
-    }
-  });
-}
-
 // var scrolling = document.getElementById("featured");
 //
 // scrolling.addEventListener("click", function() {
