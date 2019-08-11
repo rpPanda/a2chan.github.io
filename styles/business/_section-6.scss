@@ -10,17 +10,33 @@
                 fill: rgba($color: $primary-blue, $alpha: 0.1);
             }
         }
-    }
 
-    @include mq_sp() {
-        display: none;
+        @include mq_sp() {
+            position: absolute;
+        }
+
+        @include mq_rest() {
+            position: absolute;
+        }
     }
 
     .content {
-        position: absolute;
-        top: 20%;
-        left: 10%;
-        width: 40%;
+        @include mq_dl() {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            width: 40%;
+        }
+
+        @include mq_sp() {
+            position: relative;
+            text-align: center;
+        }
+
+        @include mq_rest() {
+            position: relative;
+            text-align: center;
+        }
 
         .title {
             position: relative;
@@ -31,10 +47,11 @@
             text-transform: uppercase;
 
             span {
-                display: block;
-                height: calc(
-                    24px + (32 - 24) * ((100vw - 300px) / (1920 - 300))
-                );
+                font-size: 150%;
+            }
+
+            @include mq_sp() {
+                margin-top: 5%;
             }
         }
 
@@ -44,6 +61,16 @@
             font-family: "Poppins", sans-serif;
             font-weight: 400;
             color: $primary-pink;
+
+            @include mq_sp() {
+                width: 80%;
+                margin: auto;
+            }
+
+            @include mq_rest() {
+                width: 60%;
+                margin: auto;
+            }
         }
 
         .cards {
@@ -53,6 +80,24 @@
             grid-gap: 4rem;
             padding: 2rem 0;
 
+            @include mq_sp() {
+                grid-gap: 1rem;
+                width: 90%;
+                margin: auto;
+            }
+
+            @include mq_custom(448px, 750px) {
+                grid-gap: 2rem;
+                width: 60%;
+                margin: auto;
+            }
+
+            @include mq_custom(750px, 1224px) {
+                grid-gap: 2rem;
+                width: 50%;
+                margin: auto;
+            }
+
             .card {
                 position: relative;
                 box-shadow: 0 0 10px rgba($color: $primary-pink, $alpha: 0.5);
@@ -60,15 +105,19 @@
                 text-align: center;
                 background: #fcfdff;
 
+                @include mq_sp() {
+                    // box-shadow: none;
+                }
+
                 .strong {
                     position: relative;
-                    @include res-font-size(44, 48);
+                    @include res-font-size(32, 48);
                     text-transform: uppercase;
                     color: $primary-pink;
                     padding: 2rem 1rem;
 
                     span {
-                        @include res-font-size(38, 42);
+                        @include res-font-size(28, 42);
                     }
                 }
                 .text {

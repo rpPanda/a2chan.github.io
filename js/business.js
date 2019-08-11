@@ -73,13 +73,20 @@ $("#submit-form").on("click", function(e) {
     })
 })
 
-var cascade_cards = document
-    .getElementById("cascade")
-    .getElementsByClassName("card")
-var i
+const expandCard = () => {
+    var cascade_cards = document
+        .getElementById("cascade")
+        .getElementsByClassName("card")
+    var i
 
-for (i = 0; i < cascade_cards.length; i++) {
-    cascade_cards[i].addEventListener("click", function() {
-        this.classList.toggle("expand-section--4-card")
-    })
+    for (i = 0; i < cascade_cards.length; i++) {
+        cascade_cards[i].addEventListener("click", function() {
+            this.classList.toggle("expand-section--4-card")
+        })
+    }
 }
+
+$(document).ready(() => {
+    document.getElementById("contact-form").reset()
+    expandCard()
+})

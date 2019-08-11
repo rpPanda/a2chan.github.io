@@ -88,6 +88,13 @@ $tertiary-font: "Montserrat", sans-serif;
     }
 }
 
+@mixin mq_custom($min, $max) {
+    @media only screen and (min-device-width: $min) and (max-device-width: $max) {
+        /*Styles*/
+        @content;
+    }
+}
+
 /* Large screens ----------- */
 @mixin mq_large {
     @media only screen and (min-width: 1824px) {

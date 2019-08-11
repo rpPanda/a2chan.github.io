@@ -438,11 +438,8 @@ jQuery("img.svg").each(function() {
 })
 
 $(document).ready(() => {
-    // fallingLetters()
-    // footer_observer.observe(footer)
+    fallingLetters()
     observe_topnav(x)
-    // })
-
     desc_card.forEach(card => {
         observer.observe(card)
     })
