@@ -1116,7 +1116,7 @@
 .res-menu__nav-logo {
   position: absolute;
   top: 2vh;
-  left: 30px;
+  left: -10px;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }

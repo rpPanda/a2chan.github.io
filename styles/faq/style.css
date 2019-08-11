@@ -227,6 +227,23 @@
     margin: 0 2rem;
     height: 100%;
   }
+  .top-nav ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background: #fff;
+    width: 100%;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  .top-nav ul li:hover::before, .top-nav ul li:focus::before {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -247,25 +264,6 @@
     background: -webkit-gradient(linear, left top, right top, from(#ff846f), color-stop(#fb5575), to(#fb5575));
     background: linear-gradient(90deg, #ff846f, #fb5575, #fb5575);
   }
-}
-
-.top-nav ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  background: #fff;
-  width: 100%;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
-.top-nav ul li:hover::before, .top-nav ul li:focus::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
 }
 
 .show-dropdown {
