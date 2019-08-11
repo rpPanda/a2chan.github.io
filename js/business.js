@@ -49,6 +49,11 @@ const animateBurger = () => {
     ul.classList.toggle("show-dropdown")
 }
 
+// get a quote form
+const toggleForm = () => {
+    document.querySelector(".query-form").classList.toggle("showForm")
+}
+
 var cascade_cards = document
     .getElementById("cascade")
     .getElementsByClassName("card")
