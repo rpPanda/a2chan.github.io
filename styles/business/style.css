@@ -1277,6 +1277,10 @@ body a {
   }
 }
 
+.types-of-content .card .desc .slide .content ul {
+  padding-left: 10px;
+}
+
 .types-of-content .card .desc .slide--1 {
   position: relative;
   visibility: visible;
