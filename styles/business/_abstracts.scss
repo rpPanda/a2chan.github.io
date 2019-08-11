@@ -1,0 +1,110 @@
+$primary-pink: #fc808a;
+$primary-blue: #256e9c;
+$text-white: #fff;
+$text-black: #675f58;
+
+$primary-font: "Poppins", sans-serif;
+$tertiary-font: "Montserrat", sans-serif;
+
+@mixin mq($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin mq_min($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+@mixin mq_h($size) {
+    @media only screen and (max-height: $size) {
+        @content;
+    }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@mixin mq_sp() {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@mixin mq_sp_l() {
+    @media only screen and (min-width: 321px) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* Smartphones (portrait) ----------- */
+@mixin mq_sp_p() {
+    @media only screen and (max-width: 320px) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@mixin mq_ipad() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@mixin mq_ipad_l() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@mixin mq_ipad_p() {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+        /* Styles */
+        @content;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@mixin mq_dl() {
+    @media only screen and (min-width: 1224px) {
+        /* Styles */
+        @content;
+    }
+}
+
+// Between smartphone and desktop/laptop - LOL
+@mixin mq_rest {
+    @media only screen and (min-device-width: 480px) and (max-device-width: 1224px) {
+        /*Styles*/
+        @content;
+    }
+}
+
+@mixin mq_custom($min, $max) {
+    @media only screen and (min-device-width: $min) and (max-device-width: $max) {
+        /*Styles*/
+        @content;
+    }
+}
+
+/* Large screens ----------- */
+@mixin mq_large {
+    @media only screen and (min-width: 1824px) {
+        /* Styles */
+        @content;
+    }
+}
+
+@mixin res-font-size($min, $max) {
+    font-size: calc(
+        #{$min}px + (#{$max} - #{$min}) * ((100vw - 300px) / (1920 - 300))
+    );
+}

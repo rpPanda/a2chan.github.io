@@ -1,0 +1,109 @@
+@import "abstracts";
+@import "top-nav";
+
+$gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: $gradient;
+    background-size: 300%;
+    animation: bg-animation 25s infinite alternate;
+
+    a {
+        text-decoration: none !important;
+    }
+}
+
+.about_us {
+    position: relative;
+    font-family: $primary-font;
+    margin: auto;
+    margin-top: 10vh;
+
+    @include mq_dl() {
+        width: 50%;
+    }
+
+    @include mq_custom(700px, 1224px) {
+        width: 70%;
+    }
+
+    @include mq_custom(480px, 700px) {
+        width: 80%;
+    }
+
+    @include mq_sp() {
+        width: 90%;
+    }
+
+    .title-wrap {
+        position: relative;
+        background: #fff;
+        padding: 1rem 3rem;
+        display: inline-block;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 3vh;
+
+        .title {
+            position: relative;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include res-font-size(32, 72);
+            font-weight: 600;
+            color: $primary-pink;
+        }
+    }
+
+    .text {
+        position: relative;
+        text-align: center;
+        color: #fff;
+
+        @include mq_dl() {
+            width: 80%;
+            margin: auto;
+        }
+
+        @include res-font-size(16, 20);
+        line-height: 200%;
+
+        div {
+            position: relative;
+            padding: 2rem;
+            margin: 2rem 0;
+            border: 1px solid #fff;
+
+            &:nth-child(1) {
+                text-align: left;
+            }
+
+            &:nth-child(2) {
+                text-align: right;
+            }
+
+            &:nth-child(3) {
+                text-align: left;
+            }
+        }
+    }
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}

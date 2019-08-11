@@ -1,0 +1,273 @@
+$pink-1: #fc808a;
+.offerings {
+    position: relative;
+
+    @include mq_dl {
+        width: 55%;
+        margin: 10vh auto;
+    }
+
+    @include mq_rest {
+        width: 80%;
+        margin: 10vh auto;
+    }
+
+    > .title {
+        position: relative;
+        @include res-font-size(32, 48);
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+        color: $primary-blue;
+        margin: 0 0 3rem 0;
+    }
+
+    .cascade {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, max-content);
+        grid-row-gap: 4rem;
+        cursor: pointer;
+
+        @include mq_sp() {
+            width: 80%;
+            margin: auto;
+            grid-row-gap: 3rem;
+        }
+
+        .card {
+            position: relative;
+
+            font-family: $primary-font;
+
+            @include mq_rest {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: max-content 1fr;
+                align-items: center;
+
+                &:nth-child(even) {
+                    .image {
+                        grid-column: 1/2;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 2/4;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 2/4;
+                        grid-row: 2/3;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .image {
+                        grid-column: 3/4;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 1/3;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 1/3;
+                        grid-row: 2/3;
+                    }
+                }
+
+                .image {
+                    position: relative;
+                    text-align: center;
+
+                    .container {
+                        position: relative;
+                        display: inline-block;
+                        height: 6rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .title {
+                    position: relative;
+                    @include res-font-size(24, 32);
+                    color: $primary-pink;
+                    font-weight: 500;
+                }
+
+                .description {
+                    position: relative;
+                    @include res-font-size(12, 16);
+                }
+            }
+
+            @include mq_dl {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: max-content 1fr;
+                align-items: center;
+
+                &:nth-child(even) {
+                    .image {
+                        grid-column: 1/2;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 2/4;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 2/4;
+                        grid-row: 2/3;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .image {
+                        grid-column: 3/4;
+                        grid-row: 1/3;
+                    }
+                    .title {
+                        grid-column: 1/3;
+                        grid-row: 1/2;
+                    }
+                    .description {
+                        grid-column: 1/3;
+                        grid-row: 2/3;
+                    }
+                }
+
+                .image {
+                    position: relative;
+                    text-align: center;
+
+                    .container {
+                        position: relative;
+                        display: inline-block;
+                        height: 10rem;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .title {
+                    position: relative;
+                    @include res-font-size(24, 32);
+                    color: $primary-pink;
+                    font-weight: 500;
+                }
+
+                .description {
+                    position: relative;
+                    @include res-font-size(12, 16);
+                }
+            }
+
+            @include mq_sp {
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                grid-template-rows: 1fr;
+                place-items: center;
+
+                box-shadow: 0px 3px 7px rgba($color: #000000, $alpha: 0.14);
+                padding: 1rem;
+                border-radius: 11px;
+
+                &::before {
+                    content: "+";
+                    position: absolute;
+                    right: 15px;
+                    color: #707070;
+                    font-size: 20px;
+                    transition: all 500ms ease-out;
+                }
+
+                .image {
+                    position: relative;
+                    text-align: center;
+
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+
+                    .container {
+                        position: relative;
+                        display: inline-block;
+                        height: 100%;
+                        width: 50px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+
+                .title {
+                    grid-row: 1/2;
+                    grid-column: 2/3;
+                    position: relative;
+                    @include res-font-size(20, 32);
+                    color: $primary-pink;
+                    font-weight: 500;
+                    text-align: center;
+                    width: 85%;
+                    margin: 0 20px 0 auto;
+                }
+
+                .description {
+                    position: absolute;
+                    z-index: 10;
+
+                    top: 120%;
+
+                    @include res-font-size(16, 18);
+                    color: $text-black;
+
+                    overflow: hidden;
+                    visibility: hidden;
+
+                    .wrapper {
+                        position: relative;
+                        overflow: hidden;
+                        height: 100%;
+                        width: 100%;
+
+                        background: $text-white;
+                        box-shadow: 0px 3px 55px
+                            rgba($color: #000000, $alpha: 0.16);
+
+                        transform: translateY(-120%);
+                        transition: all 500ms ease-out;
+
+                        .text {
+                            position: relative;
+                            padding: 2rem 1.5rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.expand-section--4-card {
+    &::before {
+        transform: rotate(45deg) !important;
+    }
+
+    .description {
+        visibility: visible !important;
+    }
+
+    .wrapper {
+        transform: translateY(0) !important;
+    }
+}

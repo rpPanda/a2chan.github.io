@@ -14,7 +14,7 @@
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Poppins:100,200,300,400,500,600,700|Mukta:300,400,500|Karla:400,700&display=swap"
+            href="https://fonts.googleapis.com/css?family=Raleway|Poppins|Karla|Montserrat&display=swap"
             rel="stylesheet"
         />
 
@@ -30,9 +30,9 @@
         <nav class="topnav burger-show">
             <ul class="topnav__nav-links">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="./about_us.html">About</a></li>
                 <li><a href="./blog.html">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#footer">Contact Us</a></li>
             </ul>
             <div class="dropdown">
                 <div class="drop-container">
@@ -60,9 +60,11 @@
                 </div>
                 <ul class="res-menu__red">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#!">About</a></li>
+                    <li><a href="./about_us.html">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
+                    <li>
+                        <a href="#footer" onClick="navSlide()">Contact Us</a>
+                    </li>
                 </ul>
                 <ul class="res-menu__lang">
                     <li><a href="#!">हिंदी</a></li>
@@ -73,16 +75,52 @@
                 </ul>
                 <div class="res-menu__social">
                     <div class="fb">
-                        <img src="./assets/fb.svg" alt="" />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.facebook.com/Pepper-Co-322356101506651/"
+                        >
+                            <img class="svg" src="./assets/fb.svg" alt="" />
+                        </a>
                     </div>
                     <div class="twitter">
-                        <img src="./assets/Twitter_white.svg" alt="" />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://twitter.com/Pepper_India"
+                        >
+                            <img
+                                class="svg"
+                                src="./assets/Twitter_white.svg"
+                                alt=""
+                            />
+                        </a>
                     </div>
                     <div class="linkedin">
-                        <img src="./assets/LinkedIN_white.svg" alt="" />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://www.linkedin.com/company/peppercontent/"
+                        >
+                            <img
+                                class="svg"
+                                src="./assets/LinkedIN_white.svg"
+                                alt=""
+                            />
+                        </a>
                     </div>
                     <div class="medium">
-                        <img src="./assets/Medium_white.svg" alt="" />
+                        <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href="https://medium.com/@peppercontent3"
+                        >
+                            <img
+                                class="svg"
+                                src="./assets/Medium_white.svg"
+                                alt=""
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -111,12 +149,18 @@
                 <!-- buttons business and writer begins -->
                 <div class="btn-1-1">
                     <div class="btn-1-1__btn-1">
-                        <div class="link gaq-open" onclick="toggleForm()">
-                            Get a Quote
+                        <div class="link">
+                            <a href="./business.html">
+                                Engage as a business
+                            </a>
                         </div>
                     </div>
                     <div class="btn-1-1__btn-2">
-                        <div class="link">Connect With Us</div>
+                        <div class="link">
+                            <a href="./writer.html">
+                                Enagage as a writer
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- buttons end -->
@@ -148,6 +192,13 @@
                                 <div
                                     class="card__side card__side--front card__side--front-1"
                                 >
+                                    <div class="mask">
+                                        <img
+                                            src="./assets/letter_pa.svg"
+                                            alt=""
+                                            class="svg"
+                                        />
+                                    </div>
                                     <div class="card__description">
                                         Pepper Tales.
                                     </div>
@@ -165,6 +216,13 @@
                                 <div
                                     class="card__side card__side--front card__side--front-2"
                                 >
+                                    <div class="mask">
+                                        <img
+                                            src="./assets/letter_ta.svg"
+                                            alt=""
+                                            class="svg"
+                                        />
+                                    </div>
                                     <div class="card__description">
                                         Translation.
                                     </div>
@@ -182,6 +240,13 @@
                                 <div
                                     class="card__side card__side--front card__side--front-3"
                                 >
+                                    <div class="mask">
+                                        <img
+                                            src="./assets/letter_bha.svg"
+                                            alt=""
+                                            class="svg"
+                                        />
+                                    </div>
                                     <div class="card__description">
                                         Vernacular.
                                     </div>
@@ -272,36 +337,48 @@
                     <div class="testimonial-slide owl-carousel owl-theme">
                         <div class="item">
                             <p>
-                                By having a bigger purpose, it just might be
-                                that Avira's building a 21st century design
-                                studio: the crucible of big, world-changing
-                                ideas."
+                                Pepper, to us, is the synonym of the word
+                                'dedication'. Team Pepper has attended to our
+                                content requirements diligently. Undoubtedly, it
+                                has some of the best writers, editors and
+                                analysts in the industry, all of them turning it
+                                into the cynosure of curated content.
                             </p>
                             <div class="infor-client">
-                                <span class="client-name">ROBERT SMITH</span>
+                                <span class="client-name"
+                                    >Harsh Binani, Cuelogic Technologies</span
+                                >
                             </div>
                         </div>
                         <div class="item">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Vero distinctio ex, nesciunt
-                                quas magni odit. Expedita unde labore eaque
-                                dignissimos temporibus ipsam, animi harum
-                                laborum, nihil eligendi doloribus, eius magnam?
+                                It has been a privilege to work with Pepper. We
+                                have always got something far more beautiful
+                                than we expected. The combination of its
+                                professionalism and perseverance has never
+                                failed to pleasantly surprise us. It certainly
+                                has got some of the best content professionals
+                                on board.
                             </p>
                             <div class="infor-client">
-                                <span class="client-name">ROBERT SMITH</span>
+                                <span class="client-name"
+                                    >Nikhil Jois, Bharat Matrimony
+                                </span>
                             </div>
                         </div>
                         <div class="item">
                             <p>
-                                By having a bigger purpose, it just might be
-                                that Avira's building a 21st century design
-                                studio: the crucible of big, world-changing
-                                ideas."
+                                Pepper has never failed to live up to our
+                                expectations and has become our favourite team
+                                to work with. It has undoubtedly blazed a
+                                beautiful trail of professionalism, zeal and
+                                dedication. We have always loved working with
+                                Team Pepper.
                             </p>
                             <div class="infor-client">
-                                <span class="client-name">ROBERT SMITH</span>
+                                <span class="client-name"
+                                    >Manas Makani, India Today Group</span
+                                >
                             </div>
                         </div>
                     </div>
@@ -311,130 +388,126 @@
         </div>
         <div class="bg-card bg-card--card6">
             <!-- <div class="color-picker"></div> -->
-            <footer>
-                <div class="about-us">
-                    <div class="container">
-                        <div class="title">
-                            About us
-                        </div>
-                        <div class="content">
-                            <p>
-                                With unprecedented importance being given to
-                                online presence, the work interface has
-                                transformed from the static space of a cubicle
-                                to the ever-changing dynamics of the digital
-                                world. Pepper aims to bridge the gap between
-                                content creators and those who demand it. We're
-                                four individuals who believe in equalising
-                                opportunities and creating a platform where
-                                talent meets opportunity.
-                            </p>
+            <footer id="footer">
+                <div class="bottom">
+                    <div class="logo">
+                        <img src="./assets/logo_text.svg" alt="" class="svg" />
+                    </div>
+                    <div class="quick-links">
+                        <div class="title">Menu</div>
+                        <div class="links">
+                            <div class="linkItems">
+                                <a href="./index.html">Home</a>
+                            </div>
+                            <div class="linkItems">
+                                <a href="./about_us.html">About</a>
+                            </div>
+                            <div class="linkItems">
+                                <a href="./blog.html">Blog</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="bottom-wrapper">
-                    <div class="bottom">
-                        <div class="title">
-                            <div class="title-text">
+                    <div class="address-wrapper">
+                        <div class="address-text">
+                            <div class="title">
+                                Office:
+                            </div>
+                            <div class="desc">
+                                <div>605, Rattan Icon Building</div>
+                                <div>Seawoods, Sector 50, Navi Mumbai</div>
+                                <div>Maharashtra - 400706</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone anirudh">
+                        <div class="content">
+                            <div class="name">
+                                Anirudh Singla
+                            </div>
+                            <div class="mail">
                                 <img
-                                    src="./assets/logo_text.svg"
-                                    alt=""
                                     class="svg"
+                                    src="./assets/mail.svg"
+                                    alt=""
                                 />
+                                <span>anirudh@pepper.org.in</span>
                             </div>
                         </div>
-                        <div class="quick-links">
-                            <div class="contain">
-                                <div class="title">Menu</div>
-                                <div class="links">
-                                    <div><a href="./index.html">Home</a></div>
-                                    <div><a href="#!">About</a></div>
-                                    <div><a href="./blog.html">Blog</a></div>
-                                    <div>
-                                        <a href="./portfolio.html">Portfolio</a>
-                                    </div>
-                                </div>
+                    </div>
+                    <div class="phone rishabh">
+                        <div class="content">
+                            <div class="name">
+                                Rishabh Shekhar
+                            </div>
+                            <div class="mail">
+                                <img
+                                    class="svg"
+                                    src="./assets/mail.svg"
+                                    alt=""
+                                />
+                                <span>
+                                    rishabh@pepper.org.in
+                                </span>
                             </div>
                         </div>
-                        <div class="address-wrapper">
-                            <div class="address">
-                                <div class="address-text">
-                                    <div class="title">
-                                        Office:
-                                    </div>
-                                    <p>
-                                        605, Rattan Icon Building
-                                        <br />Seawoods, Sector 50, Navi Mumbai
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone anirudh">
-                            <div class="content">
-                                <div class="name">
-                                    Anirudh Singla
-                                </div>
-                                <div class="mail">
-                                    <img
-                                        class="svg"
-                                        src="./assets/mail.svg"
-                                        alt=""
-                                    />
-                                    <span>anirudh@pepper.org.in</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="phone rishabh">
-                            <div class="content">
-                                <div class="name">
-                                    Rishabh Shekhar
-                                </div>
-                                <div class="mail">
-                                    <img
-                                        class="svg"
-                                        src="./assets/mail.svg"
-                                        alt=""
-                                    />
-                                    <span>
-                                        rishabh@pepper.org.in
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="info">
-                            <p>© 2019, Pepper. All Rights Reserved.</p>
-                        </div>
-                        <div class="social-wrapper">
-                            <div class="social">
-                                <div class="fb">
+                    </div>
+                    <div class="group">
+                        <div class="social">
+                            <div class="icons fb">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.facebook.com/Pepper-Co-322356101506651/"
+                                >
                                     <img
                                         class="svg"
                                         src="./assets/fb.svg"
                                         alt=""
                                     />
-                                </div>
-                                <div class="twitter">
+                                </a>
+                            </div>
+                            <div class="icons twitter">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://twitter.com/Pepper_India"
+                                >
                                     <img
                                         class="svg"
                                         src="./assets/Twitter_white.svg"
                                         alt=""
                                     />
-                                </div>
-                                <div class="linkedin">
+                                </a>
+                            </div>
+                            <div class="icons linkedin">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://www.linkedin.com/company/peppercontent/"
+                                >
                                     <img
                                         class="svg"
                                         src="./assets/LinkedIN_white.svg"
                                         alt=""
                                     />
-                                </div>
-                                <div class="medium">
+                                </a>
+                            </div>
+                            <div class="icons medium">
+                                <a
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    href="https://medium.com/@peppercontent3"
+                                >
                                     <img
                                         class="svg"
                                         src="./assets/Medium_white.svg"
                                         alt=""
                                     />
-                                </div>
+                                </a>
                             </div>
+                        </div>
+                        <div class="info">
+                            <div>© 2019, Pepper. All Rights Reserved.</div>
                         </div>
                     </div>
                 </div>

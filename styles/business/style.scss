@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none !important;
+        color: inherit !important;
+    }
+}
+
+@import "abstracts";
+@import "top-nav";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+@import "section-5";
+@import "section-6";
+@import "footer";
+@import "get-quote";
+
+.section {
+    width: 100%;
+
+    &:not(.section--1) {
+        margin: 10vh 0;
+    }
+}

@@ -29,6 +29,11 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     cursor: default;
+
+    a {
+        cursor: pointer !important;
+        text-decoration: none !important;
+    }
 }
 
 .bg-card {
@@ -54,7 +59,7 @@ body {
     &--card4 {
         width: 100vw;
         position: relative;
-        background-color: rgba($color: $p5_color5, $alpha: 1);
+        background-color: rgba($color: #fdfdff, $alpha: 1);
 
         @media only screen and (max-device-height: 600px) {
             margin-top: 50px !important;

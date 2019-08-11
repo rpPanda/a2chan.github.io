@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 206 97">
+  <g id="Group_1" data-name="Group 1" transform="translate(-452 -6840)">
+    <g id="Ellipse_3_copy" data-name="Ellipse 3 copy" transform="translate(457.22 6845.87)" fill="#fff" stroke="#fb808a" stroke-linejoin="round" stroke-width="3">
+      <ellipse cx="43.17" cy="43.27" rx="43.17" ry="43.27" stroke="none"/>
+      <ellipse cx="43.17" cy="43.27" rx="44.67" ry="44.77" fill="none"/>
+    </g>
+    <g id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" transform="translate(567.1 6845.87)" fill="#fff" stroke="#fb808a" stroke-linejoin="round" stroke-width="3">
+      <ellipse cx="43.17" cy="43.27" rx="43.17" ry="43.27" stroke="none"/>
+      <ellipse cx="43.17" cy="43.27" rx="44.67" ry="44.77" fill="none"/>
+    </g>
+    <g id="Ellipse_3_copy_2-2" data-name="Ellipse 3 copy 2" transform="translate(586.69 6865.56)" fill="#fff" stroke="#fb808a" stroke-linejoin="round" stroke-width="3" opacity="0.6">
+      <ellipse cx="23.89" cy="23.92" rx="23.89" ry="23.92" stroke="none"/>
+      <ellipse cx="23.89" cy="23.92" rx="25.39" ry="25.42" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(476.87 6865.56)" fill="#fff" stroke="#fb808a" stroke-linejoin="round" stroke-width="3" opacity="0.6">
+      <ellipse cx="23.86" cy="23.92" rx="23.86" ry="23.92" stroke="none"/>
+      <ellipse cx="23.86" cy="23.92" rx="25.36" ry="25.42" fill="none"/>
+    </g>
+    <text id="c" transform="translate(491.597 6898.633)" fill="#fb808a" font-size="36.622" font-family="ProximaNova-Regular, Proxima Nova" letter-spacing="-0.025em"><tspan x="0" y="0">c</tspan></text>
+    <text id="c-2" data-name="c" transform="translate(599.502 6898.633)" fill="#fb808a" font-size="36.622" font-family="ProximaNova-Regular, Proxima Nova" letter-spacing="-0.025em"><tspan x="0" y="0">c</tspan></text>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="3.3" cy="3.28" rx="3.3" ry="3.28" transform="translate(495.78 6861.63)" fill="#fb808a"/>
+    <ellipse id="Ellipse_4_copy" data-name="Ellipse 4 copy" cx="3.3" cy="3.28" rx="3.3" ry="3.28" transform="translate(495.78 6910.13)" fill="#fb808a"/>
+    <ellipse id="Ellipse_4_copy_2" data-name="Ellipse 4 copy 2" cx="3.27" cy="3.28" rx="3.27" ry="3.28" transform="translate(607 6861.63)" fill="#fb808a"/>
+    <ellipse id="Ellipse_4_copy_2-2" data-name="Ellipse 4 copy 2" cx="3.27" cy="3.28" rx="3.27" ry="3.28" transform="translate(607 6910.13)" fill="#fb808a"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="4.59" cy="4.59" r="4.59" transform="translate(452 6884.57)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy" data-name="Ellipse 5 copy" cx="4.55" cy="4.59" rx="4.55" ry="4.59" transform="translate(539 6884.57)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy_5" data-name="Ellipse 5 copy 5" cx="4.55" cy="4.59" rx="4.55" ry="4.59" transform="translate(561.9 6884.57)" fill="#fb808a"/>
+    <circle id="Ellipse_5_copy_5-2" data-name="Ellipse 5 copy 5" cx="4.59" cy="4.59" r="4.59" transform="translate(648.82 6884.57)" fill="#fb808a"/>
+    <rect id="Shape_3" data-name="Shape 3" width="22.89" height="1.31" transform="translate(543.56 6888.5)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy_2" data-name="Ellipse 5 copy 2" cx="4.59" cy="4.58" rx="4.59" ry="4.58" transform="translate(606.32 6927.84)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy_3" data-name="Ellipse 5 copy 3" cx="4.59" cy="4.58" rx="4.59" ry="4.58" transform="translate(606.32 6840)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy_4" data-name="Ellipse 5 copy 4" cx="4.59" cy="4.58" rx="4.59" ry="4.58" transform="translate(494.5 6927.84)" fill="#fb808a"/>
+    <ellipse id="Ellipse_5_copy_4-2" data-name="Ellipse 5 copy 4" cx="4.59" cy="4.58" rx="4.59" ry="4.58" transform="translate(494.5 6840)" fill="#fb808a"/>
+  </g>
+</svg>

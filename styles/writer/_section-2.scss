@@ -1,0 +1,73 @@
+.section--2 {
+    position: relative;
+
+    .caption {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        @include res-font-size(36, 72);
+        font-weight: 600;
+        color: $primary-red;
+        width: 90%;
+        margin: 0 auto 5vh auto;
+    }
+
+    .what-we-do {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        width: 80%;
+        margin: auto;
+        grid-gap: 2rem;
+
+        @include mq_sp {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, max-content);
+        }
+
+        @media only screen and (min-device-width: 480px) and (max-device-width: 900px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, max-content);
+        }
+
+        .card {
+            position: relative;
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            grid-gap: 0.2rem 1rem;
+            font-family: "Poppins", sans-serif;
+            border: dashed 4px rgba($color: $primary-red, $alpha: 0.6);
+            padding: 2rem;
+
+            @include mq_sp() {
+                grid-gap: 0 0.2rem;
+
+                .sl {
+                    line-height: 100%;
+                }
+            }
+
+            @media only screen and (min-device-width: 480px) and (max-device-width: 900px) {
+                grid-gap: 0 0.2rem;
+
+                .sl {
+                    line-height: 100%;
+                }
+            }
+
+            .sl {
+                position: relative;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                @include res-font-size(32, 50);
+            }
+
+            .content {
+                position: relative;
+                grid-row: 2/3;
+                grid-column: 2/3;
+                @include res-font-size(18, 26);
+            }
+        }
+    }
+}

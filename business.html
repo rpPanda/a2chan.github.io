@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./styles/business/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins|Montserrat&display=swap"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <title>Business</title>
+    </head>
+    <body>
+        <nav class="top-nav">
+            <div class="burger" id="burger" onclick="animateBurger()">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="logo">
+                <a target="_blank" rel="noopener noreferrer" href="./index.html"
+                    ><img src="./assets/logo_text.svg" alt="" class="svg"
+                /></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="./about_us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="#footer">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="back-panel"></div>
+        <div class="section section--1">
+            <div class="fancy-business">
+                <img src="./assets/fancy-business.svg" alt="" />
+                <!-- <div class="panel-1"></div>
+                <div class="panel-2"></div> -->
+            </div>
+            <div class="container">
+                <div class="heading">Turn content into customers</div>
+                <div class="sub-heading">
+                    "Words are free. It's how you use them that may cost you."
+                </div>
+                <div class="sub-text">
+                    Revolutionising from blogging to digital media marketing,
+                    words have been the swords to get an edge though. Content
+                    acts as a perfect emotional and informational bridge between
+                    Consumer and Commerce. In the sea of mediocre content, with
+                    the wave of quality, a hail of experience - anchor it with
+                    Pepper. Sail your ship high with us!
+                </div>
+                <div class="button" onclick="toggleForm()">
+                    <div class="button-in">
+                        <a target="_blank" rel="noopener noreferrer"
+                            >Get a quote</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--2">
+            <div class="caption">What do we do?</div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        We help plan your content atomisation, churn all the
+                        fission and fusions and put all the spin-offs to your
+                        content calendar.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        From ideation phase to the publicity finale, we provide
+                        end-to-end solution for content creation. Taking care of
+                        aspects from research, the value proposition to content
+                        optimisations, we give you the best of resources.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        All the spin-offs that we add are of course backed by
+                        the best of mathematics and analytics. It's altogether a
+                        boost for a perfect hail!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--3">
+            <div class="how-we-work">
+                <div class="title">How we work?</div>
+                <div class="container">
+                    <div class="card card--1">
+                        <div class="title">Analysing the client's need</div>
+                        <div class="serial">1.</div>
+                        <div class="content">
+                            <div class="description">
+                                We analyse and curate a content strategy that
+                                can make or break your content marketing
+                                efforts. Our experts will devise a keyword and
+                                SEO strategy to fit your unique needs and set up
+                                a content calendar insuring consistency.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--2">
+                        <div class="title">Pre-Production</div>
+                        <div class="serial">2.</div>
+                        <div class="content">
+                            <div class="description">
+                                We provide a best-in-class, end to end solution
+                                for content creation, covering the journey from
+                                ideation to publishing. Our services include
+                                Audience Research, Content Value Proposition,
+                                Competitor Analysis, Tone of Voice Development
+                                and Channel Optimisation.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--3">
+                        <div class="title">Post-Production</div>
+                        <div class="serial">3.</div>
+                        <div class="content">
+                            <div class="description">
+                                We at Pepper, are very particular about quality
+                                and provide additional services for re-edits.
+                                Our content translates to improved search
+                                rankings and traffic, increased conversion rates
+                                and brand integrity
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--4">
+            <div class="offerings">
+                <div class="title">We offer content for</div>
+                <div class="cascade" id="cascade">
+                    <div class="card card--1">
+                        <div class="image">
+                            <div class="container">
+                                <img src="./assets/blog-post.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="title">Blog Posts</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Blog posts are generally 500-700 word long
+                                    content pieces which are usually one of the
+                                    most published forms of content that each
+                                    organisation associates with its product.
+                                    With the right length to keep the readers
+                                    engaged along with providing the requisite
+                                    information in a concise and crisp manner,
+                                    blog posts get the maximum of internet
+                                    traffic depending on the use of specific key
+                                    words.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--2">
+                        <div class="image">
+                            <div class="container">
+                                <img src="./assets/webpage.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="title">Web Pages</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Webpages need to be keyword rich and should
+                                    provide the reader, the requisite
+                                    information and resources that the
+                                    particular website provides for. Usually
+                                    800-1000 words long, SEO optimisation is a
+                                    key tool involved. Website content can be
+                                    something as commonplace and straightforward
+                                    as your company's "About Us" text, it can
+                                    also be pages that are regularly added to
+                                    and updated.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--3">
+                        <div class="image">
+                            <div class="container">
+                                <img
+                                    src="./assets/social-media-content.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="title">Social Media Content</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Social media content provides for special
+                                    curated posts which align engagement,
+                                    virality, retweets, shares, followers and
+                                    all the other good things that come to
+                                    social media marketers. With SMO
+                                    integration, social media posts are usually
+                                    100-200 words and work best when regularly
+                                    updated on premium social media platforms.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--4">
+                        <div class="image">
+                            <div class="container">
+                                <img src="./assets/articles.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="title">Articles</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Articles are detailed content pieces that
+                                    feature in-depth research and statistical
+                                    driven conclusions. They are among the most
+                                    potential lead-creators which allow clients
+                                    to gather as much information as possible in
+                                    a short time frame.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--5">
+                        <div class="image">
+                            <div class="container">
+                                <img src="./assets/whitepapers.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="title">Whitepapers</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Whitepapers are industry based content
+                                    pieces, that are legislative documents which
+                                    usually describe a theory behind a
+                                    particular technology or an industry. They
+                                    are 2000-2200 in word size and are
+                                    persuasive, authoritative and provide an
+                                    in-depth report on a specific topic that
+                                    presents a problem and provides a solution.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--6">
+                        <div class="image">
+                            <div class="container">
+                                <img src="./assets/press-release.svg" alt="" />
+                            </div>
+                        </div>
+
+                        <div class="title">Press releases</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Press Releases are formal pieces of content
+                                    that are used to deliver informational
+                                    updates about your organisation to media
+                                    professionals. With an added incentive of
+                                    better coverage as compared to generic
+                                    advertisement pieces. They are usually
+                                    400-500 words and provide for recorded
+                                    communication directed at members of the
+                                    news media for declarations.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--7">
+                        <div class="image">
+                            <div class="container">
+                                <img
+                                    src="./assets/product-description.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="title">Product description</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Product description is a structured format
+                                    of presenting information about a product
+                                    which includes its benefits, form,
+                                    presentation, price, purpose etc. Successful
+                                    sellers, whether in a store or online, know
+                                    the importance of a great product
+                                    description. Besides the visually appeal of
+                                    the product, it is the product description
+                                    that assists in selling the product.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--8">
+                        <div class="image">
+                            <div class="container">
+                                <img
+                                    src="./assets/company-profile.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="title">Company profile</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Product description is a structured format
+                                    of presenting information about a product
+                                    which includes its benefits, form,
+                                    presentation, price, purpose etc. Successful
+                                    sellers, whether in a store or online, know
+                                    the importance of a great product
+                                    description. Besides the visually appeal of
+                                    the product, it is the product description
+                                    that assists in selling the product.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                    <div class="card card--9">
+                        <div class="image">
+                            <div class="container">
+                                <img
+                                    src="./assets/academic-writting.svg"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+
+                        <div class="title">Academic writing</div>
+                        <div class="description">
+                            <div class="wrapper">
+                                <div class="text">
+                                    Academic Writing is usually conducted in
+                                    several sets of forms and genres and is
+                                    usually targeted towards a critical and
+                                    informed audience. Intended to reinforce or
+                                    challenge concepts or arguments, they are
+                                    usually 8-10 pages long and are adequately
+                                    detailed. Formal academic rhetoric often
+                                    finds use in this type of writing.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- description -->
+                    </div>
+                    <!-- card -->
+                </div>
+                <!-- cascade -->
+            </div>
+        </div>
+        <div class="section section--5">
+            <div class="types-of-content">
+                <div class="card card--1">
+                    <div class="heading">Brand content</div>
+                    <div class="desc">
+                        <div class="slide slide--1">
+                            <div class="content">
+                                If your brand has grey hair, add a little colour of storytelling to keep it hip and hot. Stay in step
+                                with the way the world wants to see you and lose that traditional flab with the new-age style of
+                                marketing through creative content
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                        <div class="slide slide--2">
+                            <div class="content">
+                                <ul>
+                                    <li>Brand Communication Campaign</li>
+                                    <li>Copywriting (Print / Outdoor/ Radio)</li>
+                                    <li>Marketing Collaterals (newsletters / brochures)</li>
+                                    <li>Branded Content (custom content for brands)</li>
+                                </ul>
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--2">
+                    <div class="heading">Corporate content</div>
+                    <div class="desc">
+                        <div class="slide slide--1">
+                            <div class="content">
+                                We understand that people in suits are busy, so we ease your crease by helping you create content for
+                                internal
+                                and external communications. We create anything from a table tent card to a book for the company. Did we
+                                tell
+                                you we have a special arrangement with India’s leading publisher Penguin India to custom publish a book
+                                just for
+                                you?
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                        <div class="slide slide--2">
+                            <div class="content">
+                                <ul>
+                                    <div>
+                                        <li>Corporate Communication</li>
+                                        <li>PR Content</li>
+                                        <li>Internal Communication</li>
+                                        <li>Presentations</li>
+                                        <li>Whitepapers</li>
+                                    </div>
+                                    <div>
+                                        <li>Ghostwriting articles for CXOs</li>
+                                        <li>Corporate profiling of CXOs</li>
+                                        <li>Reports</li>
+                                        <li>Coffee Table Books and Custom Publishing</li>
+                                    </div>
+                                </ul>
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--3">
+                    <div class="heading">Events content</div>
+                    <div class="desc">
+                        <div class="slide slide--1">
+                            <div class="content">
+                                Like most agency folks, we are brimming with ideas and can’t wait to see them come to life. Our end to
+                                end solutions comprise concepts, activation ideas, pitch presentations, theme collateral copy,
+                                scripting, AV, designing etc for events, activations, IPs, exhibitions and weddings..
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                        <div class="slide slide--2">
+                            <div class="content">
+                                <ul>
+                                    <li>Concepts & Themes</li>
+                                    <li>Brand Activation Ideas</li>
+                                    <li>Collateral Content for MICE, Dealer Meets, R&R etc</li>
+                                    <li>Scripts</li>
+                                    <li>Ideas to Presentations</li>
+                                </ul>
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card--4">
+                    <div class="heading">Books and publishing</div>
+                    <div class="desc">
+                        <div class="slide slide--1">
+                            <div class="content">
+                                Want to get your company’s history embedded in print forever? Or render a visual treat for your
+                                consumers with
+                                photo stories about your brand? We can create a custom book like a novel, graphic novel, e-book, video
+                                book or
+                                coffee table book for your brand, your CXO or your company.
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                        <div class="slide slide--2">
+                            <div class="content">
+                                <ul>
+                                    <li>Coffee Table Books</li>
+                                    <li>Custom Publishing</li>
+                                    <li>Graphic Novels etc</li>
+                                </ul>
+                                <div class="arrow"><img src="./assets/down-arrow.svg" alt="" class="svg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--6">
+            <div class="cc">
+                <div class="background">
+                    <img src="./assets/worldmap.svg" alt="" class="svg" />
+                </div>
+                <div class="content">
+                    <div class="title">
+                        The <span> C - C </span>bridge
+                    </div>
+                    <div class="desc">
+                        Content acts a perfect emotional and informational
+                        bridge between Consumer and Commerce. In the sea of
+                        mediocre content with the wave of quality, a hail of
+                        experience - anchor it with Pepper. Sail your ship high
+                        with us!
+                    </div>
+                    <div class="cards">
+                        <div class="card card--1">
+                            <div class="strong">120+</div>
+                            <div class="text">
+                                Clients <br />all over the <br />globe
+                            </div>
+                        </div>
+                        <div class="card card--2">
+                            <div class="strong">48 <span>hrs</span></div>
+                            <div class="text">turnaround <br />time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="bottom">
+                <div class="title">
+                    <div class="text">Pepper</div>
+                </div>
+                <div class="quick-links">
+                    <div class="links">
+                        <div class="linkItems">
+                            <a
+                                href="./index.html"
+                                >Home</a
+                            >
+                        </div>
+                        <div class="linkItems">
+                            <a
+                                href="./about_us.html"
+                                >About Us</a
+                            >
+                        </div>
+                        <div class="linkItems">
+                            <a
+                                href="./blog.html"
+                                >Blog</a
+                            >
+                        </div>
+                        <div class="linkItems">
+                            <a
+                                href="./writer.html"
+                                >Writers</a
+                            >
+                        </div>
+                    </div>
+                </div>
+                <div class="address">
+                    <div class="text">
+                        <div>605, Rattan Icon Building</div>
+                        <div>Seawoods, Sector 50</div>
+                        <div>Navi Mumbai</div>
+                        <div>Maharashtra - 400706</div>
+                    </div>
+                </div>
+                <div class="phone anirudh">
+                    <div class="content">
+                        <div class="name">
+                            Anirudh Singla
+                        </div>
+                        <div class="mail">
+                            <span>anirudh@pepper.org.in</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone rishabh">
+                    <div class="content">
+                        <div class="name">
+                            Rishabh Shekhar
+                        </div>
+                        <div class="mail">
+                            <span>
+                                rishabh@pepper.org.in
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="wrapper">
+                        <div class="icons fb">
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.facebook.com/Pepper-Co-322356101506651/"
+                            >
+                                <img class="svg" src="./assets/fb.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="icons twitter">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Pepper_India">
+                                <img
+                                    class="svg"
+                                    src="./assets/Twitter_white.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="icons linkedin">
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.linkedin.com/company/peppercontent/"
+                            >
+                                <img
+                                    class="svg"
+                                    src="./assets/LinkedIN_white.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                        <div class="icons medium">
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://medium.com/@peppercontent3"
+                            >
+                                <img
+                                    class="svg"
+                                    src="./assets/Medium_white.svg"
+                                    alt=""
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div>© 2019, Pepper. All Rights Reserved.</div>
+                </div>
+                <div class="vertical-line">
+                    <div class="line"></div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="query-form">
+            <div onClick="toggleForm()" class="close-button">
+                <img src="./assets/cross.svg" alt="" class="svg" />
+            </div>
+            <div class="wrapper">
+                <div class="title">
+                    <div class="text">Get a quote</div>
+                </div>
+                <div class="form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="Name" placeholder="Name" class="form-control" />
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="EMAIL" style="text-transform: none"
+                                class="form-control" />
+                        </div>
+                        <div class="group-1">
+                            <div class="industry">
+                                <label for="industry">Industry</label>
+                                <select id="industry" name="Industry" class="form-control">
+                                    <option value="" disabled selected>industry</option>
+                                    <option value="Automobile">Automobile</option>
+                                    <option value="Business">Business</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Entertainment">Entertainment</option>
+                                    <option value="Environment">Environment</option>
+                                    <option value="Fashion">Fashion</option>
+                                    <option value="Food">Food</option>
+                                    <option value="Guides">Guides</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Lifestyle">Lifestyle</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="Pop">Pop Culture</option>
+                                    <option value="Reviews">Reviews</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Travel">Travel</option>
+                                    <option value="Technical">Technical</option>
+                                    <option value="Website">Website</option>
+                                </select>
+                            </div>
+                
+                            <div class="vertical">
+                                <label for="vertical">Vertical</label>
+                                <select id="vertical" name="Vertical" class="form-control">
+                                    <option value="" disabled selected>Vertical</option>
+                                    <option value="article">Article</option>
+                                    <option value="blog">Blog</option>
+                                    <option value="whitepaper">Whitepaper</option>
+                                    <option value="press-release">Press Release</option>
+                                    <option value="product-desc">Product Description</option>
+                                    <option value="website">Website</option>
+                                    <option value="video-script">Video Script</option>
+                                    <option value="book">Book Writing</option>
+                                    <option value="branded">Branded Content</option>
+                                    <option value="others">Others</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="group-2">
+                            <div class="tat">
+                                <label for="tat">Turn around time</label>
+                                <select class="form-control" id="tat" name="TurnaroundTime">
+                                    <option value="" disabled selected>Turnaround Time</option>
+                                    <option value="fastest">1-3 days - Fastest</option>
+                                    <option value="quick">4-7 days - Quick</option>
+                                    <option value="flexible">Over a week - Flexible</option>
+                                </select>
+                            </div>
+                            <div class="expertise">
+                                <label for="expertise">Expertise level</label>
+                                <select class="form-control" name="Expertise" id="expertise">
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                    <option value="professional">Professional</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="Message" placeholder="Message" class="form-control"></textarea>
+                        </div>
+                        <div class="button">
+                            <button id="submit-form" type="submit" value="Submit" class="button spec-hover">
+                                <span>CONTACT PEPPER</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./js/jquery.serialize-object.js"></script>
+        <script src="./js/business.js"></script>
+    </body>
+</html>

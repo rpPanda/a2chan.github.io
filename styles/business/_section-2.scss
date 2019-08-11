@@ -1,0 +1,103 @@
+.section--2 {
+    position: relative;
+    text-align: center;
+
+    .caption {
+        position: relative;
+        font-family: "Poppins", sans-serif;
+        color: $primary-blue;
+        @include res-font-size(32, 48);
+
+        @include mq_dl {
+            margin: 2rem 0 4rem 0;
+        }
+
+        @include mq_sp {
+            margin: 2rem 0;
+        }
+
+        @include mq_rest {
+            margin: 2rem 0;
+        }
+    }
+    .cards {
+        position: relative;
+
+        @include mq_dl {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 350px));
+            grid-template-rows: 1fr;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+        }
+
+        @include mq_sp {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 2rem;
+            width: 60%;
+            margin: auto;
+        }
+
+        @include mq_rest {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 2rem;
+            width: 30%;
+            margin: auto;
+        }
+
+        .card {
+            position: relative;
+            perspective: 150em;
+            box-shadow: -5px 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 4%;
+            background: linear-gradient(0deg, #ff846f, #fb5575);
+            display: grid;
+            align-items: center;
+
+            @include mq_dl() {
+                padding: 2rem 0;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                background: $text-white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                background: $text-white;
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+            }
+
+            .content {
+                position: relative;
+                width: 70%;
+                margin: 1.5rem auto;
+                color: white;
+                font-family: "Poppins", sans-serif;
+                @include res-font-size(14, 20);
+                position: relative;
+
+                @include mq_dl() {
+                    // margin: 4rem 0;
+                }
+            }
+        }
+    }
+}
