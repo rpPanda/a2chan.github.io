@@ -1174,6 +1174,7 @@ body a {
         grid-template-rows: repeat(2, minmax(340px, 1fr));
     width: 80%;
     margin: auto;
+    grid-row-gap: 2rem 0;
   }
 }
 
@@ -1242,6 +1243,11 @@ body a {
   transition: transform 0.4s ease-in-out, visibility 0s, -webkit-transform 0.4s ease-in-out;
 }
 
+.types-of-content .card .desc:hover .arrow svg, .types-of-content .card .desc:focus .arrow svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .types-of-content .card .desc .slide {
   position: relative;
   height: 100%;
@@ -1289,6 +1295,26 @@ body a {
   transition: transform 0.4s ease-in-out, visibility 0.4s;
   transition: transform 0.4s ease-in-out, visibility 0.4s, -webkit-transform 0.4s ease-in-out;
   z-index: 0;
+}
+
+.types-of-content .card .desc .arrow {
+  position: absolute;
+  height: 10px;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.types-of-content .card .desc .arrow svg {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: auto !important;
+}
+
+.types-of-content .card .desc .arrow svg path {
+  fill: #fc808a !important;
 }
 
 .cc {
